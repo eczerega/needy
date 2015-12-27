@@ -1,0 +1,69 @@
+= form_for (@user = (@user ? @user : User.new)), authenticity_token: true, html: {:class => "form form-horizontal"} do |f|
+  - if !@no_errors&&@user.errors.any?
+    #error_explanation.alert.alert-danger
+      %h= t('common.forms.show_errors')
+      %ul
+        - @user.errors.full_messages.each do |msg|
+          %li= msg.html_safe
+  -if @user.id #se puede desactivar
+    .field.imgField
+      .icon
+        = image_tag @user.get_image(:thumb)
+      .col-lg-12
+        = f.file_field :avatar, :class => 'form-control file'
+
+    .field
+      .col-lg-12
+        .icon
+          %i.fa.fa-user
+            .name-number= '1'
+        = f.text_field :first_name, :placeholder => t('placeholders.user.first_name'), :class => 'form-control'
+
+    .field
+      .col-lg-12
+        .icon
+          %i.fa.fa-user
+            .name-number= '2'
+        = f.text_field :last_name, :placeholder => t('placeholders.user.last_name'), :class => 'form-control'
+
+  .field
+    .col-lg-12
+      .icon
+        %i.fa.fa-envelope
+      = f.text_field :email, :placeholder => t('placeholders.user.email'), :class => 'form-control'
+
+  -unless @user.id
+    .field
+      .col-lg-12
+        .icon
+          %i.fa.fa-key
+        = f.password_field :password, :placeholder => t('placeholders.user.password'), :class => 'form-control'
+    .field
+      .col-lg-12
+        .icon
+          %i.fa.fa-lock
+        = f.password_field :password_confirmation, :placeholder => t('placeholders.user.password_confirmation'), :class => 'form-control'
+  -else 
+    .field
+      .icon
+      .col-lg-12
+        = f.submit t('modules.register.btn_update'), :class => 'btn btn-default'
+
+    .strippedClear
+
+    %h1.noBg= t('modules.edit.change_pass')
+    .field
+      .col-lg-12
+        .icon
+          %i.fa.fa-key
+        = f.password_field :current_password, :placeholder => t('placeholders.user.password'), :class => 'form-control'
+    .field
+      .col-lg-12
+        .icon
+          %i.fa.fa-lock
+        = f.password_field :password, :placeholder => t('placeholders.user.password_confirmation'), :class => 'form-control'
+
+  .field
+    .col-lg-12
+      .icon
+      = f.submit @user.id ? t('modules.register.btn_pass') : t('modules.register.btn'), :class => 'btn btn-default'

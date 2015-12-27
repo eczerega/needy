@@ -1,0 +1,10 @@
+.users
+  .col-md-6.col-md-offset-3
+    %h1= t('modules.register.title') 
+    .content
+      = render 'form', :locals => {:@no_errors => @no_errors}
+
+  .clear
+  .col-md-6.col-md-offset-3
+    = link_to log_in_path, :class => 'btn btn-default pull-right' do
+      = t('modules.register.footer')
