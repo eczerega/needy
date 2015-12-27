@@ -39,7 +39,7 @@
         %meta{  :name=>"keywords", :content=>"brainshots,brainshots.cl,ingenieria,tecnología,emprendimiento,chile" }
         %meta{ :name=>"google-site-verification", :content=>"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" }
 
-  %body{:class => "#{controller_name} #{action_name}"}
+  %body{:class => "#{controller_name} #{action_name}", "ng-app" => "needy" ,"ng-controller" => "MainCtrl", "ui-view" => ""}
     %header{:role => "banner"}
       .navbar-header
 
@@ -66,7 +66,9 @@
           = render 'layouts/messages'
           -unless current_user
             = render partial: "sessions/register"
-          = yield
+          {{test}}
+          %md-button.md-raised.md-primary Primary
+          =yield
 
       .hidden-xs
         = render 'layouts/footer'
