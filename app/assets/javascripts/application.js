@@ -19,4 +19,5 @@
 //= require angular-animate
 //= require angular-aria
 //= require angular-messages
+//= require slick-carousel/slick/slick.js
 //= require_tree .
