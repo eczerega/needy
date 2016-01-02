@@ -415,3 +415,32 @@ Processing by HomeController#index as HTML
   Rendered layouts/_footer.html.haml (0.4ms)
   Rendered layouts/_footer.html.haml (0.3ms)
 Completed 200 OK in 86ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-02 13:36:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (24.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (4.6ms)
+  Rendered layouts/_navigation.html.haml (2.7ms)
+  Rendered layouts/_navigation.html.haml (0.3ms)
+  Rendered layouts/_messages.html.haml (1.7ms)
+  Rendered users/_form.html.haml (291.6ms)
+  Rendered sessions/_register.html.haml (305.3ms)
+  Rendered layouts/_footer.html.haml (2.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1361ms (Views: 894.9ms | ActiveRecord: 173.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-02 13:36:08 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.1ms)
+  Rendered sessions/_register.html.haml (2.0ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
