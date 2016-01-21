@@ -1,6 +1,27 @@
 
 DefaultInit::Application.routes.draw do
   
+  resources :categories
+  resources :town_need_categories
+  resources :business_need_categories
+  resources :social_need_categories
+  resources :town_media
+  resources :business_media
+  resources :social_media
+  resources :town_needs
+  resources :business_needs
+  resources :socials_needs
+  resources :social_need_likes
+  resources :commnet_likes
+  resources :comments
+  resources :solution_media
+  resources :challenge_solutions
+  resources :solutions_likes
+  resources :challenges
+  resources :challenge_sponsors
+  resources :sponsors
+  resources :challenge_media
+  resources :challenge_media
   #G+ login
   get 'auth/:provider/callback', to: 'sessions#create_with_oauth'  
   get 'auth/failure', to:  "home#index"

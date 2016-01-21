@@ -1,0 +1,2 @@
+module SolutionsLikesHelper
+end

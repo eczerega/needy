@@ -1,0 +1,29 @@
+%h1 Listing social_need_likes
+
+%table
+  %tr
+    %th User
+    %th Integer
+    %th Social need
+    %th Integer
+    %th Value
+    %th Integer
+    %th
+    %th
+    %th
+
+  - @social_need_likes.each do |social_need_like|
+    %tr
+      %td= social_need_like.user_id
+      %td= social_need_like.integer
+      %td= social_need_like.social_need_id
+      %td= social_need_like.integer
+      %td= social_need_like.value
+      %td= social_need_like.integer
+      %td= link_to 'Show', social_need_like
+      %td= link_to 'Edit', edit_social_need_like_path(social_need_like)
+      %td= link_to 'Destroy', social_need_like, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Social need like', new_social_need_like_path

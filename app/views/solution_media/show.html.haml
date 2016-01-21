@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Solution:
+  = @solution_medium.solution_id
+%p
+  %b Integer:
+  = @solution_medium.integer
+%p
+  %b Content url:
+  = @solution_medium.content_url
+%p
+  %b String:
+  = @solution_medium.string
+%p
+  %b Content type:
+  = @solution_medium.content_type
+%p
+  %b Integer:
+  = @solution_medium.integer
+
+= link_to 'Edit', edit_solution_medium_path(@solution_medium)
+\|
+= link_to 'Back', solution_media_path

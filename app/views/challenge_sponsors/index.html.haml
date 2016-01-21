@@ -1,0 +1,25 @@
+%h1 Listing challenge_sponsors
+
+%table
+  %tr
+    %th Challenge
+    %th Integer
+    %th Sponsor
+    %th Integer
+    %th
+    %th
+    %th
+
+  - @challenge_sponsors.each do |challenge_sponsor|
+    %tr
+      %td= challenge_sponsor.challenge_id
+      %td= challenge_sponsor.integer
+      %td= challenge_sponsor.sponsor_id
+      %td= challenge_sponsor.integer
+      %td= link_to 'Show', challenge_sponsor
+      %td= link_to 'Edit', edit_challenge_sponsor_path(challenge_sponsor)
+      %td= link_to 'Destroy', challenge_sponsor, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Challenge sponsor', new_challenge_sponsor_path

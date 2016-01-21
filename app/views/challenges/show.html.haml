@@ -1,0 +1,66 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @challenge.name
+%p
+  %b String:
+  = @challenge.string
+%p
+  %b Description:
+  = @challenge.description
+%p
+  %b String:
+  = @challenge.string
+%p
+  %b Start date:
+  = @challenge.start_date
+%p
+  %b Date:
+  = @challenge.date
+%p
+  %b End date:
+  = @challenge.end_date
+%p
+  %b Date:
+  = @challenge.date
+%p
+  %b Latitude:
+  = @challenge.latitude
+%p
+  %b String:
+  = @challenge.string
+%p
+  %b Longitude:
+  = @challenge.longitude
+%p
+  %b String:
+  = @challenge.string
+%p
+  %b Location:
+  = @challenge.location
+%p
+  %b String:
+  = @challenge.string
+%p
+  %b Reward:
+  = @challenge.reward
+%p
+  %b String:
+  = @challenge.string
+%p
+  %b Conditions:
+  = @challenge.conditions
+%p
+  %b String:
+  = @challenge.string
+%p
+  %b Stage:
+  = @challenge.stage
+%p
+  %b String:
+  = @challenge.string
+
+= link_to 'Edit', edit_challenge_path(@challenge)
+\|
+= link_to 'Back', challenges_path

@@ -1,0 +1,29 @@
+%h1 Listing commnet_likes
+
+%table
+  %tr
+    %th Commnets
+    %th Integer
+    %th Value
+    %th Integer
+    %th User
+    %th Integer
+    %th
+    %th
+    %th
+
+  - @commnet_likes.each do |commnet_like|
+    %tr
+      %td= commnet_like.commnets_id
+      %td= commnet_like.integer
+      %td= commnet_like.value
+      %td= commnet_like.integer
+      %td= commnet_like.user_id
+      %td= commnet_like.integer
+      %td= link_to 'Show', commnet_like
+      %td= link_to 'Edit', edit_commnet_like_path(commnet_like)
+      %td= link_to 'Destroy', commnet_like, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Commnet like', new_commnet_like_path

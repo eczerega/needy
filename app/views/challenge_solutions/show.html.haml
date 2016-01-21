@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @challenge_solution.user_id
+%p
+  %b Integer:
+  = @challenge_solution.integer
+%p
+  %b Name:
+  = @challenge_solution.name
+%p
+  %b String:
+  = @challenge_solution.string
+%p
+  %b Challenge:
+  = @challenge_solution.challenge_id
+%p
+  %b Integer:
+  = @challenge_solution.integer
+%p
+  %b Destription:
+  = @challenge_solution.destription
+%p
+  %b String:
+  = @challenge_solution.string
+
+= link_to 'Edit', edit_challenge_solution_path(@challenge_solution)
+\|
+= link_to 'Back', challenge_solutions_path

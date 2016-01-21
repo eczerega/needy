@@ -1,0 +1,29 @@
+%h1 Listing solutions_likes
+
+%table
+  %tr
+    %th User
+    %th Integer
+    %th Solution
+    %th Integer
+    %th Value
+    %th String
+    %th
+    %th
+    %th
+
+  - @solutions_likes.each do |solutions_like|
+    %tr
+      %td= solutions_like.user_id
+      %td= solutions_like.integer
+      %td= solutions_like.solution_id
+      %td= solutions_like.integer
+      %td= solutions_like.value
+      %td= solutions_like.string
+      %td= link_to 'Show', solutions_like
+      %td= link_to 'Edit', edit_solutions_like_path(solutions_like)
+      %td= link_to 'Destroy', solutions_like, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Solutions like', new_solutions_like_path

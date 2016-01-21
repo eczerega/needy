@@ -1,0 +1,42 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @socials_need.user_id
+%p
+  %b Integer:
+  = @socials_need.integer
+%p
+  %b Name:
+  = @socials_need.name
+%p
+  %b String:
+  = @socials_need.string
+%p
+  %b Description:
+  = @socials_need.description
+%p
+  %b String:
+  = @socials_need.string
+%p
+  %b Latitude:
+  = @socials_need.latitude
+%p
+  %b Integer:
+  = @socials_need.integer
+%p
+  %b Longitude:
+  = @socials_need.longitude
+%p
+  %b Integer:
+  = @socials_need.integer
+%p
+  %b Address:
+  = @socials_need.address
+%p
+  %b String:
+  = @socials_need.string
+
+= link_to 'Edit', edit_socials_need_path(@socials_need)
+\|
+= link_to 'Back', socials_needs_path

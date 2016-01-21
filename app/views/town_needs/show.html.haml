@@ -1,0 +1,42 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @town_need.user_id
+%p
+  %b Integer:
+  = @town_need.integer
+%p
+  %b Name:
+  = @town_need.name
+%p
+  %b String:
+  = @town_need.string
+%p
+  %b Description:
+  = @town_need.description
+%p
+  %b String:
+  = @town_need.string
+%p
+  %b Latitude:
+  = @town_need.latitude
+%p
+  %b Integer:
+  = @town_need.integer
+%p
+  %b Longitude:
+  = @town_need.longitude
+%p
+  %b Integer:
+  = @town_need.integer
+%p
+  %b Address:
+  = @town_need.address
+%p
+  %b String:
+  = @town_need.string
+
+= link_to 'Edit', edit_town_need_path(@town_need)
+\|
+= link_to 'Back', town_needs_path

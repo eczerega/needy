@@ -1,0 +1,29 @@
+%h1 Listing business_media
+
+%table
+  %tr
+    %th Social need
+    %th Integer
+    %th Content url
+    %th String
+    %th Content type
+    %th Integer
+    %th
+    %th
+    %th
+
+  - @business_media.each do |business_medium|
+    %tr
+      %td= business_medium.social_need_id
+      %td= business_medium.integer
+      %td= business_medium.content_url
+      %td= business_medium.string
+      %td= business_medium.content_type
+      %td= business_medium.integer
+      %td= link_to 'Show', business_medium
+      %td= link_to 'Edit', edit_business_medium_path(business_medium)
+      %td= link_to 'Destroy', business_medium, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Business medium', new_business_medium_path

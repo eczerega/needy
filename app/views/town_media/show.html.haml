@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Social need:
+  = @town_medium.social_need_id
+%p
+  %b Integer:
+  = @town_medium.integer
+%p
+  %b Content url:
+  = @town_medium.content_url
+%p
+  %b String:
+  = @town_medium.string
+%p
+  %b Content type:
+  = @town_medium.content_type
+%p
+  %b Integer:
+  = @town_medium.integer
+
+= link_to 'Edit', edit_town_medium_path(@town_medium)
+\|
+= link_to 'Back', town_media_path

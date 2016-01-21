@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140820214356) do
+ActiveRecord::Schema.define(version: 20160120224712) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,111 @@ ActiveRecord::Schema.define(version: 20140820214356) do
     t.datetime "updated_at"
   end
 
+  create_table "business_media", force: :cascade do |t|
+    t.string   "social_need_id"
+    t.string   "integer"
+    t.string   "content_url"
+    t.string   "string"
+    t.string   "content_type"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "business_need_categories", force: :cascade do |t|
+    t.string   "category_id"
+    t.string   "integer"
+    t.string   "social_need_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "business_needs", force: :cascade do |t|
+    t.string   "user_id"
+    t.string   "integer"
+    t.string   "name"
+    t.string   "string"
+    t.string   "description"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.string   "address"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "level"
+    t.string   "integer"
+    t.string   "name"
+    t.string   "string"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "challenge_media", force: :cascade do |t|
+    t.string   "content_url"
+    t.string   "string"
+    t.string   "content_type"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "challenge_solutions", force: :cascade do |t|
+    t.string   "user_id"
+    t.string   "integer"
+    t.string   "name"
+    t.string   "string"
+    t.string   "challenge_id"
+    t.string   "destription"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "challenge_sponsors", force: :cascade do |t|
+    t.string   "challenge_id"
+    t.string   "integer"
+    t.string   "sponsor_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "challenges", force: :cascade do |t|
+    t.string   "name"
+    t.string   "string"
+    t.string   "description"
+    t.string   "start_date"
+    t.string   "date"
+    t.string   "end_date"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.string   "location"
+    t.string   "reward"
+    t.string   "conditions"
+    t.string   "stage"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "type"
+    t.string   "integer"
+    t.string   "social_need_id"
+    t.string   "user_id"
+    t.string   "parent_id"
+    t.string   "content"
+    t.string   "string"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "commnet_likes", force: :cascade do |t|
+    t.string   "commnets_id"
+    t.string   "integer"
+    t.string   "value"
+    t.string   "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
     t.integer  "sluggable_id",              null: false
@@ -45,11 +150,111 @@ ActiveRecord::Schema.define(version: 20140820214356) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
+  create_table "social_media", force: :cascade do |t|
+    t.string   "social_need_id"
+    t.string   "integer"
+    t.string   "content_url"
+    t.string   "string"
+    t.string   "content_type"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "social_need_categories", force: :cascade do |t|
+    t.string   "category_id"
+    t.string   "integer"
+    t.string   "social_need_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "social_need_likes", force: :cascade do |t|
+    t.string   "user_id"
+    t.string   "integer"
+    t.string   "social_need_id"
+    t.string   "value"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "socials_needs", force: :cascade do |t|
+    t.string   "user_id"
+    t.string   "integer"
+    t.string   "name"
+    t.string   "string"
+    t.string   "description"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.string   "address"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "solution_media", force: :cascade do |t|
+    t.string   "solution_id"
+    t.string   "integer"
+    t.string   "content_url"
+    t.string   "string"
+    t.string   "content_type"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "solutions_likes", force: :cascade do |t|
+    t.string   "user_id"
+    t.string   "integer"
+    t.string   "solution_id"
+    t.string   "value"
+    t.string   "string"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "sponsors", force: :cascade do |t|
+    t.string   "name"
+    t.string   "string"
+    t.string   "picture"
+    t.string   "web"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "tokens", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "value"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "town_media", force: :cascade do |t|
+    t.string   "social_need_id"
+    t.string   "integer"
+    t.string   "content_url"
+    t.string   "string"
+    t.string   "content_type"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "town_need_categories", force: :cascade do |t|
+    t.string   "category_id"
+    t.string   "integer"
+    t.string   "social_need_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "town_needs", force: :cascade do |t|
+    t.string   "user_id"
+    t.string   "integer"
+    t.string   "name"
+    t.string   "string"
+    t.string   "description"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.string   "address"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "user_oauths", force: :cascade do |t|

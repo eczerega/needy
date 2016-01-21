@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Category:
+  = @social_need_category.category_id
+%p
+  %b Integer:
+  = @social_need_category.integer
+%p
+  %b Social need:
+  = @social_need_category.social_need_id
+%p
+  %b Integer:
+  = @social_need_category.integer
+
+= link_to 'Edit', edit_social_need_category_path(@social_need_category)
+\|
+= link_to 'Back', social_need_categories_path

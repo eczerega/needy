@@ -1,0 +1,29 @@
+%h1 Listing town_media
+
+%table
+  %tr
+    %th Social need
+    %th Integer
+    %th Content url
+    %th String
+    %th Content type
+    %th Integer
+    %th
+    %th
+    %th
+
+  - @town_media.each do |town_medium|
+    %tr
+      %td= town_medium.social_need_id
+      %td= town_medium.integer
+      %td= town_medium.content_url
+      %td= town_medium.string
+      %td= town_medium.content_type
+      %td= town_medium.integer
+      %td= link_to 'Show', town_medium
+      %td= link_to 'Edit', edit_town_medium_path(town_medium)
+      %td= link_to 'Destroy', town_medium, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Town medium', new_town_medium_path

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Content url:
+  = @challenge_medium.content_url
+%p
+  %b String:
+  = @challenge_medium.string
+%p
+  %b Content type:
+  = @challenge_medium.content_type
+%p
+  %b String:
+  = @challenge_medium.string
+
+= link_to 'Edit', edit_challenge_medium_path(@challenge_medium)
+\|
+= link_to 'Back', challenge_media_path

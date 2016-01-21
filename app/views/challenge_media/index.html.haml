@@ -1,0 +1,25 @@
+%h1 Listing challenge_media
+
+%table
+  %tr
+    %th Content url
+    %th String
+    %th Content type
+    %th String
+    %th
+    %th
+    %th
+
+  - @challenge_media.each do |challenge_medium|
+    %tr
+      %td= challenge_medium.content_url
+      %td= challenge_medium.string
+      %td= challenge_medium.content_type
+      %td= challenge_medium.string
+      %td= link_to 'Show', challenge_medium
+      %td= link_to 'Edit', edit_challenge_medium_path(challenge_medium)
+      %td= link_to 'Destroy', challenge_medium, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Challenge medium', new_challenge_medium_path

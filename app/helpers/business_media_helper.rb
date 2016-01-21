@@ -1,0 +1,2 @@
+module BusinessMediaHelper
+end

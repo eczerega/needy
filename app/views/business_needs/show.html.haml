@@ -1,0 +1,42 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @business_need.user_id
+%p
+  %b Integer:
+  = @business_need.integer
+%p
+  %b Name:
+  = @business_need.name
+%p
+  %b String:
+  = @business_need.string
+%p
+  %b Description:
+  = @business_need.description
+%p
+  %b String:
+  = @business_need.string
+%p
+  %b Latitude:
+  = @business_need.latitude
+%p
+  %b Integer:
+  = @business_need.integer
+%p
+  %b Longitude:
+  = @business_need.longitude
+%p
+  %b Integer:
+  = @business_need.integer
+%p
+  %b Address:
+  = @business_need.address
+%p
+  %b String:
+  = @business_need.string
+
+= link_to 'Edit', edit_business_need_path(@business_need)
+\|
+= link_to 'Back', business_needs_path

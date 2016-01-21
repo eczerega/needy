@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @solutions_like.user_id
+%p
+  %b Integer:
+  = @solutions_like.integer
+%p
+  %b Solution:
+  = @solutions_like.solution_id
+%p
+  %b Integer:
+  = @solutions_like.integer
+%p
+  %b Value:
+  = @solutions_like.value
+%p
+  %b String:
+  = @solutions_like.string
+
+= link_to 'Edit', edit_solutions_like_path(@solutions_like)
+\|
+= link_to 'Back', solutions_likes_path

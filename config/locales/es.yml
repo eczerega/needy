@@ -161,7 +161,7 @@ es:
       activation: "Revisa tu correo y activa tu cuenta"
       invalid_pass: "Contraseña o correo incorrectos"
   common:
-    app_name: "Nombre App"
+    app_name: "Needy"
     app_desc: "Descripción App"
     app_url: "http://brainshots.cl"
     app_url2: "http://brainshots.cl"

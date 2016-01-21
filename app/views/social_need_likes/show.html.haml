@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @social_need_like.user_id
+%p
+  %b Integer:
+  = @social_need_like.integer
+%p
+  %b Social need:
+  = @social_need_like.social_need_id
+%p
+  %b Integer:
+  = @social_need_like.integer
+%p
+  %b Value:
+  = @social_need_like.value
+%p
+  %b Integer:
+  = @social_need_like.integer
+
+= link_to 'Edit', edit_social_need_like_path(@social_need_like)
+\|
+= link_to 'Back', social_need_likes_path

@@ -1,0 +1,25 @@
+%h1 Listing town_need_categories
+
+%table
+  %tr
+    %th Category
+    %th Integer
+    %th Social need
+    %th Integer
+    %th
+    %th
+    %th
+
+  - @town_need_categories.each do |town_need_category|
+    %tr
+      %td= town_need_category.category_id
+      %td= town_need_category.integer
+      %td= town_need_category.social_need_id
+      %td= town_need_category.integer
+      %td= link_to 'Show', town_need_category
+      %td= link_to 'Edit', edit_town_need_category_path(town_need_category)
+      %td= link_to 'Destroy', town_need_category, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Town need category', new_town_need_category_path

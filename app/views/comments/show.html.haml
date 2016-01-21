@@ -1,0 +1,36 @@
+%p#notice= notice
+
+%p
+  %b Type:
+  = @comment.type
+%p
+  %b Integer:
+  = @comment.integer
+%p
+  %b Social need:
+  = @comment.social_need_id
+%p
+  %b Integer:
+  = @comment.integer
+%p
+  %b User:
+  = @comment.user_id
+%p
+  %b Integer:
+  = @comment.integer
+%p
+  %b Parent:
+  = @comment.parent_id
+%p
+  %b Integer:
+  = @comment.integer
+%p
+  %b Content:
+  = @comment.content
+%p
+  %b String:
+  = @comment.string
+
+= link_to 'Edit', edit_comment_path(@comment)
+\|
+= link_to 'Back', comments_path

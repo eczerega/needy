@@ -1,0 +1,57 @@
+%h1 Listing challenges
+
+%table
+  %tr
+    %th Name
+    %th String
+    %th Description
+    %th String
+    %th Start date
+    %th Date
+    %th End date
+    %th Date
+    %th Latitude
+    %th String
+    %th Longitude
+    %th String
+    %th Location
+    %th String
+    %th Reward
+    %th String
+    %th Conditions
+    %th String
+    %th Stage
+    %th String
+    %th
+    %th
+    %th
+
+  - @challenges.each do |challenge|
+    %tr
+      %td= challenge.name
+      %td= challenge.string
+      %td= challenge.description
+      %td= challenge.string
+      %td= challenge.start_date
+      %td= challenge.date
+      %td= challenge.end_date
+      %td= challenge.date
+      %td= challenge.latitude
+      %td= challenge.string
+      %td= challenge.longitude
+      %td= challenge.string
+      %td= challenge.location
+      %td= challenge.string
+      %td= challenge.reward
+      %td= challenge.string
+      %td= challenge.conditions
+      %td= challenge.string
+      %td= challenge.stage
+      %td= challenge.string
+      %td= link_to 'Show', challenge
+      %td= link_to 'Edit', edit_challenge_path(challenge)
+      %td= link_to 'Destroy', challenge, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Challenge', new_challenge_path

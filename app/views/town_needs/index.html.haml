@@ -1,0 +1,41 @@
+%h1 Listing town_needs
+
+%table
+  %tr
+    %th User
+    %th Integer
+    %th Name
+    %th String
+    %th Description
+    %th String
+    %th Latitude
+    %th Integer
+    %th Longitude
+    %th Integer
+    %th Address
+    %th String
+    %th
+    %th
+    %th
+
+  - @town_needs.each do |town_need|
+    %tr
+      %td= town_need.user_id
+      %td= town_need.integer
+      %td= town_need.name
+      %td= town_need.string
+      %td= town_need.description
+      %td= town_need.string
+      %td= town_need.latitude
+      %td= town_need.integer
+      %td= town_need.longitude
+      %td= town_need.integer
+      %td= town_need.address
+      %td= town_need.string
+      %td= link_to 'Show', town_need
+      %td= link_to 'Edit', edit_town_need_path(town_need)
+      %td= link_to 'Destroy', town_need, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Town need', new_town_need_path

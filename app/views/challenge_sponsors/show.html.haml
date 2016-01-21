@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Challenge:
+  = @challenge_sponsor.challenge_id
+%p
+  %b Integer:
+  = @challenge_sponsor.integer
+%p
+  %b Sponsor:
+  = @challenge_sponsor.sponsor_id
+%p
+  %b Integer:
+  = @challenge_sponsor.integer
+
+= link_to 'Edit', edit_challenge_sponsor_path(@challenge_sponsor)
+\|
+= link_to 'Back', challenge_sponsors_path

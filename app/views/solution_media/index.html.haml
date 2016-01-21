@@ -1,0 +1,29 @@
+%h1 Listing solution_media
+
+%table
+  %tr
+    %th Solution
+    %th Integer
+    %th Content url
+    %th String
+    %th Content type
+    %th Integer
+    %th
+    %th
+    %th
+
+  - @solution_media.each do |solution_medium|
+    %tr
+      %td= solution_medium.solution_id
+      %td= solution_medium.integer
+      %td= solution_medium.content_url
+      %td= solution_medium.string
+      %td= solution_medium.content_type
+      %td= solution_medium.integer
+      %td= link_to 'Show', solution_medium
+      %td= link_to 'Edit', edit_solution_medium_path(solution_medium)
+      %td= link_to 'Destroy', solution_medium, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Solution medium', new_solution_medium_path

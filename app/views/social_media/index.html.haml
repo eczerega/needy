@@ -1,0 +1,29 @@
+%h1 Listing social_media
+
+%table
+  %tr
+    %th Social need
+    %th Integer
+    %th Content url
+    %th String
+    %th Content type
+    %th Integer
+    %th
+    %th
+    %th
+
+  - @social_media.each do |social_medium|
+    %tr
+      %td= social_medium.social_need_id
+      %td= social_medium.integer
+      %td= social_medium.content_url
+      %td= social_medium.string
+      %td= social_medium.content_type
+      %td= social_medium.integer
+      %td= link_to 'Show', social_medium
+      %td= link_to 'Edit', edit_social_medium_path(social_medium)
+      %td= link_to 'Destroy', social_medium, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Social medium', new_social_medium_path

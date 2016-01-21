@@ -1,0 +1,46 @@
+= form_for @town_need do |f|
+  - if @town_need.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@town_need.errors.count, "error")} prohibited this town_need from being saved:"
+      %ul
+        - @town_need.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :user_id
+    = f.text_field :user_id
+  .field
+    = f.label :integer
+    = f.text_field :integer
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :string
+    = f.text_field :string
+  .field
+    = f.label :description
+    = f.text_field :description
+  .field
+    = f.label :string
+    = f.text_field :string
+  .field
+    = f.label :latitude
+    = f.text_field :latitude
+  .field
+    = f.label :integer
+    = f.text_field :integer
+  .field
+    = f.label :longitude
+    = f.text_field :longitude
+  .field
+    = f.label :integer
+    = f.text_field :integer
+  .field
+    = f.label :address
+    = f.text_field :address
+  .field
+    = f.label :string
+    = f.text_field :string
+  .actions
+    = f.submit 'Save'

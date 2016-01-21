@@ -1,0 +1,33 @@
+%h1 Listing challenge_solutions
+
+%table
+  %tr
+    %th User
+    %th Integer
+    %th Name
+    %th String
+    %th Challenge
+    %th Integer
+    %th Destription
+    %th String
+    %th
+    %th
+    %th
+
+  - @challenge_solutions.each do |challenge_solution|
+    %tr
+      %td= challenge_solution.user_id
+      %td= challenge_solution.integer
+      %td= challenge_solution.name
+      %td= challenge_solution.string
+      %td= challenge_solution.challenge_id
+      %td= challenge_solution.integer
+      %td= challenge_solution.destription
+      %td= challenge_solution.string
+      %td= link_to 'Show', challenge_solution
+      %td= link_to 'Edit', edit_challenge_solution_path(challenge_solution)
+      %td= link_to 'Destroy', challenge_solution, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Challenge solution', new_challenge_solution_path
