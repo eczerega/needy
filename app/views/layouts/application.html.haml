@@ -54,9 +54,9 @@
           %header{:role => "banner"}
             .navbar-header
               %button.navbar-toggle.fa.fa-bars.visible-xs.slidemenu-trigger{ :type => "button"}
-              %a.navbar-brand{:href => home_path}= t('common.app_name')
               %button.navbar-toggle.fa.fa-plus-square-o.btnPlus.visible-xs{"data-target" => ".bs-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
               .nav.mainmenu.hidden-xs
+                =image_tag 'logo_3.png', size: "120x50"
                 = render 'layouts/navigation'
         .visible-xs
           .marginMenu

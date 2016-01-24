@@ -1,14 +1,45 @@
+@import 'coloresw8';
+
 body
 {
 	background-color: black;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif !important;
 }
 
+h1, h2, h3, h4, h5, h6 
+{
+    font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: inherit;
+    text-rendering: optimizeLegibility;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+.container-fluid h1
+{
+  background: none !important;
+  color: $h1-color;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: .05em;
+  margin-bottom: 20px;
+}
+
+.main-page-title
+{
+  color: white !important;
+  position: absolute; 
+  z-index:1;
+}
 .main-slider
 {
 	background-color: black;
 	opacity: 0.95;
     z-index: -1;
-    height: 700px;
+    height: 650px;
     margin-top: -50px;
 
 }
@@ -38,9 +69,14 @@ body
   padding: 0px !important;
 }
 
+.mainmenu
+{
+  margin-left: 20px;
+}
+
 video#bgvid { 
-  	-webkit-filter: brightness(65%);
-  	filter: grayscale(20%);
+  	-webkit-filter: brightness(25%);
+  	filter: grayscale(40%);
     position: fixed;
     top: 50%;
     left: 50%;
