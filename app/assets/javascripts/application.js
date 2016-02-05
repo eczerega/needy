@@ -20,4 +20,7 @@
 //= require angular-aria
 //= require angular-messages
 //= require slick-carousel/slick/slick.js
+//= require waypoints/lib/noframework.waypoints.js
 //= require_tree .
+
+

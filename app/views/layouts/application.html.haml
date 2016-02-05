@@ -46,15 +46,14 @@
 
     .transition
       .marginMenu
-        .slidemenu.visible-xs.alterHeight  
+        .slidemenu.visible-xs.alterHeight
           = render 'layouts/slidemenu'
 
       .contGeneral.alterHeight    
         -unless @hide_header
           %header{:role => "banner"}
-            .navbar-header
+            #menubar-big.navbar-header.menu-up{"ng-class" => "myVar"} 
               %button.navbar-toggle.fa.fa-bars.visible-xs.slidemenu-trigger{ :type => "button"}
-              %button.navbar-toggle.fa.fa-plus-square-o.btnPlus.visible-xs{"data-target" => ".bs-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
               .nav.mainmenu.hidden-xs
                 =image_tag 'logo_3.png', size: "120x50"
                 = render 'layouts/navigation'
