@@ -16,9 +16,9 @@
       %source{:src => "#{image_url 'video.mp4'}", :type => "video/mp4"}
 .row
   #basic-waypoint.col-md-12.second-content
-    .row
-      .col-md-10
-        %h3
+    .row{:layout => "row", "layout-align" => "center center"}  
+      .col-md-9
+        %h2
           Necesidades más Urgentes
         .row.resume-project
           .col-md-5.image-project
@@ -27,15 +27,23 @@
             .row
               .col-md-12
                 %h4.project-title
-                  Título
+                  Se necesita eliminar la contaminación de Santiago
             .row
               .col-md-12.project-content
                 %p
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mu fugiat nulla pariatur. 
 
-      .col-md-2.resume-project.hidden-xs
-        %p
-          Needy estará disponible muy pronto!
+      .col-md-3.resume-project.hidden-xs
+        %ul
+          -@counter=1
+          -@categories.each do |category|
+            -if @counter==1
+              %li.category-list.selected-category-list
+                =category.name
+            -else
+              %li.category-list
+                =category.name
+            -@counter+=1
 
 .row
   .col-md-12.third-content

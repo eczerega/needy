@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   # caches_page :index,:contact, :expires_in => 30.minutes
 
   def index
+    @categories= Category.all
   end
 
   # The view to send a contact email
