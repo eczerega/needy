@@ -16,10 +16,26 @@
       %source{:src => "#{image_url 'video.mp4'}", :type => "video/mp4"}
 .row
   #basic-waypoint.col-md-12.second-content
-    %h2
-      Necesidades más Urgentes
-    %p
-      Needy estará disponible muy pronto!
+    .row
+      .col-md-10
+        %h3
+          Necesidades más Urgentes
+        .row.resume-project
+          .col-md-5.image-project
+            =image_tag 'image_ejemplo1.jpeg'
+          .col-md-7
+            .row
+              .col-md-12
+                %h4.project-title
+                  Título
+            .row
+              .col-md-12.project-content
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mu fugiat nulla pariatur. 
+
+      .col-md-2.resume-project.hidden-xs
+        %p
+          Needy estará disponible muy pronto!
 
 .row
   .col-md-12.third-content

@@ -9,20 +9,12 @@ var app = angular
     ]
 )
 app
-
-
-
-
 .controller('MainCtrl',
     function ($scope, $element) {
-    	//$scope.myVar='oks';
         $scope.test= 'Hola soy needy!';
-
-
 		var waypoint = new Waypoint({
 		  element: document.getElementById('basic-waypoint'),
 		  handler: function(direction) {
-		  	$scope.myVar='not-up';
 		  	var myEl = angular.element( document.querySelector( '#menubar-big' ) );
 
 			if($("#menubar-big").hasClass("not-up")==false)
@@ -33,12 +25,8 @@ app
 			{
 				$("#menubar-big").removeClass("not-up");
 			}
-			
-
 		  },
-		//offset: '300'
+		offset: '380'
 		})
-
-
     }
 );
