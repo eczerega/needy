@@ -9,9 +9,10 @@ body
 }
 
 p {
+     text-align: justify;
     display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    //-webkit-margin-before: 1em;
+    //-webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
@@ -158,6 +159,7 @@ h1, h2, h3, h4, h5, h6
 
   .resume-project
   {
+    position: relative;
     .image-project
     {
       padding-left: 0px !important;
@@ -171,11 +173,42 @@ h1, h2, h3, h4, h5, h6
     color: #828587;
     line-height: 1.5 !important;
     color: #555555 !important;
-    font-size: 16px !important;
+   // font-size: 14px !important;
     font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
     font-weight: normal;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased !important;
+    p
+    {
+      //font-size: 14px !important;
+    }
+  }
+
+  .tags
+  {
+    color: #838484;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 16px;
+    span
+    {
+
+      font-size: 14px;
+      padding: 10px 15px 0px 0px;
+      font-weight: 600;
+    }
+  }
+  .pull-bottom
+  {
+    position: absolute;
+    right: 15px !important;
+    span
+    {
+      font-weight: 600;
+      font-size: 15px !important;
+      cursor: pointer;
+      padding: 5px;
+    }
   }
 }
 

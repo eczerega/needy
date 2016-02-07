@@ -2,8 +2,9 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-      
+      =favicon_link_tag
       -# Favicon
+        
         %link{:rel=>"icon", :type => "image/ico", :href => "/assets/favicon.ico"}
       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
       %title= content_for?(:title) ? yield(:title) : t('common.app_name')
