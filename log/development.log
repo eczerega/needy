@@ -22872,3 +22872,2489 @@ Processing by HomeController#index as HTML
   Rendered layouts/_footer.html.haml (0.9ms)
   Rendered layouts/_footer.html.haml (0.5ms)
 Completed 200 OK in 2442ms (Views: 2440.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 19:45:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (17.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (82.7ms)
+  Rendered layouts/_slidemenu.html.haml (13.9ms)
+  Rendered layouts/_navigation.html.haml (9.4ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (1.9ms)
+  Rendered users/_form.html.haml (134.0ms)
+  Rendered sessions/_register.html.haml (161.2ms)
+  Rendered layouts/_footer.html.haml (4.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2903ms (Views: 2199.5ms | ActiveRecord: 53.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 19:45:43 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.8ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+Completed 200 OK in 55ms (Views: 54.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:14:17 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (130.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (373.6ms)
+  Rendered layouts/_slidemenu.html.haml (36.4ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.6ms)
+  Rendered users/_form.html.haml (7.1ms)
+  Rendered sessions/_register.html.haml (48.8ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1166ms (Views: 943.5ms | ActiveRecord: 130.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:20:08 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (5.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (13.2ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.0ms)
+  Rendered sessions/_register.html.haml (4.2ms)
+  Rendered layouts/_footer.html.haml (4.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3660ms (Views: 3659.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:20:27 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (3.8ms)
+  Rendered layouts/_footer.html.haml (1.1ms)
+  Rendered layouts/_footer.html.haml (0.0ms)
+Completed 200 OK in 107ms (Views: 106.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:21:07 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.1ms)
+  Rendered layouts/_footer.html.haml (2.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:49:51 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.8ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (6.7ms)
+  Rendered layouts/_slidemenu.html.haml (2.8ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.9ms)
+  Rendered sessions/_register.html.haml (6.1ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 403ms (Views: 401.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:50:08 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.4ms)
+  Rendered layouts/_slidemenu.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 273ms (Views: 272.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:50:19 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (3.7ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:50:23 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:50:40 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.1ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:51:12 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.9ms)
+  Rendered layouts/_footer.html.haml (0.0ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:51:37 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.0ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:51:51 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.3ms)
+  Rendered layouts/_footer.html.haml (2.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:52:15 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (2.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:52:54 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered users/_form.html.haml (2.5ms)
+  Rendered sessions/_register.html.haml (23.8ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3003ms (Views: 3001.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:54:00 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+  Rendered layouts/_slidemenu.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (3.0ms)
+  Rendered sessions/_register.html.haml (7.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 2289ms (Views: 2288.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:57:03 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (21.4ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (3.0ms)
+  Rendered sessions/_register.html.haml (5.7ms)
+  Rendered layouts/_footer.html.haml (7.8ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 2644ms (Views: 2631.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:59:29 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (6.0ms)
+  Rendered layouts/_slidemenu.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.0ms)
+  Rendered sessions/_register.html.haml (5.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 2626ms (Views: 2625.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 22:59:44 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (8.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (4.0ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:00:21 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.0ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2581ms (Views: 2579.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:00:38 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.4ms)
+  Rendered layouts/_footer.html.haml (4.0ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:00:52 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (2.4ms)
+  Rendered sessions/_register.html.haml (4.9ms)
+  Rendered layouts/_footer.html.haml (3.4ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:01:18 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.6ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (3.8ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1217ms (Views: 1216.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:04:27 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.8ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (18.6ms)
+  Rendered layouts/_slidemenu.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (1.6ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.7ms)
+  Rendered users/_form.html.haml (3.9ms)
+  Rendered sessions/_register.html.haml (7.2ms)
+  Rendered layouts/_footer.html.haml (0.8ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 3159ms (Views: 3153.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:05:19 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 464ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (Invalid CSS after "    position": expected ";", was ": absolute;"
+  (in /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/footer.css.scss:111)):
+    11:       %meta{:content => content_for?(:description) ? yield(:description) : t('common.app_desc'), :name => "description"}
+    12:       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
+    13:       = metamagic
+    14:       = stylesheet_link_tag "application", :media => "all" #, "data-turbolinks-track" => true
+    15:       = javascript_include_tag "application" #, "data-turbolinks-track" => true
+    16:       = csrf_meta_tags
+    17:       = yield(:head)
+  app/assets/stylesheets/footer.css.scss:111
+  app/views/layouts/application.html.haml:14:in `_app_views_layouts_application_html_haml__3778101838070662780_70200824465960'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:05:30 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Invalid CSS after "    position": expected ";", was ": absolute;"
+  (in /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/footer.css.scss:119)):
+    11:       %meta{:content => content_for?(:description) ? yield(:description) : t('common.app_desc'), :name => "description"}
+    12:       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
+    13:       = metamagic
+    14:       = stylesheet_link_tag "application", :media => "all" #, "data-turbolinks-track" => true
+    15:       = javascript_include_tag "application" #, "data-turbolinks-track" => true
+    16:       = csrf_meta_tags
+    17:       = yield(:head)
+  app/assets/stylesheets/footer.css.scss:119
+  app/views/layouts/application.html.haml:14:in `_app_views_layouts_application_html_haml__3778101838070662780_70200824465960'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (141.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:05:51 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.6ms)
+  Rendered layouts/_slidemenu.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.0ms)
+  Rendered sessions/_register.html.haml (5.0ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 2567ms (Views: 2566.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:06:08 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.2ms)
+  Rendered layouts/_slidemenu.html.haml (3.4ms)
+  Rendered layouts/_navigation.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (3.0ms)
+  Rendered sessions/_register.html.haml (6.2ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1910ms (Views: 1909.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:06:19 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.4ms)
+  Rendered sessions/_register.html.haml (4.6ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+Completed 200 OK in 1377ms (Views: 1375.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:06:33 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_slidemenu.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (7.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1236ms (Views: 1234.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:07:37 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_slidemenu.html.haml (2.1ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.3ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 2632ms (Views: 2631.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:08:14 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (4.6ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 321ms (Views: 319.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:08:49 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_slidemenu.html.haml (2.1ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.5ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.7ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+Completed 200 OK in 2804ms (Views: 2802.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:09:24 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.8ms)
+  Rendered layouts/_slidemenu.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.2ms)
+  Rendered sessions/_register.html.haml (5.3ms)
+  Rendered layouts/_footer.html.haml (8.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2602ms (Views: 2600.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:09:56 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2634ms (Views: 2633.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:13:06 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.8ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (6.0ms)
+  Rendered layouts/_slidemenu.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered users/_form.html.haml (2.2ms)
+  Rendered sessions/_register.html.haml (20.2ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2341ms (Views: 2340.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:14:01 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+  Rendered layouts/_slidemenu.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.1ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2016ms (Views: 2014.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:17:12 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.3ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2897ms (Views: 2896.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:23:42 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_slidemenu.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (1.6ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (4.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2830ms (Views: 2828.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:29:52 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (5.0ms)
+  Rendered layouts/_footer.html.haml (3.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 293ms (Views: 292.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:33:10 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (21.1ms)
+Completed 500 Internal Server Error in 545ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (Asset logical path has no extension: backbuildings
+  (in /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/footer.css.scss)):
+    11:       %meta{:content => content_for?(:description) ? yield(:description) : t('common.app_desc'), :name => "description"}
+    12:       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
+    13:       = metamagic
+    14:       = stylesheet_link_tag "application", :media => "all" #, "data-turbolinks-track" => true
+    15:       = javascript_include_tag "application" #, "data-turbolinks-track" => true
+    16:       = csrf_meta_tags
+    17:       = yield(:head)
+  app/views/layouts/application.html.haml:14:in `_app_views_layouts_application_html_haml__3778101838070662780_70200824465960'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:33:51 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.6ms)
+  Rendered sessions/_register.html.haml (5.6ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2703ms (Views: 2701.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:36:29 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.0ms)
+  Rendered layouts/_slidemenu.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered users/_form.html.haml (2.0ms)
+  Rendered sessions/_register.html.haml (5.3ms)
+  Rendered layouts/_footer.html.haml (2.9ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 356ms (Views: 354.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:41:55 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.7ms)
+  Rendered layouts/_slidemenu.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (1.6ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.3ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2593ms (Views: 2591.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:44:33 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (25.7ms)
+  Rendered layouts/_footer.html.haml (4.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 324ms (Views: 323.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:45:03 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.4ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.2ms)
+  Rendered sessions/_register.html.haml (5.2ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2641ms (Views: 2639.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:48:10 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (24.2ms)
+  Rendered layouts/_footer.html.haml (4.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 275ms (Views: 273.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:48:20 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (17.9ms)
+  Rendered layouts/_footer.html.haml (3.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 133ms (Views: 131.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:48:29 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (3.1ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (4.5ms)
+  Rendered layouts/_footer.html.haml (3.7ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 139ms (Views: 138.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:48:57 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (13.3ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 103ms (Views: 102.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:50:48 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_slidemenu.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (3.2ms)
+  Rendered sessions/_register.html.haml (7.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2631ms (Views: 2630.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:51:32 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (14.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (4.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 105ms (Views: 104.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:57:24 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.6ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.7ms)
+  Rendered sessions/_register.html.haml (6.0ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2767ms (Views: 2766.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-07 23:58:51 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.6ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered users/_form.html.haml (2.2ms)
+  Rendered sessions/_register.html.haml (5.7ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+Completed 200 OK in 2517ms (Views: 2515.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:09:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (66.2ms)
+  Rendered layouts/_slidemenu.html.haml (25.0ms)
+  Rendered layouts/_navigation.html.haml (9.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (2.9ms)
+  Rendered users/_form.html.haml (217.2ms)
+  Rendered sessions/_register.html.haml (246.2ms)
+  Rendered layouts/_footer.html.haml (6.0ms)
+  Rendered layouts/_footer.html.haml (1.1ms)
+Completed 200 OK in 5174ms (Views: 4415.3ms | ActiveRecord: 71.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:10:33 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_slidemenu.html.haml (2.9ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.6ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1011ms (Views: 1010.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:13:45 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.6ms)
+  Rendered layouts/_footer.html.haml (6.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 298ms (Views: 297.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:14:06 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.8ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.3ms)
+  Rendered sessions/_register.html.haml (5.3ms)
+  Rendered layouts/_footer.html.haml (4.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 313ms (Views: 311.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:14:17 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.6ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:14:30 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 682ms (Views: 681.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:18:20 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.8ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.2ms)
+  Rendered sessions/_register.html.haml (5.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 654ms (Views: 653.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:18:55 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.7ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 474ms (Views: 472.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:19:26 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (2.1ms)
+  Rendered sessions/_register.html.haml (4.5ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 342ms (Views: 340.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:20:03 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (4.2ms)
+  Rendered layouts/_footer.html.haml (3.8ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 753ms (Views: 751.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:20:32 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.8ms)
+  Rendered users/_form.html.haml (4.3ms)
+  Rendered sessions/_register.html.haml (26.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 466ms (Views: 465.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:20:54 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.0ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.9ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 811ms (Views: 810.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:25:24 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.6ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.1ms)
+  Rendered sessions/_register.html.haml (26.6ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1176ms (Views: 1174.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:26:50 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 477ms (Views: 476.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:28:49 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.7ms)
+  Rendered sessions/_register.html.haml (24.1ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1132ms (Views: 1131.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:29:15 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (5.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (4.1ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 766ms (Views: 765.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:30:05 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.6ms)
+  Rendered layouts/_slidemenu.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.1ms)
+  Rendered sessions/_register.html.haml (4.9ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 878ms (Views: 877.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:33:57 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.2ms)
+  Rendered layouts/_slidemenu.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (3.7ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.8ms)
+Completed 200 OK in 1987ms (Views: 1985.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:34:38 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (4.6ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 307ms (Views: 306.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:35:22 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.1ms)
+  Rendered sessions/_register.html.haml (5.1ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 265ms (Views: 264.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:38:46 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (11.6ms)
+  Rendered layouts/_slidemenu.html.haml (3.7ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.8ms)
+  Rendered sessions/_register.html.haml (6.1ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1233ms (Views: 1230.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:39:19 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (5.1ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 701ms (Views: 699.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:39:47 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.4ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.0ms)
+  Rendered sessions/_register.html.haml (5.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 287ms (Views: 286.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:40:00 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 710ms (Views: 709.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:41:34 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.7ms)
+  Rendered sessions/_register.html.haml (5.7ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 802ms (Views: 800.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:41:54 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (3.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 293ms (Views: 291.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:42:38 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (2.5ms)
+  Rendered sessions/_register.html.haml (7.0ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 223ms (Views: 221.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:43:30 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (15.2ms)
+  Rendered layouts/_slidemenu.html.haml (8.2ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (2.1ms)
+  Rendered layouts/_messages.html.haml (0.5ms)
+  Rendered users/_form.html.haml (3.4ms)
+  Rendered sessions/_register.html.haml (7.0ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+Completed 200 OK in 340ms (Views: 336.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:44:14 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (3.9ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1038ms (Views: 1037.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:45:15 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.0ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1084ms (Views: 1083.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:48:37 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (6.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (4.4ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1044ms (Views: 1042.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:49:13 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (21.7ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 833ms (Views: 831.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:50:35 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (10.6ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1140ms (Views: 1137.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:51:27 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.9ms)
+  Rendered sessions/_register.html.haml (23.1ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1532ms (Views: 1530.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:51:50 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (5.1ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 820ms (Views: 818.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:53:03 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (11.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered users/_form.html.haml (2.5ms)
+  Rendered sessions/_register.html.haml (5.9ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 955ms (Views: 951.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:53:44 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (9.4ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (3.0ms)
+  Rendered sessions/_register.html.haml (43.1ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.8ms)
+Completed 200 OK in 939ms (Views: 936.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:54:06 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.7ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 293ms (Views: 292.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:54:34 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (5.2ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 776ms (Views: 775.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:55:07 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (7.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 628ms (Views: 626.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:55:36 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 179ms (Views: 178.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:56:56 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.6ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (4.0ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1089ms (Views: 1087.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:57:36 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.8ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (4.4ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 998ms (Views: 997.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 00:58:31 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.6ms)
+  Rendered sessions/_register.html.haml (5.9ms)
+  Rendered layouts/_footer.html.haml (0.9ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 1350ms (Views: 1348.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:00:10 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (10.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.2ms)
+  Rendered sessions/_register.html.haml (5.9ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 1429ms (Views: 1427.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:00:38 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.4ms)
+  Rendered layouts/_slidemenu.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.9ms)
+  Rendered sessions/_register.html.haml (6.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 830ms (Views: 828.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:01:01 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (4.0ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 890ms (Views: 889.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:01:53 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.6ms)
+  Rendered sessions/_register.html.haml (5.4ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 1085ms (Views: 1084.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:02:26 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (3.8ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 341ms (Views: 340.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:04:05 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (12.1ms)
+  Rendered layouts/_slidemenu.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (3.8ms)
+  Rendered sessions/_register.html.haml (7.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 1364ms (Views: 1361.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:05:03 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.3ms)
+  Rendered sessions/_register.html.haml (4.9ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 1041ms (Views: 1039.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:05:30 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.4ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 931ms (Views: 929.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:07:03 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.8ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1025ms (Views: 1023.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:07:39 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+Completed 200 OK in 1074ms (Views: 1073.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:08:27 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1572ms (Views: 1571.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:09:10 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (5.0ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 823ms (Views: 821.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:09:48 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.8ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.6ms)
+  Rendered sessions/_register.html.haml (6.2ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 179ms (Views: 178.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:09:53 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:10:50 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_slidemenu.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 285ms (Views: 283.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:11:21 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 149ms (Views: 148.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:11:53 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 531ms (Views: 530.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:13:26 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (9.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (5.1ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 961ms (Views: 959.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:14:25 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 142ms (Views: 140.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:14:49 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.4ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.2ms)
+  Rendered sessions/_register.html.haml (2.9ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (2.6ms)
+Completed 200 OK in 153ms (Views: 152.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:15:07 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (4.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 152ms (Views: 150.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:15:34 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.4ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 465ms (Views: 464.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:16:24 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.8ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.1ms)
+  Rendered sessions/_register.html.haml (4.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3629ms (Views: 3627.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:18:23 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (3.8ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 315ms (Views: 313.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:19:00 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered users/_form.html.haml (2.2ms)
+  Rendered sessions/_register.html.haml (4.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 708ms (Views: 707.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:19:36 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (2.7ms)
+  Rendered sessions/_register.html.haml (5.9ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 155ms (Views: 154.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:23:04 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (4.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 345ms (Views: 344.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:23:34 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (4.0ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 85ms (Views: 84.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:26:09 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (4.3ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 269ms (Views: 267.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:27:17 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.7ms)
+  Rendered sessions/_register.html.haml (6.4ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3599ms (Views: 3597.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:35:06 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (7.2ms)
+  Rendered layouts/_slidemenu.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (3.3ms)
+  Rendered sessions/_register.html.haml (7.3ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 3045ms (Views: 3042.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:35:57 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 153ms (Views: 152.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:37:31 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_slidemenu.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (2.1ms)
+  Rendered sessions/_register.html.haml (4.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 1235ms (Views: 1233.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:39:10 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.3ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.4ms)
+  Rendered sessions/_register.html.haml (6.0ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1149ms (Views: 1147.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:39:35 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.4ms)
+  Rendered layouts/_slidemenu.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (3.7ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 173ms (Views: 172.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:44:14 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:48:33 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (3.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 192ms (Views: 191.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:49:03 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (4.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:49:22 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (3.7ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 307ms (Views: 306.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:49:40 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:49:56 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 139ms (Views: 138.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:50:30 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:51:00 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.6ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (3.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2178ms (Views: 2177.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:51:37 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (3.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 1146ms (Views: 1145.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:51:55 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.6ms)
+  Rendered sessions/_register.html.haml (3.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1211ms (Views: 1210.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:52:22 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.6ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 1374ms (Views: 1372.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:52:54 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.2ms)
+  Rendered layouts/_slidemenu.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.1ms)
+  Rendered sessions/_register.html.haml (5.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 115ms (Views: 113.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:53:13 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_slidemenu.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (2.3ms)
+  Rendered sessions/_register.html.haml (5.6ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1944ms (Views: 1943.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:53:46 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (1.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (5.5ms)
+  Rendered layouts/_slidemenu.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 733ms (Views: 731.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:54:17 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.3ms)
+  Rendered sessions/_register.html.haml (3.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:54:39 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (4.7ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (2.5ms)
+  Rendered sessions/_register.html.haml (4.7ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 117ms (Views: 116.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:55:04 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_slidemenu.html.haml (2.6ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.5ms)
+  Rendered sessions/_register.html.haml (5.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2370ms (Views: 2369.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:55:45 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.7ms)
+  Rendered sessions/_register.html.haml (6.0ms)
+  Rendered layouts/_footer.html.haml (0.8ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1931ms (Views: 1929.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:56:23 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_slidemenu.html.haml (1.6ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (4.7ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 92ms (Views: 91.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:57:20 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.4ms)
+  Rendered layouts/_slidemenu.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (1.5ms)
+  Rendered sessions/_register.html.haml (4.2ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 264ms (Views: 262.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:58:02 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.7ms)
+  Rendered sessions/_register.html.haml (3.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2428ms (Views: 2427.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:59:23 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Invalid CSS after "    bottom: 0 ": expected ";", was "!im;"
+  (in /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/footer.css.scss:114)):
+    11:       %meta{:content => content_for?(:description) ? yield(:description) : t('common.app_desc'), :name => "description"}
+    12:       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
+    13:       = metamagic
+    14:       = stylesheet_link_tag "application", :media => "all" #, "data-turbolinks-track" => true
+    15:       = javascript_include_tag "application" #, "data-turbolinks-track" => true
+    16:       = csrf_meta_tags
+    17:       = yield(:head)
+  app/assets/stylesheets/footer.css.scss:114
+  app/views/layouts/application.html.haml:14:in `_app_views_layouts_application_html_haml___1612956649128797721_70113095731520'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:59:35 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.6ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (2.8ms)
+  Rendered sessions/_register.html.haml (6.6ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1163ms (Views: 1161.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 01:59:51 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.0ms)
+  Rendered sessions/_register.html.haml (5.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 02:00:41 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+  Rendered layouts/_slidemenu.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered users/_form.html.haml (2.3ms)
+  Rendered sessions/_register.html.haml (5.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+Completed 200 OK in 2697ms (Views: 2695.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 02:01:16 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered sessions/_register.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 02:02:29 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (12.3ms)
+  Rendered layouts/_slidemenu.html.haml (3.4ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered users/_form.html.haml (4.3ms)
+  Rendered sessions/_register.html.haml (7.6ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 265ms (Views: 259.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 02:02:50 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_slidemenu.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered users/_form.html.haml (1.9ms)
+  Rendered sessions/_register.html.haml (4.0ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 341ms (Views: 340.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-08 02:03:42 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_slidemenu.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.6ms)
+  Rendered users/_form.html.haml (1.8ms)
+  Rendered sessions/_register.html.haml (4.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2490ms (Views: 2489.7ms | ActiveRecord: 0.4ms)

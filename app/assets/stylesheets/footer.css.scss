@@ -1,13 +1,14 @@
 footer {
   position: absolute;
   bottom: 0;
+  padding-bottom: 20px;
   width: 100%;
   min-height: 80px;
-  background: none no-repeat scroll 0 0 #263238;
+  background: none no-repeat scroll 0 0 #1a1f1b;
   .footer_social {
     color: #ffffff;
     overflow: hidden;
-    margin: 20px 0 0;
+    margin: 0px 0 0;
     text-align: center;
     .copy { 
       p strong { 
@@ -91,3 +92,68 @@ footer {
     }
   }
 }
+
+
+
+.new-footer
+{
+
+  max-height: 840px !important;
+  min-height: 600px !important;
+  height: 840px;
+  position: relative;
+  background: #a4d8a7; /* Old browsers */
+  background: -moz-linear-gradient(top,  #a4d8a7 12%, #f4bc84 60%, #1a1f1b 81%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #a4d8a7 12%,#f4bc84 60%,#1a1f1b 81%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #a4d8a7 12%,#f4bc84 60%,#1a1f1b 81%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4d8a7', endColorstr='#1a1f1b',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6da6d6', endColorstr='#1a1f1b',GradientType=0 ); /* IE6-9 */
+  z-index: -3;
+  .mountains
+  {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    height: 400px;
+    background-image: image-url('mountains.png');
+    background-repeat: repeat-x;
+  }
+  .backbuildings
+  {
+    //top: 230px;
+    height: 480px;
+    max-height: 480px !important;
+    min-height: 400px !important;
+
+    bottom: 20px !important;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-image: image-url('backbuildings.png');
+    background-repeat: repeat-x;
+  }
+  .frontbuildings
+  {
+    bottom: 0 !important; 
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    height: 400px;
+    background-image: image-url('frontbuildings.png');
+    background-repeat: repeat-x;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

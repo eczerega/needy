@@ -11,15 +11,6 @@ group :development, :test do
   gem 'railroady' #para generar diagramas E-R de la base de datos. Uso: rake diagram:all
   gem 'rails-rename', '~> 1.0.0' #para cambiarle el nombre a la app con: rails g rename NewAppName
   gem "hub", ">= 1.12.4", :require => nil #agrega funcionalidades extra de GitHub en la consola
-  ## Benchmarking and code analytics
-  # Rails Best Practices can be run with: rails_best_practices -f html
-  #gem "rails_best_practices"
-  # Rubocop can be run with the following examples:
-  # rubocop -R app/models/ -o doc/rubocop_models.txt
-  # rubocop -R app/controllers/ -o doc/rubocop_controllers.txt
-  # rubocop -R -o doc/rubocop_all.txt
-  #gem 'rubocop', require: false
-  # To use folow the instructions on https://github.com/colszowka/simplecov
   gem 'simplecov', :require => false
   gem 'hirb' #mejora como se muestran las respuestas de tablas de rails c. Uso: Hirb.enable
   gem 'awesome_print' #mejora la forma de imprimir datos en la consola. Uso: ap User.first
@@ -41,10 +32,10 @@ gem 'sass-rails',   '>= 4.0.3'
 gem 'coffee-rails', '>= 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'autoprefixer-rails'
-gem 'jquery-rails' #jquery en los assets de rails
+gem 'jquery-rails'
 
 #Boostrap
-gem "font-awesome-rails" #para usar iconos de bootstrap extendidos
+gem "font-awesome-rails" 
 gem 'bootstrap-sass', '~> 3.2.0'
 
 #Herramientas de Rails
@@ -84,15 +75,13 @@ gem 'cocaine', "~> 0.5.3"
 gem "paperclip"
 gem 'aws-sdk', '< 2.0'
 
+#parallax
+gem 'parallax-rails'
 
-##Heroku services & configurations
-#cambio de BBDD para heroku
-group :development, :test do
-  gem 'sqlite3', ">= 1.3.10"
-end
-group :production do
-  gem 'pg', "~> 0.18.2"
-end
+
+
+gem 'pg', "~> 0.18.2"
+
 gem "unicorn", ">= 4.8.3" #servidor con multithread en producion
 #gem 'newrelic_rpm'
 #gem 'delayed_job_active_record'

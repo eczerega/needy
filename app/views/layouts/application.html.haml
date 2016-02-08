@@ -62,14 +62,14 @@
           .marginMenu
           %nav.collapse.navbar-collapse.bs-navbar-collapse.menuExtra{:role => "navigation"}
             = render 'layouts/navigation'
-
         .container-fluid
           = render 'layouts/messages'
           -unless current_user
             = render partial: "sessions/register"
           =yield
-
       .hidden-xs
         = render 'layouts/footer'
     .visible-xs
       = render 'layouts/footer'
+
+
