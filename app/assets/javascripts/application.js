@@ -9,6 +9,8 @@
 //= require angular-messages
 //= require slick-carousel/slick/slick.js
 //= require waypoints/lib/noframework.waypoints.js
+//= require ng-simple-parallax/js/app.js
+//= require ng-simple-parallax/js/ngParallax.js
 //= require_tree .
 
 

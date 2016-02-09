@@ -98,9 +98,9 @@ footer {
 .new-footer
 {
 
-  max-height: 840px !important;
-  min-height: 600px !important;
-  height: 840px;
+  max-height: 900px !important;
+  min-height: 700px !important;
+  height: 900px;
   position: relative;
   background: #a4d8a7; /* Old browsers */
   background: -moz-linear-gradient(top,  #a4d8a7 12%, #f4bc84 60%, #1a1f1b 81%); /* FF3.6-15 */
@@ -121,16 +121,14 @@ footer {
   }
   .backbuildings
   {
-    //top: 230px;
-    height: 480px;
+    height: 480px; //520 weno
     max-height: 480px !important;
-    min-height: 400px !important;
-
-    bottom: 20px !important;
+    min-height: 370px !important;
+    bottom: 0px !important; //20 weno
     width: 100%;
     position: absolute;
     z-index: -1;
-    background-image: image-url('backbuildings.png');
+    background-image: image-url('backbuildings3.png');
     background-repeat: repeat-x;
   }
   .frontbuildings
