@@ -6,12 +6,14 @@ var app = angular
     .module('needy',
     [
         'ngMaterial',
-        'ngParallax'
+        'duParallax'
     ]
 )
 app
 .controller('MainCtrl',
-    function ($scope, $element) {
+    function ($scope, $element, parallaxHelper) {
+    $scope.background = parallaxHelper.createAnimator(-0.3, 150, -150);
+    	
     	var altura=0;
     	var limite = 0;
     	var lastScrollTop = 0;
@@ -20,7 +22,7 @@ app
 		var recalc;
 		var recalc_c;
     	$(window).scroll(function(event){
-    		var st = $(this).scrollTop();
+		var st = $(this).scrollTop();
 
     		if(limite==1){
 

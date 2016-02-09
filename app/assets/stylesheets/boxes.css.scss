@@ -1,0 +1,116 @@
+.card
+{
+    background-color: #ffffff;
+    border: solid 1px #D9D9DE;
+    //border-radius: 6px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 12px;
+
+    .thumbnail
+    {
+        border: 0;
+	    margin: 0;
+	    //padding: 0;
+	    font-size: 100%;
+	    vertical-align: baseline;
+	    img
+	    {
+	    	display:block;
+	    }
+    }
+    .content
+    {
+    	border: 0px !important;
+    	padding:10px;
+    	h6
+    	{
+    	    font-size: 14px;
+    		font-weight: bold;
+    	}
+    	.by
+    		{
+    			margin-top: -3px;
+    			p
+    			{
+					color: #9A9A9A !important;
+			   	 	text-transform: uppercase;    				
+    			}
+
+    		}
+    	.description
+
+    	{
+	    	p
+	    	{
+	    		margin-top: 5px;
+	    		margin-bottom: 5px;
+	    		color: #9A9A9A !important;
+	    	}
+
+    	}
+	.footer
+	{
+			padding-top: 25px;
+			padding-left: 0px !important;
+			padding-right: 0px !important;
+			font-size: 12px;
+			font-weight: 600;
+			.col-md-8
+			{
+				padding: 0px !important;
+			}
+			.col-md-4
+			{
+				padding: 0px !important;
+			}
+			i
+			{
+				margin-left: 5px;
+				color: #46a34d;
+			}
+	}
+
+    }
+}
+
+
+.fb
+{
+	border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9de;
+    vertical-align: middle;
+    .left
+    {
+    	padding: 70px;
+    	background-color: #e8f6ff;
+    	.invitation
+    	{
+    		h2
+    		{
+    			color:#0F2105;
+    			font-size: 40px;    			
+    		}
+
+    		border: 0;
+		    margin: 0;
+		    padding: 0;
+		    font-size: 100%;
+		    vertical-align: baseline;
+    	}
+    }
+    .col-md-4
+    {	
+    	padding: 30px;
+    	display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    p
+	    {
+	    	margin-top: 8px;
+	    	color: #9A9A9A !important;
+	    }
+    }
+}
