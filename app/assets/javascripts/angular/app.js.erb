@@ -6,82 +6,59 @@ var app = angular
     .module('needy',
     [
         'ngMaterial',
-        'duParallax'
+        'duParallax',
+        'ui.router',
+        'angular-loading-bar', 
+        'ngAnimate'
     ]
 );
 
-    
+app.config(function(
+					$stateProvider,
+                	$urlRouterProvider
+            	)
+                {
+                      //$urlRouterProvider.otherwise("/");
+
+			      $stateProvider
+			        .state('home', {
+                  	   url: ":r_id",
+                       templateUrl:
+                        function ($stateParams) {
+                          r_id= $stateParams.r_id;
+                          return '/home/index?r_id='+r_id
+                        }
+			        })
+			          .state('inicio1', {
+			              url: "/inicio1",
+			              template: "route1.list.html"
+			          })
+			          
+			        .state('inicio2', {
+			            url: "/inicio2",
+			            template: "route2.html"
+			        })
+			          .state('inicio4', {
+			              url: "/inicio4",
+			              template: "route2.list.html"
+			          })
+
+
+                }
+        );
+
+app.run(function($rootScope, $templateCache) {
+    $rootScope.$on('$routeChangeStart', function(event, next, current) {
+        if (typeof(current) !== 'undefined'){
+            $templateCache.remove(current.templateUrl);
+        }
+    });
+});
 app
-.controller('MainCtrl',
-    function ($scope, $element, parallaxHelper) {
-    $scope.background = parallaxHelper.createAnimator(-0.3, 150, -150);
-    	
-    	var altura=0;
-    	var limite = 0;
-    	var lastScrollTop = 0;
-    	var position;		
-		var position_c;
-		var recalc;
-		var recalc_c;
-    	$(window).scroll(function(event){
-		var st = $(this).scrollTop();
+.controller('MainCtrl',function($scope,$rootScope){
+  
 
-    		if(limite==1){
+            
+});
 
-    		 position = $('.backbuildings').css("height");			
-    		 position_c = $('.new-footer').css("height");
 
-	    		if (st > lastScrollTop)
-	    		{
-	    			 recalc = parseInt(position.substring(0, position.length - 2), 10) -1;
-	    			 recalc_c = parseInt(position_c.substring(0, position_c.length - 2), 10) -3;
-	    			$('.backbuildings').css("height", recalc + 'px');
-	    			$('.new-footer').css("height", recalc_c + 'px');		
-	    		}
-	    		else
-	    		{
-	    		    recalc = parseInt(position.substring(0, position.length - 2), 10) +1;
-	    			 recalc_c = parseInt(position_c.substring(0, position_c.length - 2), 10) +3;
-	    			$('.backbuildings').css("height", recalc + 'px');
-	    			$('.new-footer').css("height", recalc_c + 'px');	
-	    		}
-    		}
-  			lastScrollTop = st;
-    	});
-
-		var parallax = new Waypoint({
-		  element: document.getElementById('foot'),
-		  handler: function(direction) {
-		  		if(limite==0)
-		  		{
-					limite=1;
-					altura=$('.navbar-header').offset().top;
-					//alert(altura);
-		  		}
-		  		else
-		  		{
-		  			limite=0;
-		  		}
-		  },
-		offset: '380'
-		});
-        $scope.test= 'Hola soy needy!';
-        $scope.myPattern = '<%= image_url 'backbuildings.png' %>';
-		var waypoint = new Waypoint({
-		  element: document.getElementById('basic-waypoint'),
-		  handler: function(direction) {
-		  	var myEl = angular.element( document.querySelector( '#menubar-big' ) );
-
-			if($("#menubar-big").hasClass("not-up")==false)
-			{
-				myEl.addClass('not-up'); 
-			}
-			else
-			{
-				$("#menubar-big").removeClass("not-up");
-			}
-		  },
-		offset: '380'
-		});
-    }
-);

@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-layout 'empty'
+layout false
   def new
     if current_user
       return redirect_to home_path, :notice => t('notice.sessions.already_in')
@@ -16,7 +16,6 @@ layout 'empty'
     unless verify_recaptcha
       #return redirect_to log_in_path
     end
-    puts 'ACA ESTOY'
   	user = User.authenticate(params[:email], params[:password])
     if user&&user.active==true&&!user.deleted
       # we log him in
@@ -25,10 +24,15 @@ layout 'empty'
       #if he needs to be redirected back, the session[:last_uri] has to be set manually
       
       if session[:last_uri]
+        puts 'ACA ESTOY'
         puts 'if2'
         uri = session[:last_uri]
         session[:last_uri] = nil
-        return redirect_to uri, :notice => t('notice.sessions.already_in')
+        respond_to do |format|
+          format.js {}
+        end
+        return 
+        #return redirect_to root_path, :notice => t('notice.sessions.already_in')
       end
       return redirect_to request.referer, :notice => t('notice.sessions.already_in')
     else
@@ -45,13 +49,17 @@ layout 'empty'
         str = t('notice.sessions.invalid_pass')
       end
       puts 'if7'
-      return redirect_to log_in_path, notice: str
+      respond_to do |format|
+        format.js {}
+      end
+        return 
+      #return redirect_to log_in_path, notice: str
     end
   end
   
   def destroy
     session[:user_id] = nil
-    return redirect_to home_path
+    return redirect_to root_path
   end
 
   def unsubscribe

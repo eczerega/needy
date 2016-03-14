@@ -1,6 +1,6 @@
 app
 .controller('NavigationCtrl',
-    function ($scope, $mdDialog, $mdMedia) 
+    function ($scope,$rootScope, $mdDialog, $mdMedia, $state) 
     {
 		  $scope.showLogin = function(ev) {
 
@@ -11,10 +11,12 @@ app
 		      parent: angular.element(document.body),
 		      targetEvent: ev,
 		      clickOutsideToClose:true,
-		      fullscreen: useFullScreen
+		      //fullscreen: useFullScreen
 		    })
 
 		  };
+
+
 
       $scope.showRegister = function(ev) {
 
@@ -25,8 +27,24 @@ app
           parent: angular.element(document.body),
           targetEvent: ev,
           clickOutsideToClose:true,
-          fullscreen: useFullScreen
+          //fullscreen: useFullScreen
         })
+
+      };
+
+
+
+      $scope.LogOut = function(ev) {
+
+      var useFullScreen = ($mdMedia('sm') || $mdMedia('xs'))  && $scope.customFullscreen;
+      $mdDialog.show({
+        //controller: DialogController,
+        templateUrl: '/log_out',
+        parent: angular.element(document.body),
+        targetEvent: ev,
+        //clickOutsideToClose:true,
+        //fullscreen: useFullScreen
+      })
 
       };
     }

@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  layout 'empty'
+  layout false
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   load_and_authorize_resource except: [:create]
 
@@ -44,16 +44,25 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-
+    @error_creation =''
+    @success = false
     respond_to do |format|
       if @user.save
         @user.slug = nil
         @user.save
-        UserMailer.welcome(@user).deliver
+        @success=true
+        #UserMailer.welcome(@user).deliver
         format.html { redirect_to home_path, notice: t('notice.user.create') }
+        format.js {}
         format.json { render json: @user, status: :created, location: @user }
       else
+        counter = 1
+        @user.errors.full_messages.each do |msg|
+          @error_creation += counter.to_s+") "+ msg + " "
+          counter += 1
+        end
         format.html { render action: "new" }
+         format.js {}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

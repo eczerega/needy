@@ -1,0 +1,24 @@
+
+<% if @success==true %>	
+	
+
+	swal
+	(
+		{   
+			title: "Usuario creado", 
+			type: "success",    
+			timer: 2000,
+			showConfirmButton: false
+		}
+	);
+
+<% else %>
+
+	sweetAlert("Oops... Su registro cuenta con los siguientes errores: ",
+
+		'<%= @error_creation.html_safe %>'
+	 , "error");	
+
+
+
+<% end %>

@@ -22,6 +22,10 @@ DefaultInit::Application.routes.draw do
   resources :sponsors
   resources :challenge_media
   resources :challenge_media
+
+  #empty index
+  get "empty" => "index#empty", :as => "empty"
+
   #G+ login
   get 'auth/:provider/callback', to: 'sessions#create_with_oauth'  
   get 'auth/failure', to:  "home#index"
@@ -50,7 +54,7 @@ DefaultInit::Application.routes.draw do
   resources :users
 
   get "home" => "home#index", :as => "home"
-  root :to => "home#index"
+  root :to => 'index#empty'
 
   #API
   namespace :api, defaults: {format: 'json'} do

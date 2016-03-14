@@ -9,7 +9,7 @@
   %md-dialog-content
     .md-dialog-content
       .anchador
-      = form_tag sessions_path, :class => "form form-horizontal" do
+      = form_tag sessions_path,:remote => true, :class => "form form-horizontal" do
         .field
           .icon
             %i.fa.fa-envelope

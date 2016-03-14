@@ -11,6 +11,8 @@
 //= require waypoints/lib/noframework.waypoints.js
 //= require angular-scroll/angular-scroll.js
 //= require ng-parallax/angular-parallax.js
+//= require sweetalert/dist/sweetalert.min.js
+//= require angular-loading-bar/build/loading-bar.min.js
 //= require_tree .
 
 

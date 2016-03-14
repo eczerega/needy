@@ -1,4 +1,4 @@
-= form_for (@user = (@user ? @user : User.new)), authenticity_token: true, html: {:class => "form form-horizontal"} do |f|
+= form_for (@user = (@user ? @user : User.new)), authenticity_token: true, html: {:class => "form form-horizontal", :remote => true} do |f|
   - if !@no_errors&&@user.errors.any?
     #error_explanation.alert.alert-danger
       %h= t('common.forms.show_errors')
@@ -66,4 +66,4 @@
   .field
     .col-lg-12
       .icon
-      = f.submit @user.id ? t('modules.register.btn_pass') : t('modules.register.btn'), :class => 'btn btn-default'
+      = f.submit @user.id ? 'Registrar': t('modules.register.btn'),  :class => 'boton-input'

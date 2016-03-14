@@ -2,7 +2,9 @@ class HomeController < ApplicationController
   
   # caches_page :index,:contact, :expires_in => 30.minutes
 
+  layout false
   def index
+
     @categories= Category.all
   end
 
