@@ -1,10 +1,28 @@
-.users
-  .col-md-6.col-md-offset-3
-    %h1= t('modules.register.title') 
-    .content
-      = render 'form', :locals => {:@no_errors => @no_errors}
+%md-dialog{}
+  %md-toolbar
+    .md-toolbar-tools
+      %h2 Regístrate
+      %span{:flex => ""}
+      %md-button.md-icon-button{"ng-click" => "cancel()"}
+        %md-icon{"aria-label" => "Close dialog"}
+  %md-dialog-content
+    .asd
+      .content
+        = render 'form', :locals => {:@no_errors => @no_errors}
 
-  .clear
-  .col-md-6.col-md-offset-3
-    = link_to log_in_path, :class => 'btn btn-default pull-right' do
-      = t('modules.register.footer')
+
+
+
+  %md-dialog-actions{:layout => "row"}
+    %md-button{:href => "http://en.wikipedia.org/wiki/Mango", "md-autofocus" => "", :target => "_blank"}
+      Facebook
+    %span{:flex => ""}
+    %md-button{"ng-click" => "answer('')"}
+      Google+
+    %md-button{"ng-click" => "answer('')", :style => "margin-right:20px;"}
+      Cerrar
+
+
+
+
+

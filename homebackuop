@@ -1,29 +1,12 @@
-.main-slider{:layout => "row", "layout-align" => "center center"} 
-  %div{"ng-animate"=>"animate'"}
-    %h1
-      ¿Qué necesita Chile?
-  %video#bgvid{:autoplay => "", :loop => "", :poster => "polina.jpg"}
-    %source{:src => "https://jumpseller-videos.s3.amazonaws.com/WebM_background.webm", :type => "video/webm"}
-      %source{:src => "https://az781005.vo.msecnd.net/asset-8712445d-1500-80c3-1e68-f1e4ecc7bd1c/V%C3%ADdeo%20background%20h.264.mp4", :type => "video/mp4"}
-
-%div{:flex => ""}
-  I'm above on mobile, and to the left on larger devices.
-%div{:flex => ""}
-  I'm below on mobile, and to the right on larger devices.
-.row
-  .col-md-12.second-content
-    .car-container.ng-scope.ng-isolate-scope.animated.fadeInUp{"when-not-visible" => "animateElementOut", "when-visible" => "animateElementIn"}
-      .car
-        %h3.ng-binding 2014 Ford Territory SZ Titanium Sequential Sports Shift
-        .ng-binding WIN a trip to Hawaii. End of Financial Year Clearance sale is on this Thursday to Sunday! Take advantage of red hot prices across our extensive range and go into the draw to WIN a trip to Hawaii.
-.row
-  .col-md-12.third-content
-    ASDASDASD!
-    {{test}}
-    %md-button.md-raised.md-primary md-primary}
-
-.row
-  .col-md-12.fourth-content
-    ASDASDASD!
-    {{test}}
-    %md-button.md-raised.md-primary md-primary}
+.background-session
+  .row
+    .col-md-1
+    .col-md-5
+      =image_tag 'logo_3.png', size: "120x50"
+    .col-md-3
+    .col-md-3
+      .login-text
+        %br
+        Eres nuevo?
+      .login-enter
+        Crear

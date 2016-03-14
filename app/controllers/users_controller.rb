@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+  layout 'empty'
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   load_and_authorize_resource except: [:create]
 
@@ -95,14 +95,22 @@ class UsersController < ApplicationController
   end
 
   def activate
-    @token = Token.find_by_value(params[:token])
-    @user = @token.user
-    @user.update_attribute :active, true
+    #@token = Token.find_by_value(params[:token])
+    #@user = @token.user
+    #@user.update_attribute :active, true
+    
+
     # para obligarlo a completar el perfil
     # @user.update_attribute :first_login, true
-    session[:user_id] = @user.id
+    
+
+
+    #session[:user_id] = @user.id
     # Borramos para no acumular basura
-    @token.destroy
+    
+
+
+    #@token.destroy
     redirect_to home_path, notice: t('notice.user.activate')
   end
 

@@ -9,13 +9,13 @@ class Ability
     else
         # global abilities
         can [:new, :create, :activate], User
-        can [:index, :show], Blog
+        can [:index, :show]
 
         # only if the user is logged in
         if user.id!=nil
             # can only update if its his own
             can [:show,:edit, :update], User, id: user.id
-            can [:new, :edit, :create, :update, :destroy], Blog
+            can [:new, :edit, :create, :update, :destroy]
             can [:new, :create, :destroy], Comment
         end
     end

@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+layout 'empty'
   def new
     if current_user
       return redirect_to home_path, :notice => t('notice.sessions.already_in')
@@ -13,27 +14,37 @@ class SessionsController < ApplicationController
   end
   def create
     unless verify_recaptcha
-      return redirect_to log_in_path
+      #return redirect_to log_in_path
     end
+    puts 'ACA ESTOY'
   	user = User.authenticate(params[:email], params[:password])
     if user&&user.active==true&&!user.deleted
       # we log him in
+      puts 'if1'
       session[:user_id] = user.id
       #if he needs to be redirected back, the session[:last_uri] has to be set manually
+      
       if session[:last_uri]
+        puts 'if2'
         uri = session[:last_uri]
         session[:last_uri] = nil
         return redirect_to uri, :notice => t('notice.sessions.already_in')
       end
       return redirect_to request.referer, :notice => t('notice.sessions.already_in')
     else
+      puts 'if3'
       if user && user.active!=true
+        puts 'if4'
+        user.active=true
         str = t('notice.sessions.activation')
       elsif user && user.deleted!=false
+        puts 'if5'
         str = t('notice.sessions.user_not_found')
       else
+        puts 'if6'
         str = t('notice.sessions.invalid_pass')
       end
+      puts 'if7'
       return redirect_to log_in_path, notice: str
     end
   end
