@@ -16,22 +16,25 @@ layout false
     unless verify_recaptcha
       #return redirect_to log_in_path
     end
+    @success = false
   	user = User.authenticate(params[:email], params[:password])
     if user&&user.active==true&&!user.deleted
       # we log him in
       puts 'if1'
       session[:user_id] = user.id
+      @success=true
       #if he needs to be redirected back, the session[:last_uri] has to be set manually
-      
-      if session[:last_uri]
-        puts 'ACA ESTOY'
-        puts 'if2'
-        uri = session[:last_uri]
-        session[:last_uri] = nil
         respond_to do |format|
           format.js {}
         end
-        return 
+      return 
+      if session[:last_uri]
+        puts 'ACA ESTOY'
+        @success=true
+        puts 'if2'
+        uri = session[:last_uri]
+        session[:last_uri] = nil
+
         #return redirect_to root_path, :notice => t('notice.sessions.already_in')
       end
       return redirect_to request.referer, :notice => t('notice.sessions.already_in')

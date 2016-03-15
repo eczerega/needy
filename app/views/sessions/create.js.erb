@@ -1,0 +1,26 @@
+
+<% if @success==true %>	
+	
+
+	swal
+	(
+		{   
+			title: "Logueado correctamente", 
+			type: "success",    
+			timer: 2000,
+			showConfirmButton: false
+		}
+	);
+	setTimeout(function(){ location.reload();}, 2100);
+	
+
+<% else %>
+
+	sweetAlert("Oops... Error en las credenciales: ",
+
+		'usuario o contraseña inválidos'
+	 , "error");	
+
+
+
+<% end %>
