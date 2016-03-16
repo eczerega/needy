@@ -37,6 +37,7 @@ gem 'jquery-rails'
 
 
 #Boostrap
+gem 'font-awesome-sass'
 gem "font-awesome-rails" 
 gem 'bootstrap-sass', '~> 3.2.0'
 

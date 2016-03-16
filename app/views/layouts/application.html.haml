@@ -4,8 +4,8 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
       =favicon_link_tag
       -# Favicon
-        
         %link{:rel=>"icon", :type => "image/ico", :href => "/assets/favicon.ico"}
+      %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :rel => "stylesheet"}/  
       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
       %title= content_for?(:title) ? yield(:title) : t('common.app_name')
       %meta{:content => content_for?(:description) ? yield(:description) : t('common.app_desc'), :name => "description"}

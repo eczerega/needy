@@ -62431,3 +62431,73 @@ Processing by IndexController#empty as HTML
   Rendered layouts/_footer.html.haml (0.4ms)
   Rendered layouts/_footer.html.haml (0.2ms)
 Completed 200 OK in 284ms (Views: 284.1ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 15:18:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 651ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Illegal nesting: nesting within a self-closing tag is illegal.):
+     5:       =favicon_link_tag
+     6:       -# Favicon
+     7:       %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :rel => "stylesheet"}/  
+     8:         %link{:rel=>"icon", :type => "image/ico", :href => "/assets/favicon.ico"}
+     9:       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
+    10:       %title= content_for?(:title) ? yield(:title) : t('common.app_name')
+    11:       %meta{:content => content_for?(:description) ? yield(:description) : t('common.app_desc'), :name => "description"}
+  app/views/layouts/application.html.haml:8
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (33.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 15:18:04 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Illegal nesting: nesting within a self-closing tag is illegal.):
+     5:       =favicon_link_tag
+     6:       -# Favicon
+     7:       %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :rel => "stylesheet"}/  
+     8:         %link{:rel=>"icon", :type => "image/ico", :href => "/assets/favicon.ico"}
+     9:       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
+    10:       %title= content_for?(:title) ? yield(:title) : t('common.app_name')
+    11:       %meta{:content => content_for?(:description) ? yield(:description) : t('common.app_desc'), :name => "description"}
+  app/views/layouts/application.html.haml:8
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 15:18:29 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (188.5ms)
+  Rendered layouts/_navigation.html.haml (6.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (1.9ms)
+  Rendered layouts/_footer.html.haml (3.0ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2389ms (Views: 2383.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 15:18:33 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (20.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (86.0ms)
+Completed 200 OK in 139ms (Views: 95.3ms | ActiveRecord: 21.8ms)
