@@ -1,0 +1,55 @@
+.main-slider-need
+{
+    text-align: center !important;
+    padding-top: 160px !important;
+
+    background-color: #e8f5e9 ;
+    opacity: 0.99;
+    z-index: -1;
+    min-width: 300px;
+    min-height: 700px;
+    margin-top: -50px;
+
+    h1
+    {
+        color: #003404 !important;
+    }
+    .main-image
+    {
+        -webkit-filter: brightness(35%);
+        filter: grayscale(40%);
+        top: -120px;
+        position: fixed; 
+        right: 0; 
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        display: block;
+        max-width:100%;
+        max-height:100%;
+        z-index: -100;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .main-title
+    {
+      position: relative;
+      z-index: 10;
+    }
+    video#bgvid 
+      { 
+        -webkit-filter: brightness(35%);
+        filter: grayscale(40%);
+        top: 0px;
+        position: absolute; 
+        right: 0; 
+        bottom: 0;
+        width: 100%;
+        //height: auto;
+        z-index: -100;
+        background-size: cover;
+        overflow: hidden;
+      }
+
+}

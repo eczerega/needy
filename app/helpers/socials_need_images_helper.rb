@@ -1,0 +1,2 @@
+module SocialsNeedImagesHelper
+end

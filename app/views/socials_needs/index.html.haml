@@ -1,41 +1,43 @@
-%h1 Listing socials_needs
+.main-slider-need{} 
 
-%table
-  %tr
-    %th User
-    %th Integer
-    %th Name
-    %th String
-    %th Description
-    %th String
-    %th Latitude
-    %th Integer
-    %th Longitude
-    %th Integer
-    %th Address
-    %th String
-    %th
-    %th
-    %th
-
-  - @socials_needs.each do |socials_need|
+  %h1 Agregar título de la necesidad
+  %br
+  %table
     %tr
-      %td= socials_need.user_id
-      %td= socials_need.integer
-      %td= socials_need.name
-      %td= socials_need.string
-      %td= socials_need.description
-      %td= socials_need.string
-      %td= socials_need.latitude
-      %td= socials_need.integer
-      %td= socials_need.longitude
-      %td= socials_need.integer
-      %td= socials_need.address
-      %td= socials_need.string
-      %td= link_to 'Show', socials_need
-      %td= link_to 'Edit', edit_socials_need_path(socials_need)
-      %td= link_to 'Destroy', socials_need, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %th User
+      %th Integer
+      %th Name
+      %th String
+      %th Description
+      %th String
+      %th Latitude
+      %th Integer
+      %th Longitude
+      %th Integer
+      %th Address
+      %th String
+      %th
+      %th
+      %th
 
-%br
+    - @socials_needs.each do |socials_need|
+      %tr
+        %td= socials_need.user_id
+        %td= socials_need.integer
+        %td= socials_need.name
+        %td= socials_need.string
+        %td= socials_need.description
+        %td= socials_need.string
+        %td= socials_need.latitude
+        %td= socials_need.integer
+        %td= socials_need.longitude
+        %td= socials_need.integer
+        %td= socials_need.address
+        %td= socials_need.string
+        %td= link_to 'Show', socials_need
+        %td= link_to 'Edit', edit_socials_need_path(socials_need)
+        %td= link_to 'Destroy', socials_need, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-= link_to 'New Socials need', new_socials_need_path
+  %br
+
+  = link_to 'New Socials need', new_socials_need_path

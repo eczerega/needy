@@ -1,6 +1,6 @@
 class SocialsNeedsController < ApplicationController
   before_action :set_socials_need, only: [:show, :edit, :update, :destroy]
-
+  layout false
   # GET /socials_needs
   def index
     @socials_needs = SocialsNeed.all

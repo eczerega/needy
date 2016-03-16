@@ -23,12 +23,17 @@ app.config(function(
 			      $stateProvider
 			        .state('home', {
                   	   url: ":r_id",
-                       templateUrl:
-                        function ($stateParams) {
-                          r_id= $stateParams.r_id;
-                          return '/home/index?r_id='+r_id
-                        }
+                       templateUrl:'/home/index'
+                        
 			        })
+              .state('social_needs', {
+                       url: "/necesidades",
+                       templateUrl:'/socials_needs.html'
+              })
+              .state('new_social_needs', {
+                       url: "/necesidades-nueva",
+                       templateUrl:'/socials_needs/new.html'
+              })
 			          .state('inicio1', {
 			              url: "/inicio1",
 			              template: "route1.list.html"
@@ -47,12 +52,42 @@ app.config(function(
                 }
         );
 
-app.run(function($rootScope, $templateCache) {
-    $rootScope.$on('$routeChangeStart', function(event, next, current) {
-        if (typeof(current) !== 'undefined'){
-            $templateCache.remove(current.templateUrl);
-        }
-    });
+app.run(function($rootScope, $templateCache, $state) {
+   $rootScope.$on('$viewContentLoaded', function() {
+      if($state.current.name !== 'home')
+      {
+        var myEl = angular.element( document.querySelector( '#menubar-big' ) );
+        myEl.addClass('not-up'); 
+      }
+      else
+      {
+        var myEl = angular.element( document.querySelector( '#menubar-big' ) );
+        myEl.removeClass('not-up'); 
+        $("#menubar-big").removeClass("not-up");
+              var waypoint = new Waypoint({
+        element: document.getElementById('basic-waypoint'),
+        handler: function(direction) {
+          var myEl = angular.element( document.querySelector( '#menubar-big' ) );
+
+          altura=$("#menubar-big").offset().top;
+          if($state.current.name === 'home')
+          {
+                      if(altura>160)
+          {
+            myEl.addClass('not-up'); 
+          }
+          else
+          {
+            $("#menubar-big").removeClass("not-up");
+          }
+          }
+
+        },
+      offset: '380'
+      });
+      }
+      $templateCache.removeAll();
+   });
 });
 app
 .controller('MainCtrl',function($scope,$rootScope){

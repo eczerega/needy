@@ -16,6 +16,7 @@ group :development, :test do
   gem 'awesome_print' #mejora la forma de imprimir datos en la consola. Uso: ap User.first
 end
  
+
 ##Servicios Externos
 #Login G+
 gem "omniauth-google-oauth2"
@@ -45,7 +46,7 @@ gem "cancancan"
 #para declarar variables de entorno(en el application.yml). Se suben a heroku con: figaro heroku:set
 gem "figaro", ">= 0.7.0" 
 gem 'friendly_id', '~> 5.0.4' #the name says it all
-gem 'eventmachine', '1.0.7', :git => "git://github.com/eventmachine/eventmachine.git"
+#gem 'eventmachine', '1.0.7', :git => "git://github.com/eventmachine/eventmachine.git"
 
 ##Herramientas de testing
 # Es uno de los frameworks de test más usados en Rails 3 y 4.

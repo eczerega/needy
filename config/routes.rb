@@ -1,6 +1,8 @@
 
 DefaultInit::Application.routes.draw do
   
+  resources :socials_need_images
+  resources :social_media_images
   resources :categories
   resources :town_need_categories
   resources :business_need_categories

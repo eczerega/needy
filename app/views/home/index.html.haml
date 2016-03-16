@@ -6,7 +6,10 @@
       .col-md-12{:layout => "row", "layout-align" => "center center"}   
         %h1
           ¿Qué necesita Chile? 
-      .col-md-12{:layout => "row", "layout-align" => "center center"}   
+      .col-md-12{:layout => "row", "layout-align" => "center center"}  
+        -if current_user!= nil
+          %md-button.md-raised.md-primary.landing-slider-buttons{"ui-sref" => "new_social_needs"} 
+            Crear       
         %md-button.md-raised.md-primary.landing-slider-buttons
           Opina
         %md-button.md-raised.md-primary.landing-slider-buttons
@@ -148,7 +151,12 @@
         =image_tag 'video.jpg', :size => "500x280"
       .col-md-6
         %p
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+          Es el portal donde se escuchan las necesidades y opiniones de los chilenos.
+          ¿Como Funciona?
+          Si reconoces algún problema o necesidad del lugar donde vives, compártelo con nosotros.
+          Si encuentras alguna problemática en esta página con la que estés de acuerdo, dale 👍 Me gusta y coméntalo.
+          Si se te ocurre alguna forma de solucionar el problema, compártela!
+          ¡Invita a tus amigos a que se hagan parte de la comunidad Needy!
         %md-button.md-raised.md-primary.landing-slider-buttons{:style=>"width: 100%; bottom: 0;"}
           Únete o muere 
 .row

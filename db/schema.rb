@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160120224712) do
+ActiveRecord::Schema.define(version: 20160316144110) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -160,6 +160,13 @@ ActiveRecord::Schema.define(version: 20160120224712) do
     t.datetime "updated_at",     null: false
   end
 
+  create_table "social_media_images", force: :cascade do |t|
+    t.integer  "socials_need_id"
+    t.string   "image"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
   create_table "social_need_categories", force: :cascade do |t|
     t.string   "category_id"
     t.string   "integer"
@@ -175,6 +182,13 @@ ActiveRecord::Schema.define(version: 20160120224712) do
     t.string   "value"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+  end
+
+  create_table "socials_need_images", force: :cascade do |t|
+    t.integer  "socials_need_id"
+    t.string   "image_url"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "socials_needs", force: :cascade do |t|

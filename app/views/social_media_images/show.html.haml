@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Socials need:
+  = @social_media_image.socials_need_id
+%p
+  %b Image:
+  = @social_media_image.image
+
+= link_to 'Edit', edit_social_media_image_path(@social_media_image)
+\|
+= link_to 'Back', social_media_images_path

@@ -1,6 +1,6 @@
 
 %ul.nav.navbar-nav.btnMenu2int.right{"ng-cloak" => "", "ng-controller" => "NavigationCtrl"}
-	%li.btnAdmin{"ui-sref" => "home({r_id: '#{Random.new}'})"} 
+	%li.btnAdmin{"ui-sref" => "home"} 
 		= link_to 'Inicio', 'javascript:void(0)'
 	- unless current_user&&(can? :manage, :admin)&&['admins','users'].include?(controller.controller_name)
 		- if current_user
@@ -11,6 +11,8 @@
 					= link_to t('common.nav.admin'), 'javascript:void(0)'
 			%li.btnAdmin
 				= link_to current_user.to_s, '#'
+			%li.btnAdmin{"ui-sref" => "inicio2"} 
+				= link_to 'Contacto', 'javascript:void(0)'
 			%li.btnAdmin{}
 				= link_to 'Salir', log_out_path
 		- else
