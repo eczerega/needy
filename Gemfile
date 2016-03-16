@@ -35,6 +35,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
+
 #Boostrap
 gem "font-awesome-rails" 
 gem 'bootstrap-sass', '~> 3.2.0'

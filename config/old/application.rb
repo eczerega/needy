@@ -9,6 +9,7 @@ Bundler.require(:default, Rails.env)
 module DefaultInit
   class Application < Rails::Application
     
+
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
       
@@ -52,12 +53,20 @@ module DefaultInit
 
     config.filter_parameters += [:password, :password_confirmation]
 
+
+
+    config.assets.enabled = true
+    config.assets.paths << "#{Rails.root}/app/assets/fonts" 
+
     config.assets.precompile += ["fontawesome-webfont.ttf",
                          "fontawesome-webfont.eot",
                          "fontawesome-webfont.svg",
                          "fontawesome-webfont.woff"]
 
     config.active_record.raise_in_transactional_callbacks = true
+    config.assets.precompile += %w( .svg .eot .woff .ttf) 
+
+
 
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,

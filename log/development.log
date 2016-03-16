@@ -62399,3 +62399,35 @@ DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczer
 DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
 DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
 DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 14:51:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (4.2ms)
+  Rendered layouts/_slidemenu.html.haml (25.4ms)
+  Rendered layouts/_navigation.html.haml (6.7ms)
+  Rendered layouts/_navigation.html.haml (0.3ms)
+  Rendered layouts/_messages.html.haml (2.7ms)
+  Rendered layouts/_footer.html.haml (3.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 6234ms (Views: 5507.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 14:52:07 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (23.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (264.8ms)
+Completed 200 OK in 310ms (Views: 196.4ms | ActiveRecord: 87.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 14:52:08 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  Rendered layouts/_slidemenu.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.2ms)
+  Rendered layouts/_navigation.html.haml (0.2ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 284ms (Views: 284.1ms | ActiveRecord: 0.0ms)
