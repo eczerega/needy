@@ -9,6 +9,7 @@ Bundler.require(:default, Rails.env)
 module DefaultInit
   class Application < Rails::Application
     
+
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
       
@@ -51,6 +52,11 @@ module DefaultInit
     config.active_support.escape_html_entities_in_json = true
 
     config.filter_parameters += [:password, :password_confirmation]
+
+
+
+    config.assets.enabled = true
+    config.assets.paths << "#{Rails.root}/app/assets/fonts" 
 
     config.assets.precompile += ["fontawesome-webfont.ttf",
                          "fontawesome-webfont.eot",

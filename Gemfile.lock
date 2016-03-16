@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/eventmachine/eventmachine.git
+  revision: 6d02b4abab759e9aeb6366e71ec62047da5762c4
+  specs:
+    eventmachine (1.2.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -295,6 +301,7 @@ DEPENDENCIES
   coffee-rails (>= 4.0.0)
   database_cleaner (~> 1.4.0)
   email_spec (~> 1.6.0)
+  eventmachine!
   factory_girl_rails (~> 4.5.0)
   faker (~> 1.4.3)
   figaro (>= 0.7.0)

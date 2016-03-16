@@ -62352,3 +62352,50 @@ Processing by SocialsNeedsController#new as HTML
   Rendered socials_needs/_form.html.haml (3.2ms)
   Rendered socials_needs/new.html.haml (4.9ms)
 Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 12:51:27 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (3.7ms)
+  [1m[35mUser Load (11.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (232.6ms)
+  Rendered layouts/_navigation.html.haml (8.9ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (2.5ms)
+  Rendered layouts/_footer.html.haml (7.6ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+Completed 200 OK in 2170ms (Views: 1513.9ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 12:51:29 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 206ms (Views: 204.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 12:51:30 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (60.1ms)
+Completed 200 OK in 88ms (Views: 60.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 12:53:53 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (18.7ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from mon_synchronize at /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211)
