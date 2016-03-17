@@ -52,6 +52,12 @@ app.config(function(
                 }
         );
 
+app.config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('green')
+    .accentPalette('orange');
+});
+
 app.run(function($rootScope, $templateCache, $state) {
    $rootScope.$on('$viewContentLoaded', function() {
       if($state.current.name !== 'home')

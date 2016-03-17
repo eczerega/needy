@@ -1,0 +1,26 @@
+app
+.controller('NeedCtrl',
+    function ($scope,$timeout, $http) {
+    	$scope.test="pruebo";
+		$scope.user = null;
+		$scope.users = null;
+		$scope.categories = null;
+		$http({
+		  method: 'GET',
+		  url: '/categories.json'
+		}).then(function successCallback(response) {
+		    $scope.categories =  response.data;
+		  }, function errorCallback(response) {
+		    // called asynchronously if an error occurs
+		    // or server returns response with an error status.
+		  });
+
+		$scope.loadUsers = function() 
+		{
+			return $timeout(function() 
+				{
+					$scope.users =  $scope.categories
+				}, 650);
+   		 		}
+   		}	
+);

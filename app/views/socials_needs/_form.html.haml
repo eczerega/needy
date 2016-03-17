@@ -6,7 +6,7 @@
   $(document).ready(function() {});
 
 
-.main-slider-need{} 
+.main-slider-need{"ng-controller" => "NeedCtrl"} 
   .row
     .col-md-6
       .row
@@ -18,9 +18,9 @@
           Arrastra o haz click para agregar imágenes
       .row.sheet
         %md-input-container.md-block{"flex-gt-sm" => ""}
-          %label Link video youtube
-          %input{}    
-      .row{:class=>"floating", :style=>"margin-top: 40px!important;"}
+          %label Link video youtube -no disponible en alpha-
+          %input.video    
+      .row.hidden-xs{:class=>"floating", :style=>"margin-top: 40px!important;"}
         .col-md-3
           %span
             = image_tag 'needy_mascota.png'   
@@ -30,37 +30,54 @@
         .col-md-2
     .col-md-6
 
-      = form_for @socials_need, :html => {remote: true }  do |f|
+      = form_for @socials_need, :html => {remote: true, :id =>"main_form" }  do |f|
         - if @socials_need.errors.any?
           #error_explanation
-            %h2= "#{pluralize(@socials_need.errors.count, "error")} prohibited this socials_need from being saved:"
+            %h2= "#{pluralize(@socials_need.errors.count, "error")} Existen los siguientes errores:"
             %ul
               - @socials_need.errors.full_messages.each do |msg|
                 %li= msg      
         .row.sheet
-          %md-input-container.md-block{"flex-gt-sm" => ""}
-            %label Título de la necesidad
-            %input{"ng-model" => "user.firstName"}
+          .col-md-7
+            %md-input-container.md-block
+              %label Título de la necesidad
+              %input.name
+          .col-md-3
+            %md-select.category{"md-on-open" => "loadUsers()", "ng-model" => "user", :placeholder => "Categoría", :style => "min-width: 200px;"}
+              %md-option{"ng-value" => "user", "ng-repeat" => "user in users"} 
+                {{user.name}}
         .row.sheet  
           %md-input-container.md-block
             %label Descriptión
-            %textarea{"md-maxlength" => "250", "md-select-on-focus" => "", "ng-model" => "user.biography", :rows => "10", :style =>"height: 210px"} 
+            %textarea.description{"md-maxlength" => "250", "md-select-on-focus" => "", "ng-model" => "user.biography", :rows => "10", :style =>"height: 210px"} 
         .row.sheet
-          %md-input-container.md-block{"flex-gt-sm" => ""}
-            %label Ubicación
-            %input{"ng-model" => "user.firstName"}  
+          #sender-d
+            %md-input-container.md-block{"flex-gt-sm" => ""}
+              %label Ubicación -mapa no disponible-
+              %input.latitude{"ng-model" => "user.firstName"}  
 
         .field
-          = f.hidden_field :name
-          = f.hidden_field :user_id
-          = f.hidden_field :description
-          = f.hidden_field :latitude
-          = f.hidden_field :longitude
-          = f.hidden_field :address
-        %md-button.md-raised.md-primary.landing-slider-buttons{:style=>"width: 100%"} 
-          = f.submit 'Save'
+          = f.hidden_field :name,:id=>"name"
+          = f.hidden_field :user_id,:id=>"user_id"
+          = f.hidden_field :description,:id=>"description"
+          = f.hidden_field :latitude,:id=>"latitude"
+          = f.hidden_field :longitude,:id=>"longitude"
+          = f.hidden_field :address,:id=>"address"
+        #sender
+          %md-button.md-primary.landing-slider-buttons.button-sender{:style=>"width: 100%"} 
+            Crear
+
+
 :javascript
     $( document ).ajaxComplete(function() {
       Dropzone.discover();
     });
+    $("#sender").click(function()
+    {
+      $('#name').val($(".name").val());
+      $('#description').val($(".description").val());
+      $('#latitude').val($(".latitude").val());
+      $("#main_form").submit();
+    });
+
 

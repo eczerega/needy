@@ -76,7 +76,7 @@ gem 'responders' #se usan en la api para el tipo de respuesta por defecto
 gem 'cocaine', "~> 0.5.3"
 # gem "paperclip", :git => "https://github.com/thoughtbot/paperclip.git"
 gem "paperclip"
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk'
 
 #parallax
 gem 'parallax-rails'

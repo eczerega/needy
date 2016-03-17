@@ -69284,3 +69284,3175 @@ Processing by SocialsNeedsController#new as HTML
   Rendered socials_needs/_form.html.haml (6.5ms)
   Rendered socials_needs/new.html.haml (9.4ms)
 Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 21:52:27 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (3292.7ms)
+Completed 200 OK in 4073ms (Views: 3310.8ms | ActiveRecord: 72.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:52:37 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (277.9ms)
+  Rendered socials_needs/new.html.haml (324.9ms)
+Completed 200 OK in 380ms (Views: 347.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:53:43 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (2.7ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (49.0ms)
+  Rendered layouts/_navigation.html.haml (7.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (2.6ms)
+  Rendered layouts/_footer.html.haml (2.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3915ms (Views: 3914.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:53:49 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (80.5ms)
+  Rendered socials_needs/new.html.haml (132.6ms)
+Completed 200 OK in 164ms (Views: 163.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:54:27 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 805ms (Views: 804.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:54:29 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (65.6ms)
+  Rendered socials_needs/new.html.haml (68.5ms)
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:54:47 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.3ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 238ms (Views: 237.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:54:48 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (12.9ms)
+  Rendered socials_needs/new.html.haml (14.5ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:55:33 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.1ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 246ms (Views: 245.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:55:35 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (14.2ms)
+  Rendered socials_needs/new.html.haml (16.6ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:55:45 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.3ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 406ms (Views: 404.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:55:47 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (50.3ms)
+  Rendered socials_needs/new.html.haml (52.2ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:56:25 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 726ms (Views: 725.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:56:28 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (65.0ms)
+  Rendered socials_needs/new.html.haml (66.8ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:58:28 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1990ms (Views: 1989.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:58:31 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (45.4ms)
+  Rendered socials_needs/new.html.haml (59.5ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    57:           = f.hidden_field :latitude
+    58:           = f.hidden_field :longitude
+    59:           = f.hidden_field :address
+    60:         %md-button.#sender.md-primary.landing-slider-buttons.button-sender{:style=>"width: 100%"} 
+    61:           BOTON DE PRUEBA
+    62:         %md-button.md-raised.md-primary.landing-slider-buttons{:style=>"width: 100%"} 
+    63:           = f.submit 'Save'
+  app/views/socials_needs/_form.html.haml:60
+  app/views/socials_needs/new.html.haml:1:in `_app_views_socials_needs_new_html_haml___3555256904638631726_70279973609020'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:59:07 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.3ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 338ms (Views: 336.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:59:09 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (47.5ms)
+  Rendered socials_needs/new.html.haml (49.2ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 21:59:48 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.9ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 911ms (Views: 910.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 21:59:50 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (43.1ms)
+  Rendered socials_needs/new.html.haml (45.1ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 22:00:29 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.4ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 265ms (Views: 264.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 22:00:30 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (31.0ms)
+  Rendered socials_needs/new.html.haml (32.7ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 22:03:07 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.7ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1996ms (Views: 1995.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 22:03:11 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (7.7ms)
+  Rendered socials_needs/new.html.haml (27.9ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    60:           = f.hidden_field :address
+    61:         #sender
+    62:           %md-button.md-primary.landing-slider-buttons.button-sender{:style=>"width: 100%"} 
+    63:               BOTON DE PRUEBA
+    64:         %md-button.md-raised.md-primary.landing-slider-buttons{:style=>"width: 100%"} 
+    65:           = f.submit 'Save'
+    66: :javascript
+  app/views/socials_needs/_form.html.haml:63
+  app/views/socials_needs/new.html.haml:1:in `_app_views_socials_needs_new_html_haml___3555256904638631726_70279973609020'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (179.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 22:04:16 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 220ms (Views: 219.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 22:04:18 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (41.0ms)
+  Rendered socials_needs/new.html.haml (42.7ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 22:04:36 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 233ms (Views: 231.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 22:04:38 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (15.9ms)
+  Rendered socials_needs/new.html.haml (19.5ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 22:06:09 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.8ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 1496ms (Views: 1495.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 22:06:12 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (42.4ms)
+  Rendered socials_needs/new.html.haml (45.2ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 22:07:23 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.6ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2330ms (Views: 2329.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 22:07:27 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (34.8ms)
+  Rendered socials_needs/new.html.haml (44.9ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 22:07:44 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 244ms (Views: 243.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 22:07:46 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (15.6ms)
+  Rendered socials_needs/new.html.haml (19.1ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload-target" for 127.0.0.1 at 2016-03-16 22:11:48 -0300
+
+ActionController::RoutingError (No route matches [POST] "/upload-target"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (21.6ms)
+
+
+Started POST "/upload-target" for 127.0.0.1 at 2016-03-16 22:11:48 -0300
+
+ActionController::RoutingError (No route matches [POST] "/upload-target"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:08:08 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (1.3ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (16.4ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.7ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1837ms (Views: 1833.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:08:11 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (20.7ms)
+  Rendered socials_needs/new.html.haml (34.1ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:55: syntax error, unexpected '{', expecting ')'
+...e_false(( f.hidden_field :name{:id=>"name"}
+...                               ^
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:55: syntax error, unexpected '}', expecting ')'
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:57: syntax error, unexpected '}', expecting tSTRING_DEND
+));}\n        #{_hamlout.format_s...
+    ^
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:61: unknown regexp option - d
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:61: syntax error, unexpected $undefined
+...E PRUEBA\n        </md-button>\n      </div>\n      <md-butt...
+...                               ^
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: unknown regexp option - d
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: syntax error, unexpected $undefined
+));}\n      </md-button>\n", -1, false);end;_hamlout.b...
+                         ^
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: syntax error, unexpected $undefined, expecting tSTRING_DEND
+...aml_temp);_hamlout.push_text("\n    </div>\n  </div>\n</div>...
+...                               ^
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: unknown regexp options - dv
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: syntax error, unexpected $undefined
+...h_text("\n    </div>\n  </div>\n</div>\n<script>\n    $( doc...
+...                               ^
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: unknown regexp options - crpt
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: syntax error, unexpected $undefined
+...").val());\n    });\n</script>\n", -3, false);::Haml::Util.h...
+...                               ^
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: unterminated string meets end of file
+/Users/eczerega/Documents/needy/v1/app/views/socials_needs/_form.html.haml:66: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/views/socials_needs/_form.html.haml:55: syntax error, unexpected '{', expecting ')'
+  app/views/socials_needs/_form.html.haml:55: syntax error, unexpected '}', expecting ')'
+  app/views/socials_needs/_form.html.haml:57: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/socials_needs/_form.html.haml:61: unknown regexp option - d
+  app/views/socials_needs/_form.html.haml:61: syntax error, unexpected $undefined
+  app/views/socials_needs/_form.html.haml:66: unknown regexp option - d
+  app/views/socials_needs/_form.html.haml:66: syntax error, unexpected $undefined
+  app/views/socials_needs/_form.html.haml:66: syntax error, unexpected $undefined, expecting tSTRING_DEND
+  app/views/socials_needs/_form.html.haml:66: unknown regexp options - dv
+  app/views/socials_needs/_form.html.haml:66: syntax error, unexpected $undefined
+  app/views/socials_needs/_form.html.haml:66: unknown regexp options - crpt
+  app/views/socials_needs/_form.html.haml:66: syntax error, unexpected $undefined
+  app/views/socials_needs/_form.html.haml:66: unterminated string meets end of file
+  app/views/socials_needs/_form.html.haml:66: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+  app/views/socials_needs/new.html.haml:1:in `_app_views_socials_needs_new_html_haml___3555256904638631726_70279973609020'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:08:35 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 260ms (Views: 258.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:08:37 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (91.4ms)
+  Rendered socials_needs/new.html.haml (95.5ms)
+Completed 200 OK in 99ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:11:16 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.2ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 285ms (Views: 284.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:11:17 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (41.2ms)
+  Rendered socials_needs/new.html.haml (43.5ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:17:43 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (1.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (23.4ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (1.6ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 2084ms (Views: 2080.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:17:46 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (39.1ms)
+  Rendered socials_needs/new.html.haml (56.3ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:19:25 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1794ms (Views: 1793.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:19:28 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (43.1ms)
+  Rendered socials_needs/new.html.haml (45.2ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:20:57 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.2ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 228ms (Views: 227.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:20:59 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (40.7ms)
+  Rendered socials_needs/new.html.haml (44.1ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:24:20 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1699ms (Views: 1698.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:24:23 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (102.0ms)
+  Rendered socials_needs/new.html.haml (110.9ms)
+Completed 200 OK in 140ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:25:48 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.7ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 912ms (Views: 910.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:25:51 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (35.8ms)
+  Rendered socials_needs/new.html.haml (39.8ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:26:04 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.1ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 232ms (Views: 231.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:26:05 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (19.5ms)
+  Rendered socials_needs/new.html.haml (21.5ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-16 23:26:13 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"", "user_id"=>"", "description"=>"", "latitude"=>"", "longitude"=>"", "address"=>""}, "commit"=>"Save"}
+  [1m[36m (17.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (200.8ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", ""], ["name", ""], ["description", ""], ["latitude", ""], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 02:26:13.930266"], ["updated_at", "2016-03-17 02:26:13.930266"]]
+  [1m[36m (23.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_needs/8
+Completed 302 Found in 313ms (ActiveRecord: 242.3ms)
+
+
+Started GET "/socials_needs/8" for 127.0.0.1 at 2016-03-16 23:26:14 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"8"}
+  [1m[35mSocialsNeed Load (0.6ms)[0m  SELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1  [["id", 8]]
+  Rendered socials_needs/show.html.haml (10.1ms)
+Completed 200 OK in 112ms (Views: 109.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:26:49 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.6ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 7123ms (Views: 7122.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:26:58 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (25.3ms)
+  Rendered socials_needs/new.html.haml (44.7ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:27:23 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.2ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 4185ms (Views: 4184.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:27:28 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (29.6ms)
+  Rendered socials_needs/new.html.haml (45.3ms)
+Completed 200 OK in 75ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 23:28:29 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.8ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (31.3ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:29:01 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (28.2ms)
+  Rendered socials_needs/new.html.haml (43.9ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:29:03 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (16.2ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 5536ms (Views: 5535.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:29:10 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (17.5ms)
+  Rendered socials_needs/new.html.haml (32.6ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:33:10 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (7.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 5587ms (Views: 5585.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:33:17 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (18.5ms)
+  Rendered socials_needs/new.html.haml (34.5ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:34:53 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1822ms (Views: 1821.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:34:56 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (4.1ms)
+  Rendered socials_needs/new.html.haml (6.2ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:36:56 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.4ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1201ms (Views: 1200.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:36:59 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (6.3ms)
+  Rendered socials_needs/new.html.haml (7.9ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:37:40 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.1ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1244ms (Views: 1243.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:37:43 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (4.3ms)
+  Rendered socials_needs/new.html.haml (6.0ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-16 23:38:21 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"", "user_id"=>"", "description"=>"", "latitude"=>"", "longitude"=>"", "address"=>""}, "commit"=>"Save"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", ""], ["name", ""], ["description", ""], ["latitude", ""], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 02:38:21.846226"], ["updated_at", "2016-03-17 02:38:21.846226"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_needs/9
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/socials_needs/9" for 127.0.0.1 at 2016-03-16 23:38:21 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"9"}
+  [1m[36mSocialsNeed Load (0.9ms)[0m  [1mSELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  Rendered socials_needs/show.html.haml (1.0ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 23:38:25 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (23.4ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:38:27 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (6.7ms)
+  Rendered socials_needs/new.html.haml (8.8ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 23:38:28 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (10.2ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:41:28 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (6.4ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.8ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 5263ms (Views: 5261.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:42:09 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 242ms (Views: 240.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-16 23:42:10 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (26.8ms)
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:42:17 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (43.2ms)
+  Rendered socials_needs/new.html.haml (44.9ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:42:48 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 5188ms (Views: 5187.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:42:55 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (24.0ms)
+  Rendered socials_needs/new.html.haml (32.7ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:45:18 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.css.scss to /Users/eczerega/Documents/needy/v1/app/assets/stylesheets/_coloresw8.scss. (called from _app_views_layouts_application_html_haml___1174718207447403437_70279957867480 at /Users/eczerega/Documents/needy/v1/app/views/layouts/application.html.haml:14)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.1ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 4827ms (Views: 4825.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:45:25 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (20.0ms)
+  Rendered socials_needs/new.html.haml (34.2ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:47:37 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.4ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 253ms (Views: 252.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:47:39 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (24.6ms)
+  Rendered socials_needs/new.html.haml (34.6ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:48:34 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.2ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 278ms (Views: 276.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:48:35 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (18.1ms)
+  Rendered socials_needs/new.html.haml (20.1ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:50:58 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.1ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 308ms (Views: 307.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:51:00 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (26.6ms)
+  Rendered socials_needs/new.html.haml (29.5ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:52:12 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 266ms (Views: 265.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:52:14 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (18.8ms)
+  Rendered socials_needs/new.html.haml (23.4ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:53:02 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.1ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 323ms (Views: 322.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:53:04 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (27.4ms)
+  Rendered socials_needs/new.html.haml (30.0ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:53:25 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.9ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 283ms (Views: 282.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:53:26 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (20.3ms)
+  Rendered socials_needs/new.html.haml (22.4ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:54:22 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (7.5ms)
+  Rendered layouts/_navigation.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 307ms (Views: 306.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:54:24 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (29.2ms)
+  Rendered socials_needs/new.html.haml (31.1ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:55:10 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.5ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.8ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 381ms (Views: 379.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:55:11 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (34.6ms)
+  Rendered socials_needs/new.html.haml (36.3ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:56:14 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.8ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 344ms (Views: 343.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:56:16 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (20.7ms)
+  Rendered socials_needs/new.html.haml (24.8ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:56:42 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.9ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 364ms (Views: 363.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:56:44 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (18.6ms)
+  Rendered socials_needs/new.html.haml (32.4ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:57:16 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.5ms)
+  Rendered layouts/_navigation.html.haml (2.7ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 352ms (Views: 351.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:57:18 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (19.2ms)
+  Rendered socials_needs/new.html.haml (20.9ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:58:56 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.1ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 666ms (Views: 665.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-16 23:58:58 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (43.0ms)
+  Rendered socials_needs/new.html.haml (45.8ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-16 23:59:59 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.8ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.6ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 690ms (Views: 689.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:00:03 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (29.8ms)
+  Rendered socials_needs/new.html.haml (33.2ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:05:24 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (1.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (12.8ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_messages.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.9ms)
+  Rendered layouts/_footer.html.haml (1.2ms)
+Completed 200 OK in 2040ms (Views: 2034.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:05:28 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (40.5ms)
+  Rendered socials_needs/new.html.haml (42.4ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:08:06 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1476ms (Views: 1475.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:08:09 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (17.2ms)
+  Rendered socials_needs/new.html.haml (24.8ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:08:24 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 239ms (Views: 238.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:08:26 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (32.8ms)
+  Rendered socials_needs/new.html.haml (43.1ms)
+Completed 200 OK in 45ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:10:38 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1244ms (Views: 1243.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:10:40 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (3.9ms)
+  Rendered socials_needs/new.html.haml (5.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:11:19 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1252ms (Views: 1251.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:11:22 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (3.9ms)
+  Rendered socials_needs/new.html.haml (6.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:11:46 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1301ms (Views: 1300.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:11:49 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (4.1ms)
+  Rendered socials_needs/new.html.haml (5.8ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:15:10 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1533ms (Views: 1532.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:15:13 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (17.5ms)
+  Rendered socials_needs/new.html.haml (32.9ms)
+Completed 200 OK in 78ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:16:26 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 293ms (Views: 292.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:16:27 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (21.5ms)
+  Rendered socials_needs/new.html.haml (35.6ms)
+Completed 200 OK in 38ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:19:58 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.5ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 979ms (Views: 977.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:20:01 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (37.6ms)
+  Rendered socials_needs/new.html.haml (55.1ms)
+Completed 200 OK in 67ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:20:40 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.9ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1479ms (Views: 1478.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:20:43 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (33.2ms)
+  Rendered socials_needs/new.html.haml (35.0ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:21:07 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.8ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 320ms (Views: 319.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:21:09 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (4.4ms)
+  Rendered socials_needs/new.html.haml (6.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:21:21 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 241ms (Views: 239.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:21:23 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (18.0ms)
+  Rendered socials_needs/new.html.haml (29.4ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:22:21 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.5ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2333ms (Views: 2332.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:22:24 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (42.9ms)
+  Rendered socials_needs/new.html.haml (44.7ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:23:28 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.2ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1818ms (Views: 1817.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:23:31 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (43.4ms)
+  Rendered socials_needs/new.html.haml (45.4ms)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 00:25:28 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (24.0ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:38:07 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (50.3ms)
+  Rendered socials_needs/new.html.haml (66.4ms)
+Completed 200 OK in 92ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:47:51 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (8.7ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 2437ms (Views: 2434.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:47:55 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (43.2ms)
+  Rendered socials_needs/new.html.haml (45.0ms)
+Completed 200 OK in 62ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:49:09 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 237ms (Views: 236.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:49:10 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (16.5ms)
+  Rendered socials_needs/new.html.haml (25.4ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:50:08 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.9ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 238ms (Views: 237.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:50:09 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (17.0ms)
+  Rendered socials_needs/new.html.haml (22.5ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:51:47 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.6ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 257ms (Views: 256.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:51:49 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (19.1ms)
+  Rendered socials_needs/new.html.haml (25.6ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:53:24 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1887ms (Views: 1886.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:53:27 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (71.9ms)
+  Rendered socials_needs/new.html.haml (84.7ms)
+Completed 200 OK in 116ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 00:57:45 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1986ms (Views: 1985.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 00:57:49 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (31.2ms)
+  Rendered socials_needs/new.html.haml (33.0ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:00:10 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 274ms (Views: 273.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:00:11 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (26.7ms)
+  Rendered socials_needs/new.html.haml (28.5ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:01:16 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 292ms (Views: 290.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:01:17 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (20.5ms)
+  Rendered socials_needs/new.html.haml (35.8ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 01:01:32 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"Primera necesidad", "user_id"=>"", "description"=>"olorosa", "latitude"=>"", "longitude"=>"", "address"=>""}}
+  [1m[36m (2.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", ""], ["name", "Primera necesidad"], ["description", "olorosa"], ["latitude", ""], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 04:01:32.044189"], ["updated_at", "2016-03-17 04:01:32.044189"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_needs/10
+Completed 302 Found in 13ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/upload-target" for 127.0.0.1 at 2016-03-17 01:01:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/upload-target"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (17.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (564.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (803.9ms)
+
+
+Started GET "/socials_needs/10" for 127.0.0.1 at 2016-03-17 01:01:33 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"10"}
+  [1m[35mSocialsNeed Load (0.5ms)[0m  SELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered socials_needs/show.html.haml (1.3ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:02:10 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 278ms (Views: 277.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:02:12 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (29.2ms)
+  Rendered socials_needs/new.html.haml (31.7ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:03:49 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1143ms (Views: 1142.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:03:52 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (45.0ms)
+  Rendered socials_needs/new.html.haml (46.9ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 01:04:04 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"mal olor", "user_id"=>"", "description"=>"papa", "latitude"=>"", "longitude"=>"", "address"=>""}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", ""], ["name", "mal olor"], ["description", "papa"], ["latitude", ""], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 04:04:04.053291"], ["updated_at", "2016-03-17 04:04:04.053291"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_needs/11
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/socials_needs/11" for 127.0.0.1 at 2016-03-17 01:04:04 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"11"}
+  [1m[35mSocialsNeed Load (0.5ms)[0m  SELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1  [["id", 11]]
+  Rendered socials_needs/show.html.haml (1.1ms)
+Completed 200 OK in 66ms (Views: 63.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 01:05:11 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"mal olor", "user_id"=>"", "description"=>"papa2", "latitude"=>"", "longitude"=>"", "address"=>""}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", ""], ["name", "mal olor"], ["description", "papa2"], ["latitude", ""], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 04:05:11.161351"], ["updated_at", "2016-03-17 04:05:11.161351"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_needs/12
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/socials_needs/12" for 127.0.0.1 at 2016-03-17 01:05:11 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"12"}
+  [1m[35mSocialsNeed Load (0.5ms)[0m  SELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1  [["id", 12]]
+  Rendered socials_needs/show.html.haml (1.0ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:08:25 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.7ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 1971ms (Views: 1970.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:08:28 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (34.0ms)
+  Rendered socials_needs/new.html.haml (44.4ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:11:07 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.8ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 235ms (Views: 234.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:11:09 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (20.2ms)
+  Rendered socials_needs/new.html.haml (24.9ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:11:55 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 1363ms (Views: 1362.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:11:57 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (6.1ms)
+  Rendered socials_needs/new.html.haml (7.8ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:12:05 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1134ms (Views: 1133.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:12:08 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (5.8ms)
+  Rendered socials_needs/new.html.haml (8.7ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:12:40 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 1173ms (Views: 1172.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:12:42 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (4.5ms)
+  Rendered socials_needs/new.html.haml (6.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:12:59 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1352ms (Views: 1351.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:13:02 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (5.8ms)
+  Rendered socials_needs/new.html.haml (7.4ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:13:42 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mCategory Load (72.5ms)[0m  [1mSELECT  "categories".* FROM "categories"  ORDER BY "categories"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.0ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2796ms (Views: 2722.4ms | ActiveRecord: 73.1ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:13:46 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (60.7ms)
+  Rendered socials_needs/new.html.haml (77.8ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:13:55 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (5.3ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1397ms (Views: 1396.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:13:58 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (16.9ms)
+  Rendered socials_needs/new.html.haml (33.9ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:14:13 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.1ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 248ms (Views: 247.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:14:15 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (6.0ms)
+  Rendered socials_needs/new.html.haml (8.8ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:14:47 -0300
+Processing by CategoriesController#index as JSON
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template categories/index, application/index with {:locale=>[:es], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml]}. Searched in:
+  * "/Users/eczerega/Documents/needy/v1/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (81.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-17 01:14:58 -0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.haml within layouts/application (13.8ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.5ms)
+  Rendered layouts/_navigation.html.haml (1.6ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 933ms (Views: 930.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 01:15:00 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (113.8ms)
+Completed 200 OK in 134ms (Views: 132.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/categoriesasdas" for 127.0.0.1 at 2016-03-17 01:15:05 -0300
+
+ActionController::RoutingError (No route matches [GET] "/categoriesasdas"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (193.7ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-03-17 01:15:25 -0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.haml within layouts/application (9.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.8ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 331ms (Views: 329.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 01:15:26 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (40.5ms)
+Completed 200 OK in 49ms (Views: 43.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:15:29 -0300
+Processing by CategoriesController#index as JSON
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template categories/index, application/index with {:locale=>[:es], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml]}. Searched in:
+  * "/Users/eczerega/Documents/needy/v1/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (74.9ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:16:22 -0300
+Processing by CategoriesController#index as JSON
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+RuntimeError (In order to use respond_with, first you need to declare the formats your controller responds to in the class level.):
+  app/controllers/categories_controller.rb:7:in `index'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.2ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:16:41 -0300
+Processing by CategoriesController#index as JSON
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  app/controllers/categories_controller.rb:7:in `index'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:17:17 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (76.1ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 2121ms (Views: 2116.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:17:20 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:17:21 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (30.4ms)
+  Rendered socials_needs/new.html.haml (46.3ms)
+Completed 200 OK in 122ms (Views: 64.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:19:29 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (6.1ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3094ms (Views: 3092.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:19:34 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (28.4ms)
+  Rendered socials_needs/new.html.haml (52.8ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/someUrl" for 127.0.0.1 at 2016-03-17 01:19:34 -0300
+
+ActionController::RoutingError (No route matches [GET] "/someUrl"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (21.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (235.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:20:02 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1945ms (Views: 1944.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:20:05 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (27.7ms)
+  Rendered socials_needs/new.html.haml (78.6ms)
+Completed 200 OK in 117ms (Views: 116.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:20:06 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:21:00 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.6ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3354ms (Views: 3353.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:21:05 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (27.9ms)
+  Rendered socials_needs/new.html.haml (45.0ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:21:06 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:21:26 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.3ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 1243ms (Views: 1242.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:21:29 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (4.0ms)
+  Rendered socials_needs/new.html.haml (6.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:21:29 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:21:57 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 1877ms (Views: 1876.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:22:00 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (39.6ms)
+  Rendered socials_needs/new.html.haml (57.4ms)
+Completed 200 OK in 74ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:22:01 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:23:04 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.5ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (1.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3210ms (Views: 3209.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:23:09 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (26.9ms)
+  Rendered socials_needs/new.html.haml (39.4ms)
+Completed 200 OK in 72ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:23:09 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:24:13 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.9ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3087ms (Views: 3086.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:24:18 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (23.6ms)
+  Rendered socials_needs/new.html.haml (47.2ms)
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:24:18 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:25:13 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.4ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+Completed 200 OK in 1453ms (Views: 1452.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:25:16 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (28.6ms)
+  Rendered socials_needs/new.html.haml (46.7ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:25:17 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:27:18 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.4ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 3024ms (Views: 3023.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:27:23 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (84.1ms)
+  Rendered socials_needs/new.html.haml (177.3ms)
+Completed 200 OK in 436ms (Views: 435.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:27:23 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:27:35 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.2ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1648ms (Views: 1647.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:27:38 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (29.5ms)
+  Rendered socials_needs/new.html.haml (47.6ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:27:39 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 01:29:15 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"Caceres", "user_id"=>"", "description"=>"una gran descripción", "latitude"=>"Tendremos mapa?", "longitude"=>"", "address"=>""}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", ""], ["name", "Caceres"], ["description", "una gran descripción"], ["latitude", "Tendremos mapa?"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 04:29:15.202116"], ["updated_at", "2016-03-17 04:29:15.202116"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_needs/13
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/socials_needs/13" for 127.0.0.1 at 2016-03-17 01:29:15 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"13"}
+  [1m[36mSocialsNeed Load (0.4ms)[0m  [1mSELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered socials_needs/show.html.haml (2.0ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:31:07 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (110.2ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2096ms (Views: 2090.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:31:11 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (27.1ms)
+  Rendered socials_needs/new.html.haml (44.1ms)
+Completed 200 OK in 133ms (Views: 95.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:31:11 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 38ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:31:57 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.5ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 308ms (Views: 307.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:31:59 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (5.8ms)
+  Rendered socials_needs/new.html.haml (7.6ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:31:59 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 01:32:17 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"Vanessa lacosa", "user_id"=>"", "description"=>"Totti", "latitude"=>"perrowaszaa", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", "Vanessa lacosa"], ["description", "Totti"], ["latitude", "perrowaszaa"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 04:32:17.730836"], ["updated_at", "2016-03-17 04:32:17.730836"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_needs/14
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/socials_needs/14" for 127.0.0.1 at 2016-03-17 01:32:17 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"14"}
+  [1m[35mSocialsNeed Load (0.3ms)[0m  SELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1  [["id", 14]]
+  Rendered socials_needs/show.html.haml (1.0ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 01:33:19 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"Vanessa lacosa", "user_id"=>"", "description"=>"Totti, me busca xk tiene agujero", "latitude"=>"perrowaszaa", "longitude"=>"", "address"=>""}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", "3"], ["name", "Vanessa lacosa"], ["description", "Totti, me busca xk tiene agujero"], ["latitude", "perrowaszaa"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 04:33:19.442588"], ["updated_at", "2016-03-17 04:33:19.442588"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_needs/15
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/socials_needs/15" for 127.0.0.1 at 2016-03-17 01:33:19 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"15"}
+  [1m[36mSocialsNeed Load (0.2ms)[0m  [1mSELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  Rendered socials_needs/show.html.haml (1.0ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/upload-target" for 127.0.0.1 at 2016-03-17 01:34:59 -0300
+
+ActionController::RoutingError (No route matches [POST] "/upload-target"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (23.7ms)
+
+
+Started POST "/upload-target" for 127.0.0.1 at 2016-03-17 01:36:19 -0300
+
+ActionController::RoutingError (No route matches [POST] "/upload-target"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (22.2ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 01:36:36 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (28.8ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2016-03-17 01:36:38 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:36:38 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.4ms)
+  Rendered layouts/_slidemenu.html.haml (4.3ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1292ms (Views: 1291.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 01:36:40 -0300
+Processing by HomeController#index as HTML
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (10.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2016-03-17 01:36:42 -0300
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml (11.7ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-03-17 01:36:50 -0300
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "email"=>"eczec1@gmail.com", "password"=>"[FILTERED]", "commit"=>"Ingresa"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "eczec1@gmail.com"]]
+  Rendered sessions/create.js.erb (0.8ms)
+Completed 200 OK in 664ms (Views: 9.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:36:53 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (7.0ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.7ms)
+Completed 200 OK in 528ms (Views: 526.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 01:36:54 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (25.4ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2016-03-17 01:37:26 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:37:26 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  Rendered layouts/_slidemenu.html.haml (1.4ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (0.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 337ms (Views: 336.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 01:37:27 -0300
+Processing by HomeController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (13.9ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2016-03-17 01:37:31 -0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.haml (54.7ms)
+  Rendered users/new.html.haml (74.9ms)
+Completed 200 OK in 129ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:37:34 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (13.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = '' LIMIT 1
+  [1m[36m (14.7ms)[0m  [1mROLLBACK[0m
+  Rendered users/create.js.erb (1.2ms)
+Completed 200 OK in 906ms (Views: 24.6ms | ActiveRecord: 29.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:37:42 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"sadsdad", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'sadsdad' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered users/create.js.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 2.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:37:46 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"sadsdad", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'sadsdad' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered users/create.js.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:37:52 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"sadsdad", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'sadsdad' LIMIT 1
+  [1m[36mSQL (30.4ms)[0m  [1mINSERT INTO "users" ("email", "slug", "password_salt", "password_hash", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sadsdad"], ["slug", "03-16"], ["password_salt", "$2a$10$FjKJl1.HM8kY7hbOt8nGfO"], ["password_hash", "$2a$10$FjKJl1.HM8kY7hbOt8nGfOExeevrDTuRxpnvbJg/aCmOsp0x4Kt6m"], ["created_at", "2016-03-17 04:37:52.923572"], ["updated_at", "2016-03-17 04:37:52.923572"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."id" != 19) AND "users"."slug" = $1 LIMIT 1  [["slug", "19"]]
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'sadsdad' AND "users"."id" != 19) LIMIT 1[0m
+  [1m[35mSQL (25.6ms)[0m  UPDATE "users" SET "slug" = $1, "password_salt" = $2, "password_hash" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["slug", "19"], ["password_salt", "$2a$10$8eezc5YAhgo.KCidPdYIoO"], ["password_hash", "$2a$10$8eezc5YAhgo.KCidPdYIoOG6eIefPe3R9nQtnICWChBNSynv3debC"], ["updated_at", "2016-03-17 04:37:53.094431"], ["id", 19]]
+  [1m[36m (317.0ms)[0m  [1mCOMMIT[0m
+  Rendered users/create.js.erb (0.1ms)
+Completed 200 OK in 639ms (Views: 5.4ms | ActiveRecord: 375.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:38:05 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"eczeregs", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eczeregs' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "slug", "password_salt", "password_hash", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "eczeregs"], ["slug", "03-16"], ["password_salt", "$2a$10$67UdFMY1EAr3HFU1DCTad."], ["password_hash", "$2a$10$67UdFMY1EAr3HFU1DCTad.cR7XqI4EwLZOFgF0Rr9x5IGiImCki3O"], ["created_at", "2016-03-17 04:38:05.892784"], ["updated_at", "2016-03-17 04:38:05.892784"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."id" != 20) AND "users"."slug" = $1 LIMIT 1  [["slug", "20"]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'eczeregs' AND "users"."id" != 20) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "slug" = $1, "password_salt" = $2, "password_hash" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["slug", "20"], ["password_salt", "$2a$10$BMyB2iMw6pYvoxVQpTDP4e"], ["password_hash", "$2a$10$BMyB2iMw6pYvoxVQpTDP4eBa.oSxetbcMjROwVT.ukPSjVWGB4ui6"], ["updated_at", "2016-03-17 04:38:05.983559"], ["id", 20]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered users/create.js.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 2.1ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:38:13 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"eczeregsa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eczeregsa' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "slug", "password_salt", "password_hash", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "eczeregsa"], ["slug", "03-16"], ["password_salt", "$2a$10$QC1Gdjv7Ejv0ietQzHDko."], ["password_hash", "$2a$10$QC1Gdjv7Ejv0ietQzHDko.f6YJjRhKQWYscaQ.ldsxcjogzv2sWma"], ["created_at", "2016-03-17 04:38:13.484654"], ["updated_at", "2016-03-17 04:38:13.484654"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."id" != 21) AND "users"."slug" = $1 LIMIT 1  [["slug", "21"]]
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'eczeregsa' AND "users"."id" != 21) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "slug" = $1, "password_salt" = $2, "password_hash" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["slug", "21"], ["password_salt", "$2a$10$BwK4jYBr/3xzNY6/LwaHMu"], ["password_hash", "$2a$10$BwK4jYBr/3xzNY6/LwaHMuB9vxk9z7s2EtI1lfsyMCahxAGXR8PxC"], ["updated_at", "2016-03-17 04:38:13.575800"], ["id", 21]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered users/create.js.erb (0.0ms)
+Completed 200 OK in 188ms (Views: 2.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:38:17 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"eczeregsa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eczeregsa' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered users/create.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:38:20 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"eczeregsa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eczeregsa' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered users/create.js.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:38:22 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"eczeregsa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eczeregsa' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered users/create.js.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:38:25 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"eczeregsa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eczeregsa' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered users/create.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-03-17 01:38:28 -0300
+Processing by UsersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ww82m5vIv1mCGtNsx/q8lq1gvShStG4y6ba6kCmpvROt5foqwmvN7EcqcJxd7PGj9eKRhgcHH+StdsacxMds8w==", "user"=>{"email"=>"eczeregsa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Regístrate"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1[0m  [["slug", "03-16"]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'eczeregsa' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered users/create.js.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2016-03-17 01:38:33 -0300
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml (2.1ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-03-17 01:38:35 -0300
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "email"=>"vicho@yo.cl", "password"=>"[FILTERED]", "commit"=>"Ingresa"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "vicho@yo.cl"]]
+  Rendered sessions/create.js.erb (0.1ms)
+Completed 200 OK in 1303ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-03-17 01:38:55 -0300
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "email"=>"eczec1@gmail.com", "password"=>"[FILTERED]", "commit"=>"Ingresa"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "eczec1@gmail.com"]]
+  Rendered sessions/create.js.erb (0.1ms)
+Completed 200 OK in 864ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-03-17 01:39:03 -0300
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "email"=>"eczec1@gmail.com", "password"=>"[FILTERED]", "commit"=>"Ingresa"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "eczec1@gmail.com"]]
+  Rendered sessions/create.js.erb (0.2ms)
+Completed 200 OK in 1004ms (Views: 2.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:39:06 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.6ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+Completed 200 OK in 1547ms (Views: 1546.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 01:39:23 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 217ms (Views: 216.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 01:39:24 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (32.3ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 01:39:26 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (28.5ms)
+  Rendered socials_needs/new.html.haml (45.6ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 01:39:26 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/upload-target" for 127.0.0.1 at 2016-03-17 01:39:36 -0300
+
+ActionController::RoutingError (No route matches [POST] "/upload-target"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (35.9ms)

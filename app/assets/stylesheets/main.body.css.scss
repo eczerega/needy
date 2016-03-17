@@ -29,7 +29,7 @@ input[type=submit] {
 .sheet
 {
   background-color: white;
-  padding: 4px;
+  padding: 10px 4px 0px 4px;
   margin: 10px 0px 5px 0px!important;
   width: 100%;
 }
@@ -502,6 +502,14 @@ h1, h2, h3, h4, h5, h6
   background-color: black;
 }
 
+a.md-button.md-default-theme.md-primary.md-raised, a.md-button.md-primary.md-raised, a.md-button.md-default-theme.md-primary.md-fab, a.md-button.md-primary.md-fab, .md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary.md-raised, .md-button.md-default-theme.md-primary.md-fab, .md-button.md-primary.md-fab {
+    color: white;
+    background-color: rgb(76,175,80);
+}
+
+a.md-button.md-default-theme.md-primary, a.md-button.md-primary, .md-button.md-default-theme.md-primary, .md-button.md-primary {
+     color: white !important;
+}
 
 
 

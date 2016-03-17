@@ -21,12 +21,16 @@ class SocialsNeedsController < ApplicationController
 
   # POST /socials_needs
   def create
-    @socials_need = SocialsNeed.new(socials_need_params)
-
-    if @socials_need.save
-      redirect_to @socials_need, notice: 'Socials need was successfully created.'
+    if current_user != nil
+      @socials_need = SocialsNeed.new(socials_need_params)
+      @socials_need.user_id = current_user.id
+      if @socials_need.save
+        redirect_to @socials_need, notice: 'Socials need was successfully created.'
+      else
+        render :new
+      end
     else
-      render :new
+      redirect_to root_path
     end
   end
 
