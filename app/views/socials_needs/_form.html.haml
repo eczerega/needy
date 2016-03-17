@@ -1,6 +1,6 @@
 :javascript
 
-  $.getScript('https://rawgit.com/enyo/dropzone/master/dist/dropzone.js',function(){
+  $.getScript('<%= asset_path "dropzone.js" %>',function(){
   });
 
   $(document).ready(function() {});
@@ -70,7 +70,36 @@
 
 :javascript
     $( document ).ajaxComplete(function() {
-      Dropzone.discover();
+      //Dropzone.discover();
+
+
+       var objDropZone;
+       Dropzone.autoDiscover = false;
+       $(".dropzone").dropzone({
+                acceptedFiles: '.jpeg,.jpg,.png',
+                maxFilesize: 20, //In MB
+                maxFiles: 6,
+                addRemoveLinks: true,
+                paramName: "image[attachment]",
+                autoProcessQueue: false,
+                headers: {
+              "X-CSRF-Token": $('[name=_token').val()
+            },
+                init: function () {
+                    objDropZone = this;
+
+                    this.on("success", function (file, message) {
+                        console.log('file uploaded successfully')
+                    });
+
+                    this.on("error", function (file, message) {
+                        alert('erroe');
+                        var _ref;
+                        return //(_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+                    });
+                 }
+            });
+
     });
     $("#sender").click(function()
     {
