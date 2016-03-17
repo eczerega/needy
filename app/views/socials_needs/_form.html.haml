@@ -1,82 +1,66 @@
+:javascript
 
-%script{:src => "https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"}
-%link{:href => "https://rawgit.com/enyo/dropzone/master/dist/dropzone.css", :rel => "stylesheet"}/
+  $.getScript('https://rawgit.com/enyo/dropzone/master/dist/dropzone.js',function(){
+  });
+
+  $(document).ready(function() {});
+
+
 .main-slider-need{} 
-  = form_for @socials_need, :html => {remote: true }  do |f|
-    - if @socials_need.errors.any?
-      #error_explanation
-        %h2= "#{pluralize(@socials_need.errors.count, "error")} prohibited this socials_need from being saved:"
-        %ul
-          - @socials_need.errors.full_messages.each do |msg|
-            %li= msg
+  .row
+    .col-md-6
+      .row
+      %form.sheet.dropzone{:action => "/upload-target"}
+        .dz-message{"data-dz-message" => "", :style => "color: #bec3c6;"}
+          %span
+            = image_tag 'image_icon.png'
+          %br/
+          Arrastra o haz click para agregar imágenes
+      .row.sheet
+        %md-input-container.md-block{"flex-gt-sm" => ""}
+          %label Link video youtube
+          %input{}    
+      .row{:class=>"floating", :style=>"margin-top: 40px!important;"}
+        .col-md-3
+          %span
+            = image_tag 'needy_mascota.png'   
+        .col-md-1{}
+        .col-md-6
+          %p.speech La necesidad sera revisada por nuestro equipo lo antes posible!
+        .col-md-2
+    .col-md-6
 
-
-      
-    .row
-      .col-md-1
-      .col-md-5
-      .col-md-6
-        %div{:style=>"background-color: white; padding:60px 30px; 0px; 30px; width: 100%; "}
+      = form_for @socials_need, :html => {remote: true }  do |f|
+        - if @socials_need.errors.any?
+          #error_explanation
+            %h2= "#{pluralize(@socials_need.errors.count, "error")} prohibited this socials_need from being saved:"
+            %ul
+              - @socials_need.errors.full_messages.each do |msg|
+                %li= msg      
+        .row.sheet
           %md-input-container.md-block{"flex-gt-sm" => ""}
             %label Título de la necesidad
             %input{"ng-model" => "user.firstName"}
+        .row.sheet  
           %md-input-container.md-block
             %label Descriptión
             %textarea{"md-maxlength" => "250", "md-select-on-focus" => "", "ng-model" => "user.biography", :rows => "10", :style =>"height: 210px"} 
+        .row.sheet
           %md-input-container.md-block{"flex-gt-sm" => ""}
             %label Ubicación
             %input{"ng-model" => "user.firstName"}  
 
-    .field
-      = f.text_field :name
-
-    .field
-      = f.label :user_id
-      = f.text_field :user_id
-
-    .field
-      = f.label :description
-      = f.text_field :description
-    .field
-      = f.label :latitude
-      = f.text_field :latitude
-    .field
-      = f.label :longitude
-      = f.text_field :longitude
-    .field
-      = f.label :address
-      = f.text_field :address
-    .actions
-      = f.submit 'Save'
-.row
-  %form.dropzone#file-dropzone{:action=>''}
-
+        .field
+          = f.hidden_field :name
+          = f.hidden_field :user_id
+          = f.hidden_field :description
+          = f.hidden_field :latitude
+          = f.hidden_field :longitude
+          = f.hidden_field :address
+        %md-button.md-raised.md-primary.landing-slider-buttons{:style=>"width: 100%"} 
+          = f.submit 'Save'
 :javascript
-
     $( document ).ajaxComplete(function() {
-      $( ".dropzone" ).submit();
+      Dropzone.discover();
     });
-    $.getScript('http://cdnjs.cloudflare.com/ajax/libs/dropzone/3.8.4/dropzone.min.js',function(){
-    // instantiate the uploader
-    $('#file-dropzone').dropzone({ 
-      url: "/upload",
-      maxFilesize: 100,
-      paramName: "uploadfile",
-      maxThumbnailFilesize: 5,
-      init: function() {
-        
-        this.on('success', function(file, json) {
-        });
-        
-        this.on('addedfile', function(file) {
-          
-        });
-        
-        this.on('drop', function(file) {
-          alert('file');
-        }); 
-      }
-    });
-  });
 
-  $(document).ready(function() {});
