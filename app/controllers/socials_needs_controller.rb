@@ -13,6 +13,7 @@ class SocialsNeedsController < ApplicationController
   # GET /socials_needs/new
   def new
     @socials_need = SocialsNeed.new
+    @socials_need_image = SocialsNeedImage.new
   end
 
   # GET /socials_needs/1/edit
@@ -24,8 +25,18 @@ class SocialsNeedsController < ApplicationController
     if current_user != nil
       @socials_need = SocialsNeed.new(socials_need_params)
       @socials_need.user_id = current_user.id
+      @success="ASDASDAS"
+      puts params.inspect
       if @socials_need.save
-        redirect_to @socials_need, notice: 'Socials need was successfully created.'
+        @success = true
+            respond_to do |format|
+              format.html {}
+              format.json {}
+              format.js
+            end
+        #redirect_to @socials_need, notice: 'Socials need was successfully created.'
+     
+
       else
         render :new
       end
@@ -59,4 +70,5 @@ class SocialsNeedsController < ApplicationController
     def socials_need_params
       params.require(:socials_need).permit(:user_id, :integer, :name, :string, :description, :string, :latitude, :integer, :longitude, :integer, :address, :string)
     end
+
 end

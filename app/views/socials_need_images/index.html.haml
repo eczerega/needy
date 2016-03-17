@@ -13,7 +13,7 @@
     - @socials_need_images.each do |socials_need_image|
       %tr
         %td= socials_need_image.socials_need_id
-        %td= socials_need_image.image_url
+        %td= socials_need_image.image_content
         %td= link_to 'Show', socials_need_image
         %td= link_to 'Edit', edit_socials_need_image_path(socials_need_image)
         %td= link_to 'Destroy', socials_need_image, :method => :delete, :data => { :confirm => 'Are you sure?' }

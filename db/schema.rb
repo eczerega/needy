@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160316144110) do
+ActiveRecord::Schema.define(version: 20160317145544) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -187,8 +187,12 @@ ActiveRecord::Schema.define(version: 20160316144110) do
   create_table "socials_need_images", force: :cascade do |t|
     t.integer  "socials_need_id"
     t.string   "image_url"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "image_content_file_name"
+    t.string   "image_content_content_type"
+    t.integer  "image_content_file_size"
+    t.datetime "image_content_updated_at"
   end
 
   create_table "socials_needs", force: :cascade do |t|
@@ -200,8 +204,12 @@ ActiveRecord::Schema.define(version: 20160316144110) do
     t.string   "latitude"
     t.string   "longitude"
     t.string   "address"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "image_content_file_name"
+    t.string   "image_content_content_type"
+    t.integer  "image_content_file_size"
+    t.datetime "image_content_updated_at"
   end
 
   create_table "solution_media", force: :cascade do |t|

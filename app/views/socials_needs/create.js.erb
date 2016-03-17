@@ -1,0 +1,15 @@
+<% if @success==true %>
+	//swal
+	//(
+	//	{
+	//		title: "Su necesidad será revisada para ser aprobada.",
+	//		type: "success",
+	//		timer: 3000,
+	//		showConfirmButton: false
+	//	}
+	//);
+	$(".dropzone").submit();
+
+<% else %>
+	sweetAlert("Oops...", "Hay errores en los datos ingresados!", "error");
+<% end %>

@@ -72976,3 +72976,2647 @@ Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 11:20:45 -0300
 Processing by CategoriesController#index as JSON
   [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
 Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddImagesToSocialNeeds (20160317145426)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (143.9ms)[0m  [1mALTER TABLE "socials_needs" ADD "image_content_file_name" character varying[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "socials_needs" ADD "image_content_content_type" character varying
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "socials_needs" ADD "image_content_file_size" integer[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "socials_needs" ADD "image_content_updated_at" timestamp
+  [1m[36mSQL (30.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160317145426"]]
+  [1m[35m (58.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'api_keys'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'blacklists'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'business_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'business_need_categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'business_needs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'challenge_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'challenge_solutions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'challenge_sponsors'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'challenges'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'commnet_likes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'friendly_id_slugs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'social_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'social_media_images'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'social_need_categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'social_need_likes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'socials_need_images'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'socials_needs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'solution_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'solutions_likes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'sponsors'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'tokens'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (6.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'town_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'town_need_categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'town_needs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'user_oauths'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddImagesToSocialNeedsImages (20160317145544)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (1.4ms)[0m  [1mALTER TABLE "socials_need_images" ADD "image_content_file_name" character varying[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "socials_need_images" ADD "image_content_content_type" character varying
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "socials_need_images" ADD "image_content_file_size" integer[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "socials_need_images" ADD "image_content_updated_at" timestamp
+  [1m[36mSQL (6.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160317145544"]]
+  [1m[35m (15.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'api_keys'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'blacklists'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'business_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'business_need_categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'business_needs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'challenge_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'challenge_solutions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'challenge_sponsors'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'challenges'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'commnet_likes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'friendly_id_slugs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'social_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'social_media_images'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'social_need_categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'social_need_likes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'socials_need_images'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'socials_needs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'solution_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'solutions_likes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'sponsors'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'tokens'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'town_media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'town_need_categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'town_needs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'user_oauths'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/asdasd" for 127.0.0.1 at 2016-03-17 11:59:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/asdasd"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (18.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (57.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (270.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:00:00 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (2.9ms)
+  [1m[35mUser Load (29.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (564.6ms)
+  Rendered layouts/_navigation.html.haml (4.9ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (2.7ms)
+  Rendered layouts/_footer.html.haml (6.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 7266ms (Views: 6583.0ms | ActiveRecord: 32.4ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:00:07 -0300
+Processing by SocialsNeedImagesController#index as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `before_img_url_post_process' for #<Class:0x007fb3524bbec0>):
+  app/models/socials_need_image.rb:11:in `<class:SocialsNeedImage>'
+  app/models/socials_need_image.rb:1:in `<top (required)>'
+  app/controllers/socials_need_images_controller.rb:6:in `index'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.8ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:02:49 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[36mSocialsNeedImage Load (44.7ms)[0m  [1mSELECT "socials_need_images".* FROM "socials_need_images"[0m
+  Rendered socials_need_images/index.html.haml within layouts/application (49.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (76.6ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 831ms (Views: 754.1ms | ActiveRecord: 48.4ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 12:02:52 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (20.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (89.2ms)
+Completed 200 OK in 133ms (Views: 90.8ms | ActiveRecord: 22.2ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:03:01 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (815.0ms)
+  Rendered socials_needs/new.html.haml (823.0ms)
+Completed 200 OK in 911ms (Views: 871.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:03:03 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 12:03:05 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (24.4ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:03:08 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[35mSocialsNeedImage Load (0.4ms)[0m  SELECT "socials_need_images".* FROM "socials_need_images"
+  Rendered socials_need_images/index.html.haml within layouts/application (1.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 384ms (Views: 382.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 12:03:08 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (32.7ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:03:44 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[35mSocialsNeedImage Load (0.4ms)[0m  SELECT "socials_need_images".* FROM "socials_need_images"
+  Rendered socials_need_images/index.html.haml (4.9ms)
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/socials_need_images/new" for 127.0.0.1 at 2016-03-17 12:03:47 -0300
+Processing by SocialsNeedImagesController#new as HTML
+  Rendered socials_need_images/_form.html.haml (34.2ms)
+  Rendered socials_need_images/new.html.haml (50.0ms)
+Completed 200 OK in 103ms (Views: 93.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:03:55 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kcf7N17ucPn2P+XqqXXxBC5CFc88lzMV6IYy9gPWA1RnLTeGB00CTDMPRhozY7wxdsA5YWkkQsOsRk767rjStA==", "socials_need_image"=>{"socials_need_id"=>"2", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fb34f75cec0 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-26824-aohm79.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+Unpermitted parameter: image_content
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (8.7ms)[0m  INSERT INTO "socials_need_images" ("socials_need_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["socials_need_id", 2], ["created_at", "2016-03-17 15:03:55.966583"], ["updated_at", "2016-03-17 15:03:55.966583"]]
+  [1m[36m (30.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_need_images/1
+Completed 302 Found in 46ms (ActiveRecord: 39.3ms)
+
+
+Started GET "/socials_need_images/1" for 127.0.0.1 at 2016-03-17 12:03:56 -0300
+Processing by SocialsNeedImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSocialsNeedImage Load (0.3ms)[0m  SELECT  "socials_need_images".* FROM "socials_need_images" WHERE "socials_need_images"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered socials_need_images/show.html.haml (4.6ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:03:58 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[36mSocialsNeedImage Load (0.3ms)[0m  [1mSELECT "socials_need_images".* FROM "socials_need_images"[0m
+  Rendered socials_need_images/index.html.haml (1.6ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_need_images/new" for 127.0.0.1 at 2016-03-17 12:04:39 -0300
+Processing by SocialsNeedImagesController#new as HTML
+  Rendered socials_need_images/_form.html.haml (2.0ms)
+  Rendered socials_need_images/new.html.haml (3.6ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:04:47 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8WmIWY6Nci2Ltjme6cIyRzH0YSi2KVOb2mFqV/zS+GMHg0To1y4AmE6Gmm5z1H9yaXZNhuOaIk2eoRZbEbwpgw==", "socials_need_image"=>{"socials_need_id"=>"4", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fb350353648 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-26824-8rcwqq.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+Unpermitted parameter: image_content
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "socials_need_images" ("socials_need_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["socials_need_id", 4], ["created_at", "2016-03-17 15:04:47.245993"], ["updated_at", "2016-03-17 15:04:47.245993"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_need_images/2
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/socials_need_images/2" for 127.0.0.1 at 2016-03-17 12:04:47 -0300
+Processing by SocialsNeedImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSocialsNeedImage Load (0.4ms)[0m  [1mSELECT  "socials_need_images".* FROM "socials_need_images" WHERE "socials_need_images"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered socials_need_images/show.html.haml (0.8ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_need_images/new" for 127.0.0.1 at 2016-03-17 12:05:12 -0300
+Processing by SocialsNeedImagesController#new as HTML
+  Rendered socials_need_images/_form.html.haml (2.2ms)
+  Rendered socials_need_images/new.html.haml (3.7ms)
+Completed 200 OK in 20ms (Views: 5.5ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:05:19 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x27K37vwTHscEHx+lndSy/XMapVBUk/3Pq1aB9xzkU4xhAZu4lM+ztkg344MYR/+rU5GOxThPiF6bSYLMR1Arg==", "socials_need_image"=>{"socials_need_id"=>"4", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fb3526cbc60 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-26824-siss5q.jpeg>, @original_filename="perfil.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"perfil.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save"}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-26824-1o3sucw.jpeg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-26824-8nn90t.jpeg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-26824-8nn90t.jpeg[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-26824-8nn90t.jpeg[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/39823deb9fe57e99ec408fa729570d4d20160317-26824-2lb6ng'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-26824-1agr7tq.jpeg'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "socials_need_images" ("socials_need_id", "image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["socials_need_id", 4], ["image_content_file_name", "perfil.jpeg"], ["image_content_content_type", "image/jpeg"], ["image_content_file_size", 10752], ["image_content_updated_at", "2016-03-17 15:05:19.596304"], ["created_at", "2016-03-17 15:05:20.684804"], ["updated_at", "2016-03-17 15:05:20.684804"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/003/original/perfil.jpeg
+  [1m[35m (31.8ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 1129ms (ActiveRecord: 32.2ms)
+
+NameError (uninitialized constant Paperclip::Storage::S3::AWS):
+  app/controllers/socials_need_images_controller.rb:27:in `create'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.0ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:09:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[35mSocialsNeedImage Load (0.9ms)[0m  SELECT "socials_need_images".* FROM "socials_need_images"
+  Rendered socials_need_images/index.html.haml (21.8ms)
+Completed 200 OK in 723ms (Views: 83.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/socials_need_images/new" for 127.0.0.1 at 2016-03-17 12:09:53 -0300
+Processing by SocialsNeedImagesController#new as HTML
+  Rendered socials_need_images/_form.html.haml (630.5ms)
+  Rendered socials_need_images/new.html.haml (679.5ms)
+Completed 200 OK in 702ms (Views: 701.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:10:01 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HeKI3i3ctjUuk/CbnNpvNi8JqW6qttwnWDUZuB4uZm3rCERvdH/EgOujU2sGzCIDd4uFwP8FrfEc9WW080C3jQ==", "socials_need_image"=>{"socials_need_id"=>"5", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbddd9f5e78 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-1ehsop0.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-snqygv.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1ao5w6v.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1ao5w6v.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1ao5w6v.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/97cd7a49c24b618b8ee7c684980e928720160317-27317-js7kfn'
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-ogxigg.png'
+  [1m[35mSQL (15.3ms)[0m  INSERT INTO "socials_need_images" ("socials_need_id", "image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["socials_need_id", 5], ["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:10:01.250279"], ["created_at", "2016-03-17 15:10:02.486687"], ["updated_at", "2016-03-17 15:10:02.486687"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/004/original/garcia.png
+[AWS S3 301 2.272495 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needy",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/004/original/garcia.png") AWS::S3::Errors::PermanentRedirect The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.
+
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 3977ms (ActiveRecord: 16.2ms)
+
+AWS::S3::Errors::PermanentRedirect (The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.):
+  app/controllers/socials_need_images_controller.rb:27:in `create'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.5ms)
+
+
+Started GET "/asdasd" for 127.0.0.1 at 2016-03-17 12:12:52 -0300
+
+ActionController::RoutingError (No route matches [GET] "/asdasd"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (218.4ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:12:57 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HeKI3i3ctjUuk/CbnNpvNi8JqW6qttwnWDUZuB4uZm3rCERvdH/EgOujU2sGzCIDd4uFwP8FrfEc9WW080C3jQ==", "socials_need_image"=>{"socials_need_id"=>"5", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde0ebf078 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-9r7dv0.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-tr6e88.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-dxv33g.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-dxv33g.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-dxv33g.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/138f29ee665551611706bf37946e427f20160317-27317-1sx1x3i'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1qe9unn.png'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "socials_need_images" ("socials_need_id", "image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["socials_need_id", 5], ["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:12:57.332695"], ["created_at", "2016-03-17 15:12:57.903373"], ["updated_at", "2016-03-17 15:12:57.903373"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/005/original/garcia.png
+[AWS S3 200 6.989432 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/005/original/garcia.png")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/005/imagenG/garcia.png
+[AWS S3 200 2.608964 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>45407,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 138f29ee665551611706bf37946e427f20160317-27317-1sx1x3i,:key=>"socials_need_images/image_contents/000/000/005/imagenG/garcia.png")  
+
+  [1m[35m (1.9ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_need_images/5
+Completed 302 Found in 10213ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/socials_need_images/5" for 127.0.0.1 at 2016-03-17 12:13:07 -0300
+Processing by SocialsNeedImagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSocialsNeedImage Load (0.3ms)[0m  [1mSELECT  "socials_need_images".* FROM "socials_need_images" WHERE "socials_need_images"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered socials_need_images/show.html.haml (3.6ms)
+Completed 200 OK in 80ms (Views: 38.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:13:09 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[35mSocialsNeedImage Load (0.3ms)[0m  SELECT "socials_need_images".* FROM "socials_need_images"
+  Rendered socials_need_images/index.html.haml (2.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_need_images/new" for 127.0.0.1 at 2016-03-17 12:13:10 -0300
+Processing by SocialsNeedImagesController#new as HTML
+  Rendered socials_need_images/_form.html.haml (2.9ms)
+  Rendered socials_need_images/new.html.haml (44.3ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:13:18 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FAmcjrtmGXYTAz48Q38FL/opGP6ERZcK1GuCgHflilji41A/4sVrw9YznczZaUgaoqs0UNH25tyQq/6MmotbuA==", "socials_need_image"=>{"socials_need_id"=>"6", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde342ad08 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-1axipkv.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-tcuf9w.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1b8qnyk.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1b8qnyk.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1b8qnyk.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/e667827e0c1580fac206a82caabf158520160317-27317-1jvq9pp'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-10vchtv.png'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "socials_need_images" ("socials_need_id", "image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["socials_need_id", 6], ["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:13:18.207492"], ["created_at", "2016-03-17 15:13:18.318719"], ["updated_at", "2016-03-17 15:13:18.318719"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/006/original/garcia.png
+[AWS S3 200 5.900922 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/006/original/garcia.png")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/006/imagenG/garcia.png
+[AWS S3 200 0.839561 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>45407,:content_type=>"image/png",:data=>Paperclip::FileAdapter: e667827e0c1580fac206a82caabf158520160317-27317-1jvq9pp,:key=>"socials_need_images/image_contents/000/000/006/imagenG/garcia.png")  
+
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_need_images/6
+Completed 302 Found in 6871ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/socials_need_images/6" for 127.0.0.1 at 2016-03-17 12:13:25 -0300
+Processing by SocialsNeedImagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mSocialsNeedImage Load (0.3ms)[0m  SELECT  "socials_need_images".* FROM "socials_need_images" WHERE "socials_need_images"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered socials_need_images/show.html.haml (0.9ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:13:27 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[36mSocialsNeedImage Load (0.3ms)[0m  [1mSELECT "socials_need_images".* FROM "socials_need_images"[0m
+  Rendered socials_need_images/index.html.haml (2.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:15:18 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[35mSocialsNeedImage Load (0.4ms)[0m  SELECT "socials_need_images".* FROM "socials_need_images"
+  Rendered socials_need_images/index.html.haml (22.9ms)
+Completed 200 OK in 46ms (Views: 29.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:18:11 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (3.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (465.9ms)
+  Rendered layouts/_navigation.html.haml (8.0ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (1.7ms)
+  Rendered layouts/_footer.html.haml (2.6ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 4636ms (Views: 4633.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 12:18:17 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (54.2ms)
+Completed 200 OK in 126ms (Views: 97.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:18:18 -0300
+
+SyntaxError (/Users/eczerega/Documents/needy/v1/app/controllers/socials_needs_controller.rb:27: syntax error, unexpected tIVAR, expecting '('
+      @success=false
+              ^):
+  app/controllers/socials_needs_controller.rb:27: syntax error, unexpected tIVAR, expecting '('
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:18:39 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (90.2ms)
+  Rendered socials_needs/new.html.haml (100.7ms)
+Completed 200 OK in 186ms (Views: 152.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:19:17 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (75.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 924ms (Views: 921.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:19:19 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (42.7ms)
+  Rendered socials_needs/new.html.haml (56.0ms)
+Completed 200 OK in 93ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:19:20 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 50ms (Views: 0.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 12:19:35 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (23.2ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:19:38 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (4.1ms)
+  Rendered socials_needs/new.html.haml (5.7ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:19:38 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (3.9ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 12:19:51 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (71.0ms)
+Completed 200 OK in 91ms (Views: 84.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:19:53 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (19.6ms)
+  Rendered socials_needs/new.html.haml (33.6ms)
+Completed 200 OK in 99ms (Views: 58.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:19:53 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:20:13 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"", "user_id"=>"", "description"=>"", "latitude"=>"", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (20.3ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", ""], ["description", ""], ["latitude", ""], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:20:13.021903"], ["updated_at", "2016-03-17 15:20:13.021903"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_needs/16
+Completed 302 Found in 30ms (ActiveRecord: 21.4ms)
+
+
+Started GET "/socials_needs/16" for 127.0.0.1 at 2016-03-17 12:20:13 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"16"}
+  [1m[35mSocialsNeed Load (0.4ms)[0m  SELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1  [["id", 16]]
+  Rendered socials_needs/show.html.haml (8.4ms)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:20:27 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"peo", "user_id"=>"", "description"=>"asdasd", "latitude"=>"asd", "longitude"=>"", "address"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", "3"], ["name", "peo"], ["description", "asdasd"], ["latitude", "asd"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:20:27.485144"], ["updated_at", "2016-03-17 15:20:27.485144"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_needs/17
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/socials_needs/17" for 127.0.0.1 at 2016-03-17 12:20:27 -0300
+Processing by SocialsNeedsController#show as JS
+  Parameters: {"id"=>"17"}
+  [1m[36mSocialsNeed Load (0.4ms)[0m  [1mSELECT  "socials_needs".* FROM "socials_needs" WHERE "socials_needs"."id" = $1 LIMIT 1[0m  [["id", 17]]
+  Rendered socials_needs/show.html.haml (1.3ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:22:16 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (76.6ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2108ms (Views: 2105.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:22:21 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (61.2ms)
+  Rendered socials_needs/new.html.haml (68.6ms)
+Completed 200 OK in 108ms (Views: 79.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:22:21 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 44ms (Views: 0.3ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:22:36 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"", "user_id"=>"", "description"=>"", "latitude"=>"", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", ""], ["description", ""], ["latitude", ""], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:22:36.037440"], ["updated_at", "2016-03-17 15:22:36.037440"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 1.6ms)
+
+ActionView::MissingTemplate (Missing template socials_needs/create, application/create with {:locale=>[:es], :formats=>[:js, :html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml]}. Searched in:
+  * "/Users/eczerega/Documents/needy/v1/app/views"
+):
+  app/controllers/socials_needs_controller.rb:31:in `create'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:23:29 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 2020ms (Views: 2019.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:23:33 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (133.0ms)
+  Rendered socials_needs/new.html.haml (222.5ms)
+Completed 200 OK in 403ms (Views: 402.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:23:34 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:23:40 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"", "user_id"=>"", "description"=>"", "latitude"=>"", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", ""], ["description", ""], ["latitude", ""], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:23:40.198646"], ["updated_at", "2016-03-17 15:23:40.198646"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered socials_needs/create.js.erb (0.7ms)
+Completed 200 OK in 135ms (Views: 42.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 12:27:51 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.haml (23.2ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:27:53 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (3.8ms)
+  Rendered socials_needs/new.html.haml (5.8ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:27:53 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (1.6ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-03-17 12:29:06 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.haml (14.5ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:29:07 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (5.3ms)
+  Rendered socials_needs/new.html.haml (7.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:29:07 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (1.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:29:24 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"Peo malio", "user_id"=>"", "description"=>"mi categoria", "latitude"=>"santiago", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", "Peo malio"], ["description", "mi categoria"], ["latitude", "santiago"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:29:24.514962"], ["updated_at", "2016-03-17 15:29:24.514962"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered socials_needs/create.js.erb (0.5ms)
+Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:29:45 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"Peo malio", "user_id"=>"", "description"=>"mi categoria", "latitude"=>"santiago", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", "Peo malio"], ["description", "mi categoria"], ["latitude", "santiago"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:29:45.359043"], ["updated_at", "2016-03-17 15:29:45.359043"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered socials_needs/create.js.erb (0.5ms)
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:31:57 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 358ms (Views: 357.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:31:58 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (5.5ms)
+  Rendered socials_needs/new.html.haml (7.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:31:59 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:32:08 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"pilin", "user_id"=>"", "description"=>"asdasd", "latitude"=>"asdasd", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", "pilin"], ["description", "asdasd"], ["latitude", "asdasd"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:32:08.130134"], ["updated_at", "2016-03-17 15:32:08.130134"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered socials_needs/create.js.erb (0.5ms)
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/upload-target" for 127.0.0.1 at 2016-03-17 12:32:08 -0300
+
+ActionController::RoutingError (No route matches [GET] "/upload-target"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (20.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (230.6ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:32:12 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:32:49 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[36mSocialsNeedImage Load (0.6ms)[0m  [1mSELECT "socials_need_images".* FROM "socials_need_images"[0m
+  Rendered socials_need_images/index.html.haml (19.6ms)
+Completed 200 OK in 83ms (Views: 48.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/socials_need_images/new" for 127.0.0.1 at 2016-03-17 12:32:52 -0300
+Processing by SocialsNeedImagesController#new as HTML
+  Rendered socials_need_images/_form.html.haml (4.1ms)
+  Rendered socials_need_images/new.html.haml (20.2ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:33:39 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"pilion", "user_id"=>"", "description"=>"SISIS", "latitude"=>"asdasd", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", "pilion"], ["description", "SISIS"], ["latitude", "asdasd"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:33:39.645721"], ["updated_at", "2016-03-17 15:33:39.645721"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  Rendered socials_needs/create.js.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/upload-target" for 127.0.0.1 at 2016-03-17 12:33:39 -0300
+
+ActionController::RoutingError (No route matches [GET] "/upload-target"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (19.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (217.2ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:33:43 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:33:45 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.6ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 276ms (Views: 275.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:33:46 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (32.7ms)
+  Rendered socials_needs/new.html.haml (34.8ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:33:46 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:33:51 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"kipasa", "user_id"=>"", "description"=>"asd", "latitude"=>"asd", "longitude"=>"", "address"=>""}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", "3"], ["name", "kipasa"], ["description", "asd"], ["latitude", "asd"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:33:51.192879"], ["updated_at", "2016-03-17 15:33:51.192879"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered socials_needs/create.js.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 2.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:33:51 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[36mSocialsNeedImage Load (0.4ms)[0m  [1mSELECT "socials_need_images".* FROM "socials_need_images"[0m
+  Rendered socials_need_images/index.html.haml (6.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:34:02 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:34:38 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+xttsRabiDU5jceyQXrnm8c/y+vzytMPFbUgCMuc2rVBqEHnfkclRHWlO5TE6arN57Tgfp8Wpp4lqiMzkCiig==", "socials_need_image"=>{"socials_need_id"=>"2", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde2e79828 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-10dvodj.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1ytms2w.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-8twoo2.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-8twoo2.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-8twoo2.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bf7a958866afcfae1d0793aedea5122b20160317-27317-1flq9y0'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1mt9pz5.png'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "socials_need_images" ("socials_need_id", "image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["socials_need_id", 2], ["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:34:38.615508"], ["created_at", "2016-03-17 15:34:39.117609"], ["updated_at", "2016-03-17 15:34:39.117609"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/007/original/garcia.png
+[AWS S3 200 7.066101 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/007/original/garcia.png")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/007/imagenG/garcia.png
+[AWS S3 200 2.960779 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>45407,:content_type=>"image/png",:data=>Paperclip::FileAdapter: bf7a958866afcfae1d0793aedea5122b20160317-27317-1flq9y0,:key=>"socials_need_images/image_contents/000/000/007/imagenG/garcia.png")  
+
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/socials_need_images/7
+Completed 302 Found in 10552ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/socials_need_images/7" for 127.0.0.1 at 2016-03-17 12:34:49 -0300
+Processing by SocialsNeedImagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSocialsNeedImage Load (0.3ms)[0m  SELECT  "socials_need_images".* FROM "socials_need_images" WHERE "socials_need_images"."id" = $1 LIMIT 1  [["id", 7]]
+  Rendered socials_need_images/show.html.haml (2.2ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:37:17 -0300
+Processing by SocialsNeedImagesController#index as HTML
+  [1m[36mSocialsNeedImage Load (0.4ms)[0m  [1mSELECT "socials_need_images".* FROM "socials_need_images"[0m
+  Rendered socials_need_images/index.html.haml (16.8ms)
+Completed 200 OK in 44ms (Views: 23.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/socials_need_images/new" for 127.0.0.1 at 2016-03-17 12:37:20 -0300
+Processing by SocialsNeedImagesController#new as HTML
+  Rendered socials_need_images/_form.html.haml (3.2ms)
+  Rendered socials_need_images/new.html.haml (18.8ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:37:27 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jUFGgVY+CY2wnyxfipbaAQXvaTKRXwDv1ljV22llALJ7q4owD517OHWvj68QgJc0XW1FnMTscTmSmKnXhAvRUg==", "socials_need_image"=>{"socials_need_id"=>"2", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde5304288 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-wz9z0p.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-ml7wdd.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-6is93h.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-6is93h.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-6is93h.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/e4780b23f3f3a200f5ccad6234082bc120160317-27317-1ukpwze'
+Completed 500 Internal Server Error in 777ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/socials_need_images_controller.rb:27:in `[]'
+  app/controllers/socials_need_images_controller.rb:27:in `create'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.6ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:37:56 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jUFGgVY+CY2wnyxfipbaAQXvaTKRXwDv1ljV22llALJ7q4owD517OHWvj68QgJc0XW1FnMTscTmSmKnXhAvRUg==", "socials_need_image"=>{"socials_need_id"=>"2", "image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde2eab918 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-1wi00ik.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-aru2rn.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-swerem.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-swerem.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-swerem.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/052da5b31f2e09c1f64d2b9062def33920160317-27317-4p2xfm'
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 2.3ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/socials_need_images_controller.rb:27:in `[]'
+  app/controllers/socials_need_images_controller.rb:27:in `create'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:43:37 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (75.7ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 1777ms (Views: 1773.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:43:41 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (36.9ms)
+  Rendered socials_needs/new.html.haml (55.5ms)
+Completed 200 OK in 187ms (Views: 73.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:43:41 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 40ms (Views: 1.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:44:25 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.4ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 640ms (Views: 639.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:44:27 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (34.3ms)
+  Rendered socials_needs/new.html.haml (36.3ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:44:27 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:44:34 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"Peoo", "user_id"=>"", "description"=>"caca", "latitude"=>"sadasd", "longitude"=>"", "address"=>""}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["user_id", "3"], ["name", "Peoo"], ["description", "caca"], ["latitude", "sadasd"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:44:34.460494"], ["updated_at", "2016-03-17 15:44:34.460494"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered socials_needs/create.js.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 62.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:44:34 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jIT1EGWvV549zD/C0CD2Q6EcU6gTCtkd4zo/bwFsCWB6bjmhPAwlK/j8nDJKNrt2+Z5/Bka5qMun+kNj7ALYgA=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: socials_need_image):
+  app/controllers/socials_need_images_controller.rb:58:in `socials_need_image_params'
+  app/controllers/socials_need_images_controller.rb:26:in `create'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.4ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:45:25 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:46:22 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.8ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_navigation.html.haml (1.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2641ms (Views: 2640.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:46:26 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (64.0ms)
+  Rendered socials_needs/new.html.haml (73.4ms)
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:46:26 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/socials_needs" for 127.0.0.1 at 2016-03-17 12:47:05 -0300
+Processing by SocialsNeedsController#create as JS
+  Parameters: {"utf8"=>"✓", "socials_need"=>{"name"=>"Peofeo", "user_id"=>"", "description"=>"asdasd", "latitude"=>"asasd", "longitude"=>"", "address"=>""}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "socials_needs" ("user_id", "name", "description", "latitude", "longitude", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["user_id", "3"], ["name", "Peofeo"], ["description", "asdasd"], ["latitude", "asasd"], ["longitude", ""], ["address", ""], ["created_at", "2016-03-17 15:47:05.094085"], ["updated_at", "2016-03-17 15:47:05.094085"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered socials_needs/create.js.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 26.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:47:05 -0300
+Processing by SocialsNeedImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Djh0oIvde5mwEI0MazObOF2SLyDjDpU/dS2LgQU0MKT40rgR0n4JLHUgLvzxJdYNBRADjra95Okx7feN6FrhRA=="}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: socials_need_image):
+  app/controllers/socials_need_images_controller.rb:58:in `socials_need_image_params'
+  app/controllers/socials_need_images_controller.rb:26:in `create'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.7ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:48:25 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.7ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:48:26 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.7ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_navigation.html.haml (0.7ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 2125ms (Views: 2123.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:48:29 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (40.8ms)
+  Rendered socials_needs/new.html.haml (43.6ms)
+Completed 200 OK in 98ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:48:39 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.4ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+Completed 200 OK in 343ms (Views: 342.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:48:41 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (30.7ms)
+  Rendered socials_needs/new.html.haml (33.0ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:48:50 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (2.6ms)
+  Rendered layouts/_navigation.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.5ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 429ms (Views: 428.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:48:52 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (40.6ms)
+  Rendered socials_needs/new.html.haml (43.5ms)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:48:52 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:48:56 -0300
+Processing by SocialsNeedImagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d37zCpUAZgcQQLbFi4hhZ8P6OLeuKKuS4vG+2nRXRvmBlD+7zKMUstVwFTURnixSm3gUGfub2kSmMcLWmTmXGQ==", "socials_need_image"=>{"image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde56ac9d0 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-uvz4s2.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1kcrnmg.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-c4l1fw.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-c4l1fw.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-c4l1fw.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/d3bb974bcf78b891682909b2f693b6be20160317-27317-nl1xk4'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-19rrtsz.png'
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "socials_need_images" ("image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:48:56.315701"], ["created_at", "2016-03-17 15:48:56.914049"], ["updated_at", "2016-03-17 15:48:56.914049"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/008/original/garcia.png
+[AWS S3 200 2.70058 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/008/original/garcia.png")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/008/imagenG/garcia.png
+[AWS S3 200 0.422441 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>45407,:content_type=>"image/png",:data=>Paperclip::FileAdapter: d3bb974bcf78b891682909b2f693b6be20160317-27317-nl1xk4,:key=>"socials_need_images/image_contents/000/000/008/imagenG/garcia.png")  
+
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_need_images/8
+Completed 302 Found in 3760ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/socials_need_images/8" for 127.0.0.1 at 2016-03-17 12:49:00 -0300
+Processing by SocialsNeedImagesController#show as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mSocialsNeedImage Load (0.4ms)[0m  [1mSELECT  "socials_need_images".* FROM "socials_need_images" WHERE "socials_need_images"."id" = $1 LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+ActionView::MissingTemplate (Missing template socials_need_images/show, application/show with {:locale=>[:es], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml]}. Searched in:
+  * "/Users/eczerega/Documents/needy/v1/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.8ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:49:21 -0300
+Processing by SocialsNeedImagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d37zCpUAZgcQQLbFi4hhZ8P6OLeuKKuS4vG+2nRXRvmBlD+7zKMUstVwFTURnixSm3gUGfub2kSmMcLWmTmXGQ==", "socials_need_image"=>{"image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde510fba8 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-hvdamb.jpeg>, @original_filename="perfil.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"perfil.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-27317-cqu22z.jpeg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-27317-1j5jycs.jpeg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-27317-1j5jycs.jpeg[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-27317-1j5jycs.jpeg[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/f5010fe5cdb281883050bf3fdfa003ff20160317-27317-66yizc'
+  [1m[35m (0.3ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/9019cbe4458150159d9cc2f1cd473cf120160317-27317-oi6hjx.jpeg'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "socials_need_images" ("image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["image_content_file_name", "perfil.jpeg"], ["image_content_content_type", "image/jpeg"], ["image_content_file_size", 10752], ["image_content_updated_at", "2016-03-17 15:49:21.907143"], ["created_at", "2016-03-17 15:49:22.362924"], ["updated_at", "2016-03-17 15:49:22.362924"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/009/original/perfil.jpeg
+[AWS S3 200 1.710059 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>10752,:content_type=>"image/jpeg",:data=>Paperclip::UploadedFileAdapter: perfil.jpeg,:key=>"socials_need_images/image_contents/000/000/009/original/perfil.jpeg")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/009/imagenG/perfil.jpeg
+[AWS S3 200 0.419986 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>9890,:content_type=>"image/jpeg",:data=>Paperclip::FileAdapter: f5010fe5cdb281883050bf3fdfa003ff20160317-27317-66yizc,:key=>"socials_need_images/image_contents/000/000/009/imagenG/perfil.jpeg")  
+
+  [1m[35m (3.3ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_need_images/9
+Completed 302 Found in 2605ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/socials_need_images/9" for 127.0.0.1 at 2016-03-17 12:49:24 -0300
+Processing by SocialsNeedImagesController#show as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mSocialsNeedImage Load (0.3ms)[0m  [1mSELECT  "socials_need_images".* FROM "socials_need_images" WHERE "socials_need_images"."id" = $1 LIMIT 1[0m  [["id", 9]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+ActionView::MissingTemplate (Missing template socials_need_images/show, application/show with {:locale=>[:es], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml]}. Searched in:
+  * "/Users/eczerega/Documents/needy/v1/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.8ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:49:43 -0300
+Processing by SocialsNeedImagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d37zCpUAZgcQQLbFi4hhZ8P6OLeuKKuS4vG+2nRXRvmBlD+7zKMUstVwFTURnixSm3gUGfub2kSmMcLWmTmXGQ==", "socials_need_image"=>{"image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde3772858 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-dqp45s.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-18srvyp.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1ajdh3u.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1ajdh3u.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1ajdh3u.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/00ebbee459d86f296b2f5f82cc42df1320160317-27317-1oxi4t7'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-otrj1.png'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "socials_need_images" ("image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:49:43.909441"], ["created_at", "2016-03-17 15:49:44.368419"], ["updated_at", "2016-03-17 15:49:44.368419"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/010/original/garcia.png
+[AWS S3 200 7.518477 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/010/original/garcia.png")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/010/imagenG/garcia.png
+[AWS S3 200 1.628795 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>45407,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 00ebbee459d86f296b2f5f82cc42df1320160317-27317-1oxi4t7,:key=>"socials_need_images/image_contents/000/000/010/imagenG/garcia.png")  
+
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/socials_need_images/10
+Completed 302 Found in 9667ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/socials_need_images/10" for 127.0.0.1 at 2016-03-17 12:49:53 -0300
+Processing by SocialsNeedImagesController#show as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mSocialsNeedImage Load (0.3ms)[0m  [1mSELECT  "socials_need_images".* FROM "socials_need_images" WHERE "socials_need_images"."id" = $1 LIMIT 1[0m  [["id", 10]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+ActionView::MissingTemplate (Missing template socials_need_images/show, application/show with {:locale=>[:es], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml]}. Searched in:
+  * "/Users/eczerega/Documents/needy/v1/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:50:53 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (87.1ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1951ms (Views: 1946.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:50:57 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (31.6ms)
+  Rendered socials_needs/new.html.haml (46.1ms)
+Completed 200 OK in 110ms (Views: 55.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:50:58 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (1.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:51:02 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.5ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 288ms (Views: 286.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:51:04 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (97.5ms)
+  Rendered socials_needs/new.html.haml (112.8ms)
+Completed 200 OK in 173ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:51:05 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:51:09 -0300
+Processing by SocialsNeedImagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q8Kvs2nPmcxCJNlSPRe8wYNrLjylyVfBMpH+YhIsbm+1KGMCMGzreYcUeqKnAfH02+kCkvB6Jhd2UYJu/0K/jw==", "socials_need_image"=>{"image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde52f40e0 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-1x5wu45.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-111odtk.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1enisd2.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1enisd2.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1enisd2.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/1fadc82071a2d29b30e6a16f7710495520160317-27317-1hd22ba'
+  [1m[35m (0.3ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1gupxvh.png'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "socials_need_images" ("image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:51:09.112237"], ["created_at", "2016-03-17 15:51:09.740029"], ["updated_at", "2016-03-17 15:51:09.740029"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/011/original/garcia.png
+[AWS S3 200 7.458202 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/011/original/garcia.png")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/011/imagenG/garcia.png
+[AWS S3 200 1.679625 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>45407,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 1fadc82071a2d29b30e6a16f7710495520160317-27317-1hd22ba,:key=>"socials_need_images/image_contents/000/000/011/imagenG/garcia.png")  
+
+  [1m[35m (0.9ms)[0m  COMMIT
+Completed 500 Internal Server Error in 9795ms (ActiveRecord: 1.5ms)
+
+ActionView::MissingTemplate (Missing template socials_need_images/create, application/create with {:locale=>[:es], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml]}. Searched in:
+  * "/Users/eczerega/Documents/needy/v1/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:52:03 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (3.1ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (0.9ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.4ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 1908ms (Views: 1907.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:52:07 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (19.6ms)
+  Rendered socials_needs/new.html.haml (34.8ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:52:07 -0300
+Processing by CategoriesController#index as JSON
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:52:11 -0300
+Processing by SocialsNeedImagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"COqsvX6kt0xprLlEcHzoHxYjjlvKXCjtKsWIz0JJ8EL+AGAMJwfF+aycGrTqaqUqTqGi9Z/vWTtuBfTDrychog==", "socials_need_image"=>{"image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde0b32220 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-gtuuid.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-a1io9i.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-19v5owr.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-19v5owr.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-19v5owr.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/7be35ea03f8fba7f83dc9e9f1c6ac62120160317-27317-12020ht'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-181ezmk.png'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "socials_need_images" ("image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:52:11.419092"], ["created_at", "2016-03-17 15:52:12.053721"], ["updated_at", "2016-03-17 15:52:12.053721"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/012/original/garcia.png
+[AWS S3 200 6.901551 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/012/original/garcia.png")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/012/imagenG/garcia.png
+[AWS S3 200 1.606576 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>45407,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 7be35ea03f8fba7f83dc9e9f1c6ac62120160317-27317-12020ht,:key=>"socials_need_images/image_contents/000/000/012/imagenG/garcia.png")  
+
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 9211ms (ActiveRecord: 1.1ms)
+
+ActionView::MissingTemplate (Missing template socials_need_images/create, application/create with {:locale=>[:es], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml]}. Searched in:
+  * "/Users/eczerega/Documents/needy/v1/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/eczerega/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/eczerega/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-17 12:52:51 -0300
+Processing by IndexController#empty as HTML
+  Rendered index/empty.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered layouts/_slidemenu.html.haml (4.0ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+  Rendered layouts/_footer.html.haml (0.3ms)
+  Rendered layouts/_footer.html.haml (0.2ms)
+Completed 200 OK in 876ms (Views: 875.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/socials_needs/new.html" for 127.0.0.1 at 2016-03-17 12:52:54 -0300
+Processing by SocialsNeedsController#new as HTML
+  Rendered socials_needs/_form.html.haml (22.3ms)
+  Rendered socials_needs/new.html.haml (44.6ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.json" for 127.0.0.1 at 2016-03-17 12:52:54 -0300
+Processing by CategoriesController#index as JSON
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/socials_need_images" for 127.0.0.1 at 2016-03-17 12:53:03 -0300
+Processing by SocialsNeedImagesController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VlRnaaVBAxJF9h/iyaGTMewwj5hSrRAw05bXL4/KoITs50s/zZ2uYwne48RMMt5nzLukDT5xZaHjidQU1H7Yg==", "socials_need_image"=>{"image_content"=>#<ActionDispatch::Http::UploadedFile:0x007fbde5b81938 @tempfile=#<Tempfile:/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/RackMultipart20160317-27317-17enc4w.png>, @original_filename="garcia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"socials_need_image[image_content]\"; filename=\"garcia.png\"\r\nContent-Type: image/png\r\n">}}
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-1s9sl7x.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-lgsx4n.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-lgsx4n.png[0]'
+Command :: convert '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-lgsx4n.png[0]' -auto-orient -resize "300x200" '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/1c15d68d2aa76ee8eb74abbc7673268d20160317-27317-lh9d15'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/_k/550ffpmd66b7n8b9hsk2lpz40000gn/T/bbb5ff6dc3826b999a5cf0c2e7b2c88920160317-27317-823e1n.png'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "socials_need_images" ("image_content_file_name", "image_content_content_type", "image_content_file_size", "image_content_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["image_content_file_name", "garcia.png"], ["image_content_content_type", "image/png"], ["image_content_file_size", 349803], ["image_content_updated_at", "2016-03-17 15:53:03.311254"], ["created_at", "2016-03-17 15:53:04.625279"], ["updated_at", "2016-03-17 15:53:04.625279"]]
+[paperclip] saving /socials_need_images/image_contents/000/000/013/original/garcia.png
+[AWS S3 200 3.859214 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>349803,:content_type=>"image/png",:data=>Paperclip::UploadedFileAdapter: garcia.png,:key=>"socials_need_images/image_contents/000/000/013/original/garcia.png")  
+
+[paperclip] saving /socials_need_images/image_contents/000/000/013/imagenG/garcia.png
+[AWS S3 200 0.618482 0 retries] put_object(:acl=>:public_read,:bucket_name=>"needychile",:content_length=>45407,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 1c15d68d2aa76ee8eb74abbc7673268d20160317-27317-lh9d15,:key=>"socials_need_images/image_contents/000/000/013/imagenG/garcia.png")  
+
+  [1m[35m (0.6ms)[0m  COMMIT
+  Rendered socials_need_images/create.json.erb (0.9ms)
+Completed 200 OK in 5890ms (Views: 30.3ms | ActiveRecord: 1.4ms)

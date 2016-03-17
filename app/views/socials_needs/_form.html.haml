@@ -10,7 +10,7 @@
   .row
     .col-md-6
       .row
-      %form.sheet.dropzone{:action => "/upload-target"}
+      = form_for @socials_need_image,  :html => {:class => "dropzone sheet"} do |f|
         .dz-message{"data-dz-message" => "", :style => "color: #bec3c6;"}
           %span
             = image_tag 'image_icon.png'
@@ -72,7 +72,6 @@
     $( document ).ajaxComplete(function() {
       //Dropzone.discover();
 
-
        var objDropZone;
        Dropzone.autoDiscover = false;
        $(".dropzone").dropzone({
@@ -80,8 +79,8 @@
                 maxFilesize: 20, //In MB
                 maxFiles: 6,
                 addRemoveLinks: true,
-                paramName: "image[attachment]",
-                autoProcessQueue: false,
+                paramName: "socials_need_image[image_content]",
+                autoProcessQueue: true,
                 headers: {
               "X-CSRF-Token": $('[name=_token').val()
             },
