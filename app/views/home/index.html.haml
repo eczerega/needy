@@ -10,9 +10,7 @@
         -if current_user!= nil
           %md-button.md-raised.md-primary.landing-slider-buttons{"ui-sref" => "new_social_needs"} 
             Crear       
-        %md-button.md-raised.md-primary.landing-slider-buttons
-          Opina
-        %md-button.md-raised.md-primary.landing-slider-buttons{"ui-sref" => "social_needs"} 
+        %md-button.md-raised.md-primary.landing-slider-buttons{"ui-sref" => "social_needs.filter({id: 'all', filter: 'all'})"} 
           Descubre
   %video#bgvid{:autoplay => "", :loop => "", :poster => ""}
     %source{:src => "#{image_url 'video.webm'}", :type => "video/webm"}

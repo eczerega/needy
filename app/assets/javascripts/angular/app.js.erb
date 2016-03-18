@@ -30,6 +30,16 @@ app.config(function(
                        url: "/necesidades",
                        templateUrl:'/socials_needs.html'
               })
+              .state('social_needs.filter', {
+                       url: "/categoria/:id/:filter",
+                      templateUrl:
+                        function ($stateParams) {
+                          id= $stateParams.id;
+                          filter = $stateParams.filter
+                          return 'social_filter/'+id+'/'+filter
+                        }
+
+              })
               .state('new_social_needs', {
                        url: "/necesidades-nueva",
                        templateUrl:'/socials_needs/new.html'

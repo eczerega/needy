@@ -1,53 +1,36 @@
 
-.row.needs-index-top.hidden-xs
-  .row
-    .col-md-12
-      %h1
-        Categoría ordenada por azar 
-      %h3{:style => "padding-left: 15px"}
-        Escoge un filtro
-.row.needs-index-top.hidden-md.hidden-lg{:style => "margin-top: 70px !important; height: 150px; padding: 9px !important;"}
-  .row
-    .col-md-12
+.row.needs-index-top{"ng-controller"=>"FilterCtrl"}
+  
+  .col-md-3{:style=>"margin-top:-35px"}
+    %h3
+      Buscar necesidades por:
+  .col-md-2
+    %h3
+      %span{:style=>"width: 100%"}
+        %md-input-container.md-block{"flex-gt-sm" => ""}
+          %label Nombre
+          %input{"ng-model"=>"name","ng-keyup"=>"ReloadState($event)"}
+  .col.md-3{:style=>"margin-top:-35px;"}
+    %span{:style=>"width: 100%"}  
       %h3
-        Categoría ordenada por azar           
+        %md-select.category{"md-on-open" => "loadUsers()", "ng-model" => "user", :placeholder => "Categoría", :style => "margin-right: 20px;"}
+          %md-option{"ng-value" => "user", "ng-repeat" => "user in users"} 
+            {{user.name}}
+  .col.md-3{:style=>"margin-top:-35px;"}
+    %span{:style=>"width: 100%"}
+      %h3
+        %md-select.category{"md-on-open" => "loadModes()", "ng-model" => "mode", :placeholder => "Orden", :style => "margin-right: 20px;"}
+          %md-option{"ng-value" => "mode", "ng-repeat" => "mode in modes"} 
+            {{mode.name}}
+
+
+
+
+
 .needs-index-middlev{"ng-controller" => "NeedCtrl"} 
-
   .text-center.pagination-centered{:style=>"background-color: white"}
-
-    %br
-    %table
-      - @socials_needs.each do |socials_need|
-        .card{:style=>"width: 320px; display: inline-block; margin: 15px; margin-bottom: 50px"}
-          .thumbnail
-            =image_tag SocialsNeedImage.find(socials_need.id).image_content
-          .content
-            %h6
-              = socials_need.name
-            .by
-              %p
-                BY: 
-                = User.find(socials_need.user_id).name
-            .description
-              %p
-                =truncate(socials_need.description, length: 100)
-              .footer
-                .row
-                  .col-md-8
-                    %i.fa.fa-map-marker
-                    = socials_need.latitude
-                  .col-md-4.pull-right
-                    %i.fa.fa-thumbs-up
-                    80 
-                    %i.fa.fa-thumbs-down
-                    21
-
-    %br
-
-
-
-
-
+    %div{"ui-view" => ""}
+      
 
 
  

@@ -20,13 +20,25 @@ class SocialsNeedsController < ApplicationController
   def edit
   end
 
+  def filter
+    @nombre = params[:filter]
+    @id = params[:id]
+    @filtro = params[:filter]
+    
+    if @id == "all"
+      puts @id
+      @socials_needs = SocialsNeed.all
+    else
+      @socials_needs = SocialsNeed.where("name LIKE ?", "%#{@id}%")
+    end
+  end
+
   # POST /socials_needs
   def create
     if current_user != nil
       @socials_need = SocialsNeed.new(socials_need_params)
       @socials_need.user_id = current_user.id
       @success="ASDASDAS"
-      puts params.inspect
       if @socials_need.save
         @need_id=@socials_need.id
         @success = true

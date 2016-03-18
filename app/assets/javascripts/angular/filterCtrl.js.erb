@@ -1,0 +1,46 @@
+app
+.controller('FilterCtrl',
+    function ($scope,$timeout, $http, $state) {
+		$scope.user = null;
+		$scope.users = null;
+		$scope.mode = null;
+		$scope.modes = null;
+		$http({
+		  method: 'GET',
+		  url: '/categories.json'
+		}).then(function successCallback(response) {
+		    $scope.categories =  response.data;
+		  }, function errorCallback(response) {
+		  });
+
+			$scope.loadUsers = function() 
+			{
+				return $timeout(function() 
+					{
+						$scope.users =  $scope.categories
+					}, 650);
+	 		}
+
+			$scope.loadModes = function() 
+			{
+				$scope.modes =  $scope.modes  || [
+			        { id: 1, name: 'Mayor a menor' },
+			        { id: 2, name: 'Menor a' }
+			      ];
+													
+	 		}
+	   		
+	   		
+		    $scope.ReloadState = function (id) {
+				name= $scope.name;
+				if(name=='')
+				{
+					name='all'
+				}
+				$state.go("social_needs.filter", { "id": name, "filter": "all"},  {});
+			};
+
+   		}	
+
+
+);

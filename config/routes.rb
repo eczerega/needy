@@ -55,6 +55,7 @@ DefaultInit::Application.routes.draw do
   resources :sessions
   resources :users
 
+  get "social_filter/:id/:filter" => "socials_needs#filter", :as => "social_filter"
   get "home" => "home#index", :as => "home"
   root :to => 'index#empty'
 
