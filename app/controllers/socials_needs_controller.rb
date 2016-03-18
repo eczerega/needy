@@ -28,6 +28,7 @@ class SocialsNeedsController < ApplicationController
       @success="ASDASDAS"
       puts params.inspect
       if @socials_need.save
+        @need_id=@socials_need.id
         @success = true
             respond_to do |format|
               format.html {}

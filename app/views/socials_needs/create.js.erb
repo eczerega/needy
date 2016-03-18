@@ -8,7 +8,23 @@
 	//		showConfirmButton: false
 	//	}
 	//);
-	$(".dropzone").submit();
+
+
+	$('#need_id').val(<%= @need_id %>);
+
+
+	        $.blockUI({ css: { 
+	            border: 'none', 
+	            padding: '15px', 
+	            backgroundColor: '#000', 
+	            '-webkit-border-radius': '10px', 
+	            '-moz-border-radius': '10px', 
+	            opacity: .5, 
+	            color: '#fff' 
+	        } }); 
+	 
+	        setTimeout($.unblockUI, 2500); 
+
 
 <% else %>
 	sweetAlert("Oops...", "Hay errores en los datos ingresados!", "error");

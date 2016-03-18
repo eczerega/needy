@@ -16,6 +16,7 @@
             = image_tag 'image_icon.png'
           %br/
           Arrastra o haz click para agregar imágenes
+        = f.hidden_field :socials_need_id,:id=>"need_id"
       .row.sheet
         %md-input-container.md-block{"flex-gt-sm" => ""}
           %label Link video youtube -no disponible en alpha-
@@ -69,37 +70,31 @@
 
 
 :javascript
-    $( document ).ajaxComplete(function() {
-      //Dropzone.discover();
+    var need_id=null;
+    jQuery(document).ready(function() {
+      var myDropzone = new Dropzone(".dropzone", { 
+        url: '/socials_need_images',
+        autoProcessQueue:false,
+        params: {
+          'socials_need_image[socials_need_id]': need_id
+        },
+       // paramName: "socials_need_image[image_content]",
+        acceptedFiles: '.jpeg,.jpg,.png',
+        maxFilesize: 5,
+        maxFiles: 6
+      });
 
-       var objDropZone;
-       Dropzone.autoDiscover = false;
-       $(".dropzone").dropzone({
-                acceptedFiles: '.jpeg,.jpg,.png',
-                maxFilesize: 20, //In MB
-                maxFiles: 6,
-                addRemoveLinks: true,
-                paramName: "socials_need_image[image_content]",
-                autoProcessQueue: true,
-                headers: {
-              "X-CSRF-Token": $('[name=_token').val()
-            },
-                init: function () {
-                    objDropZone = this;
+    $('#sender').on('click',function(e){
 
-                    this.on("success", function (file, message) {
-                        console.log('file uploaded successfully')
-                    });
-
-                    this.on("error", function (file, message) {
-                        alert('erroe');
-                        var _ref;
-                        return //(_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
-                    });
-                 }
-            });
-
+    setTimeout(
+      function()
+          {
+            e.preventDefault();myDropzone.processQueue();
+          }
+      , 2600);
+      });   
     });
+
     $("#sender").click(function()
     {
       $('#name').val($(".name").val());
