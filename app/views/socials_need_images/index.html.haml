@@ -1,23 +1,23 @@
-%h1 Listing socials_need_images
+.main-slider-need{"ng-controller" => "NeedCtrl"} 
+  .row
+    %table
+      %thead
+        %tr
+          %th Socials need
+          %th Image url
+          %th
+          %th
+          %th
 
-%table
-  %thead
-    %tr
-      %th Socials need
-      %th Image url
-      %th
-      %th
-      %th
+      %tbody
+        - @socials_need_images.each do |socials_need_image|
+          %tr
+            %td= socials_need_image.socials_need_id
+            %td= socials_need_image.image_content
+            %td= link_to 'Show', socials_need_image
+            %td= link_to 'Edit', edit_socials_need_image_path(socials_need_image)
+            %td= link_to 'Destroy', socials_need_image, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-  %tbody
-    - @socials_need_images.each do |socials_need_image|
-      %tr
-        %td= socials_need_image.socials_need_id
-        %td= socials_need_image.image_content
-        %td= link_to 'Show', socials_need_image
-        %td= link_to 'Edit', edit_socials_need_image_path(socials_need_image)
-        %td= link_to 'Destroy', socials_need_image, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
+    %br
 
 = link_to 'New Socials need image', new_socials_need_image_path

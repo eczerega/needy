@@ -12,7 +12,7 @@
             Crear       
         %md-button.md-raised.md-primary.landing-slider-buttons
           Opina
-        %md-button.md-raised.md-primary.landing-slider-buttons
+        %md-button.md-raised.md-primary.landing-slider-buttons{"ui-sref" => "social_needs"} 
           Descubre
   %video#bgvid{:autoplay => "", :loop => "", :poster => ""}
     %source{:src => "#{image_url 'video.webm'}", :type => "video/webm"}
@@ -30,18 +30,18 @@
             .row
               .col-md-12
                 %h4.project-title
-                  Se necesita eliminar la contaminación de Santiago
+                  =@social_needs.first.name
             .tags
               %span
                 %i.fa.fa-map-marker
-                Santiago
+                =@social_needs.first.latitude
               %span
                 %i.fa.fa-tag
                 Salud    
             .row
               .col-md-12.project-content
                 %p
-                  Si no hacemos algo con esto, nos morimos todos!. Yo me estoy muriciendo ya ayy nooo jajaj salu2
+                  =@social_needs.first.description
                 .pull-bottom
                   %span
                     %i.fa.fa-volume-up{:style =>"cursor: pointer"}
@@ -63,82 +63,34 @@
             -@counter+=1
 
 .row
-  #basic-waypoint.col-md-12.third-content
-    .row{:layout => "row", "layout-align" => "center center"}  
-      .col-md-12
-        %h2
-          Popular
-    .row
-      %br
-      .col-md-4
-        .card
+  .text-center.pagination-centered
+    %br
+    %table
+      - @social_needs.each do |socials_need|
+        .card{:style=>"width: 320px; display: inline-block; margin: 15px; margin-bottom: 50px"}
           .thumbnail
-            =image_tag 'ahogados.jpg'
+            =image_tag SocialsNeedImage.find(socials_need.id).image_content
           .content
             %h6
-              Necesitamos más ahoragos en Chile
+              = socials_need.name
             .by
               %p
-                BY: ROSAMEL FIERRO
+                BY: 
+                = User.find(socials_need.user_id).name
             .description
               %p
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                =truncate(socials_need.description, length: 100)
               .footer
                 .row
                   .col-md-8
                     %i.fa.fa-map-marker
-                    Todos los lagos de Chile
+                    = socials_need.latitude
                   .col-md-4.pull-right
                     %i.fa.fa-thumbs-up
                     80 
                     %i.fa.fa-thumbs-down
                     21
-      .col-md-4
-        .card
-          .thumbnail
-            =image_tag 'ahogados.jpg'
-          .content
-            %h6
-              Necesitamos más ahoragos en Chile
-            .by
-              %p
-                BY: ROSAMEL FIERRO
-            .description
-              %p
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              .footer
-                .row
-                  .col-md-8
-                    %i.fa.fa-map-marker
-                    Todos los lagos de Chile
-                  .col-md-4.pull-right
-                    %i.fa.fa-thumbs-up
-                    80 
-                    %i.fa.fa-thumbs-down
-                    21
-      .col-md-4
-        .card
-          .thumbnail
-            =image_tag 'ahogados.jpg'
-          .content
-            %h6
-              Necesitamos más ahoragos en Chile
-            .by
-              %p
-                BY: ROSAMEL FIERRO
-            .description
-              %p
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              .footer
-                .row
-                  .col-md-8
-                    %i.fa.fa-map-marker
-                    Todos los lagos de Chile
-                  .col-md-4.pull-right
-                    %i.fa.fa-thumbs-up
-                    80 
-                    %i.fa.fa-thumbs-down
-                    21   
+
 .row
   #basic-waypoint.col-md-12.fourth-content
     .row{:layout => "row", "layout-align" => "center center"}  
@@ -148,7 +100,7 @@
     .row
       %br
       .col-md-6
-        =image_tag 'video.jpg', :size => "500x280"
+        %iframe{:height => "315", :src => "http://www.youtube.com/embed/oooOET1IIiY?autoplay=0", :width => "100%"}
       .col-md-6
         %p
           Es el portal donde se escuchan las necesidades y opiniones de los chilenos.
@@ -159,25 +111,4 @@
           ¡Invita a tus amigos a que se hagan parte de la comunidad Needy!
         %md-button.md-raised.md-primary.landing-slider-buttons{:style=>"width: 100%; bottom: 0;"}
           Únete o muere 
-.row
-  #basic-waypoint.col-md-12.third-content
-    .row{:layout => "row", "layout-align" => "center center"}  
-      .col-md-12
-        %br
-        .fb
-          .row{:layout => "row", "layout-align" => "center center"} 
-            .col-md-8.left  
-              .invitation
-                %h2
-                  ¡Descubre proyectos geniales con tus amigos!
-                %p
-                  ¿Quién sabe qué proyectos descubrirás con la mágica combinación de Facebook y el universo creativo? Más información sobre redes sociales.
-
-            .col-md-4 
-              .facebok-button
-                %a.btn.btn-block.btn-social.btn-facebook
-                  %span.fa.fa-facebook
-                  Ingresar con Facebook
-                %p
-                  Nunca publicaremos nada en Facebook sin tu permiso.
     

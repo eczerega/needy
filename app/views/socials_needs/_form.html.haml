@@ -79,13 +79,41 @@
           'socials_need_image[socials_need_id]': need_id
         },
        // paramName: "socials_need_image[image_content]",
+        addRemoveLinks: true,
+        parallelUploads: 10,
         acceptedFiles: '.jpeg,.jpg,.png',
         maxFilesize: 5,
-        maxFiles: 6
+        maxFiles: 6,
+        init: function () {
+            objDropZone = this;
+            this.on("success", function (file, message) {
+                swal
+                (
+                  {
+                    title: "Su necesidad será revisada para ser aprobada.",
+                    type: "success",
+                    timer: 3500,
+                    showConfirmButton: false
+                  }
+                );
+                setTimeout(function()
+                      {
+          angular.element($(".main-slider-need")).scope().ReloadState();
+                      }
+                  , 3600); 
+            });
+            this.on("error", function (file, message) {
+                alert('error, intente con otra imagen o menos imagenes')
+            });
+         }
       });
 
-    $('#sender').on('click',function(e){
 
+    $('#sender').on('completemultiple', function () {
+            alert('finish');
+    });  
+
+    $('#sender').on('click',function(e){
     setTimeout(
       function()
           {

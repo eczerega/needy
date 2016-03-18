@@ -1,5 +1,6 @@
 .card
 {
+    
     background-color: #ffffff;
     border: solid 1px #D9D9DE;
     //border-radius: 6px;
@@ -17,6 +18,8 @@
 	    vertical-align: baseline;
 	    img
 	    {
+            height: 200px;
+            width: 100%;
 	    	display:block;
 	    }
     }

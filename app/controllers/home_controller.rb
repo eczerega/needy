@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
   layout false
   def index
-
+    @social_needs = SocialsNeed.first(3)
     @categories= Category.all
   end
 

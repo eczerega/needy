@@ -1,6 +1,6 @@
 app
 .controller('NeedCtrl',
-    function ($scope,$timeout, $http) {
+    function ($scope,$timeout, $http, $state) {
     	$scope.test="pruebo";
 		$scope.user = null;
 		$scope.users = null;
@@ -15,12 +15,20 @@ app
 		    // or server returns response with an error status.
 		  });
 
-		$scope.loadUsers = function() 
-		{
-			return $timeout(function() 
-				{
-					$scope.users =  $scope.categories
-				}, 650);
-   		 		}
+			$scope.loadUsers = function() 
+			{
+				return $timeout(function() 
+					{
+						$scope.users =  $scope.categories
+					}, 650);
+	 		}
+	   		
+		    $scope.ReloadState = function (id) {
+				
+				$state.go("home", {},  {reload: true});
+			};
+
    		}	
+
+
 );
