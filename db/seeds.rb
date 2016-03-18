@@ -18,3 +18,28 @@ admin.update_attribute :active, true
 admin.update_attribute :admin, true
 
 
+categories = [
+'Ambiental',
+'Energía',
+'Social',
+'Comodidad',
+'Salud',
+'Economía',
+'Ocio',
+'Tecnología',
+'Educación',
+'Legal',
+'Obras públicas',
+'Seguridad',
+'Empresas',
+'Animal',
+'Cultura',
+'Política',
+'Deportes'
+]
+
+categories.each do |category|
+	Category.create(:name => category)
+end
+
+

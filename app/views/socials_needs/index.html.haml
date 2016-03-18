@@ -1,5 +1,20 @@
-#basic-waypoint.third-content.main-slider-need{"ng-controller" => "NeedCtrl"} 
-  .text-center.pagination-centered
+
+.row.needs-index-top.hidden-xs
+  .row
+    .col-md-12
+      %h1
+        Categoría ordenada por azar 
+      %h3{:style => "padding-left: 15px"}
+        Escoge un filtro
+.row.needs-index-top.hidden-md.hidden-lg{:style => "margin-top: 70px !important; height: 150px; padding: 9px !important;"}
+  .row
+    .col-md-12
+      %h3
+        Categoría ordenada por azar           
+.needs-index-middlev{"ng-controller" => "NeedCtrl"} 
+
+  .text-center.pagination-centered{:style=>"background-color: white"}
+
     %br
     %table
       - @socials_needs.each do |socials_need|

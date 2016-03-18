@@ -1,3 +1,35 @@
+.needs-index-top
+{
+    background-color: #f7fafa !important;
+    height: 370px; 
+    margin-top: 70px;
+    border-style: solid;
+    border-color: #d9d9de;
+    border-width: 2px 0px 2px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    h1
+    {
+        color: black !important;
+        font-weight: 200;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        vertical-align: middle;
+    }
+}
+
+.needs-index-middle
+{
+    background-color: white !important;
+
+
+
+}
+
+
 .main-slider-need
 {
     text-align: center !important;
