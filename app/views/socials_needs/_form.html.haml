@@ -44,8 +44,8 @@
               %label Título de la necesidad
               %input.name
           .col-md-3
-            %md-select.category{"md-on-open" => "loadUsers()", "ng-model" => "user", :placeholder => "Categoría", :style => "min-width: 200px;"}
-              %md-option{"ng-value" => "user", "ng-repeat" => "user in users"} 
+            %md-select{"md-on-open" => "loadUsers()", "ng-model" => "user", :placeholder => "Categoría", :style => "min-width: 200px;"}
+              %md-option.category_id{"ng-value" => "user", "ng-repeat" => "user in users"} 
                 {{user.name}}
         .row.sheet  
           %md-input-container.md-block
@@ -61,6 +61,7 @@
           = f.hidden_field :name,:id=>"name"
           = f.hidden_field :user_id,:id=>"user_id"
           = f.hidden_field :description,:id=>"description"
+          = f.hidden_field :category_id,:id=>"category_id"
           = f.hidden_field :latitude,:id=>"latitude"
           = f.hidden_field :longitude,:id=>"longitude"
           = f.hidden_field :address,:id=>"address"
@@ -126,6 +127,8 @@
     $("#sender").click(function()
     {
       $('#name').val($(".name").val());
+      console.log($("#select_value_label_0 div").text());
+      $('#category_id').val($("#select_value_label_0 div").text());
       $('#description').val($(".description").val());
       $('#latitude').val($(".latitude").val());
       $("#main_form").submit();

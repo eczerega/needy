@@ -22,21 +22,31 @@ app.config(function(
 
 			      $stateProvider
 			        .state('home', {
-                  	   url: ":r_id",
+                  	   url: "/home",
                        templateUrl:'/home/index'
                         
 			        })
+              .state('home.filer', {
+                       url: "/categoria/:filter",
+                      templateUrl:
+                        function ($stateParams) {
+                          filter = $stateParams.filter
+                          return '/home/'+filter
+                        }
+                        
+              })
               .state('social_needs', {
                        url: "/necesidades",
                        templateUrl:'/socials_needs.html'
               })
               .state('social_needs.filter', {
-                       url: "/categoria/:id/:filter",
+                       url: "/filtro/:name/:category/:filter",
                       templateUrl:
                         function ($stateParams) {
-                          id= $stateParams.id;
+                          name= $stateParams.name;
+                          category = $stateParams.category
                           filter = $stateParams.filter
-                          return 'social_filter/'+id+'/'+filter
+                          return 'social_filter/'+name+'/'+category+'/'+filter
                         }
 
               })
@@ -70,7 +80,8 @@ app.config(function($mdThemingProvider) {
 
 app.run(function($rootScope, $templateCache, $state) {
    $rootScope.$on('$viewContentLoaded', function() {
-      if($state.current.name !== 'home')
+
+      if($state.current.name !== 'home.filer')
       {
         var myEl = angular.element( document.querySelector( '#menubar-big' ) );
         myEl.addClass('not-up'); 
@@ -86,7 +97,7 @@ app.run(function($rootScope, $templateCache, $state) {
           var myEl = angular.element( document.querySelector( '#menubar-big' ) );
 
           altura=$("#menubar-big").offset().top;
-          if($state.current.name === 'home')
+          if($state.current.name === 'home.filer')
           {
                       if(altura>160)
           {

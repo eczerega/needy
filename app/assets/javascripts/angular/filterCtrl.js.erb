@@ -30,14 +30,36 @@ app
 													
 	 		}
 	   		
-	   		
+		    $scope.Prueba = function (id) {
+				console.log( $scope.user.name);
+			};
+
 		    $scope.ReloadState = function (id) {
+				
+		    	if($scope.name==null)
+		    	{
+		    		name="all";
+		    	}
+		    	else
+		    	{
 				name= $scope.name;
+		    	}
+
+				if($scope.user==null)
+				{
+					category='all'
+				}
+				else
+				{
+					category= $scope.user.name;
+				}
+
 				if(name=='')
 				{
 					name='all'
 				}
-				$state.go("social_needs.filter", { "id": name, "filter": "all"},  {});
+
+				$state.go("social_needs.filter", { "name": name,"category": category, "filter": "all"},  {});
 			};
 
    		}	

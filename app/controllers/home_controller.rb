@@ -4,10 +4,29 @@ class HomeController < ApplicationController
 
   layout false
   def index
-    @social_needs = SocialsNeed.first(3)
+    #@social_needs = SocialsNeed.all
+    @social_needs_all = SocialsNeed.all
     @categories= Category.all
   end
 
+  def filter
+    @social_needs_all = SocialsNeed.all
+    @filtro = params[:filter]
+    if @filtro == "all"
+      begin
+        @social_needs = SocialsNeed.where(:category_id => 1 ).take
+      rescue Exception => e
+        @social_needs = nil
+      end
+    else
+      begin
+        @social_needs = SocialsNeed.where(:category_id => @filtro).take
+      rescue Exception => e
+        @social_needs = nil
+      end
+
+    end
+  end
   # The view to send a contact email
   def contact
   end

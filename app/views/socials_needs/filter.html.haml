@@ -5,7 +5,7 @@
       - @socials_needs.each do |socials_need|
         .card{:style=>"width: 320px; display: inline-block; margin: 15px; margin-bottom: 50px"}
           .thumbnail
-            =image_tag SocialsNeedImage.find(socials_need.id).image_content
+            =image_tag SocialsNeedImage.where(:socials_need_id => socials_need.id).take.image_content
           .content
             %h6
               = socials_need.name

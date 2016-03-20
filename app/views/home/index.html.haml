@@ -10,7 +10,7 @@
         -if current_user!= nil
           %md-button.md-raised.md-primary.landing-slider-buttons{"ui-sref" => "new_social_needs"} 
             Crear       
-        %md-button.md-raised.md-primary.landing-slider-buttons{"ui-sref" => "social_needs.filter({id: 'all', filter: 'all'})"} 
+        %md-button.md-raised.md-primary.landing-slider-buttons{"ui-sref" => "social_needs.filter({name: 'all',category: 'all', filter: 'all'})"} 
           Descubre
   %video#bgvid{:autoplay => "", :loop => "", :poster => ""}
     %source{:src => "#{image_url 'video.webm'}", :type => "video/webm"}
@@ -21,56 +21,29 @@
       .col-md-9
         %h2
           Necesidades más Urgentes
-        -begin
-          .row.resume-project
-            .col-md-5.image-project
-              =image_tag 'image_ejemplo1.jpeg'
-            .col-md-7
-              .row
-                .col-md-12
-                  %h4.project-title
-                    =@social_needs.first.name
-              .tags
-                %span
-                  %i.fa.fa-map-marker
-                  =@social_needs.first.latitude
-                %span
-                  %i.fa.fa-tag
-                  Salud    
-              .row
-                .col-md-12.project-content
-                  %p
-                    =@social_needs.first.description
-                  .pull-bottom
-                    %span
-                      %i.fa.fa-volume-up{:style =>"cursor: pointer"}
-                      Hazte notar
-                    %span
-                      %i.fa.fa-volume-off{:style =>"cursor: pointer"}
-                      No es tan importante
-        -rescue Exception => e
-          No hay necesidades
+        %div{"ui-view" => ""}
       .col-md-3.resume-project.hidden-xs
         %ul
           -@counter=1
           -@categories.each do |category|
             -if @counter==1
-              %li.category-list.selected-category-list
+              %li.category-list.selected-category-list{"ui-sref" => "home.filer({filter: '#{category.id}'})"}
                 =category.name
             -else
-              %li.category-list
+              %li.category-list{"ui-sref" => "home.filer({filter: '#{category.id}'})"}
                 =category.name
             -@counter+=1
+
 
 .row
   .text-center.pagination-centered
     %br
     %table
       -begin
-        - @social_needs.each do |socials_need|
+        - @social_needs_all.each do |socials_need|
           .card{:style=>"width: 320px; display: inline-block; margin: 15px; margin-bottom: 50px"}
             .thumbnail
-              =image_tag SocialsNeedImage.find(socials_need.id).image_content
+              =image_tag SocialsNeedImage.where(:socials_need_id => socials_need.id).take.image_content
             .content
               %h6
                 = socials_need.name
@@ -116,11 +89,13 @@
             Únete*
 
 
-
-
-
-
-
+:javascript
+    $(document).ready(function() {
+    jQuery('.category-list').click(function(){
+      $('.category-list').removeClass('selected-category-list');
+      $(this).addClass('selected-category-list');
+    });
+  });
 
 
 

@@ -13,7 +13,7 @@
   .col.md-3{:style=>"margin-top:-35px;"}
     %span{:style=>"width: 100%"}  
       %h3
-        %md-select.category{"md-on-open" => "loadUsers()", "ng-model" => "user", :placeholder => "Categoría", :style => "margin-right: 20px;"}
+        %md-select.category{"data-ng-change"=>"ReloadState($event)", "md-on-open" => "loadUsers()", "ng-model" => "user", :placeholder => "Categoría", :style => "margin-right: 20px;"}
           %md-option{"ng-value" => "user", "ng-repeat" => "user in users"} 
             {{user.name}}
   .col.md-3{:style=>"margin-top:-35px;"}
