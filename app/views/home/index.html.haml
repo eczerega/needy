@@ -19,7 +19,7 @@
   #basic-waypoint.col-md-12.second-content
     .row{:layout => "row", "layout-align" => "center center"}  
       .col-md-9
-        %h2
+        %h2{:style=>"letter-spacing: 2.15px;"}
           Necesidades más Urgentes
         %div{"ui-view" => ""}
       .col-md-3.resume-project.hidden-xs
@@ -42,10 +42,10 @@
       -begin
         - @social_needs_all.each do |socials_need|
           .card{:style=>"width: 320px; display: inline-block; margin: 15px; margin-bottom: 50px"}
-            .thumbnail
+            .thumbnail{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{socials_need.id}'})"}
               =image_tag SocialsNeedImage.where(:socials_need_id => socials_need.id).take.image_content
             .content
-              %h6
+              %h6{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{socials_need.id}'})"}
                 = socials_need.name
               .by
                 %p
@@ -78,7 +78,7 @@
       .col-md-6
         %iframe{:height => "315", :src => "http://www.youtube.com/embed/oooOET1IIiY?autoplay=0", :width => "100%"}
       .col-md-6
-        %p
+        .quees{:style=>"line-height: 28px;"}
           Es el portal donde se escuchan las necesidades y opiniones de los chilenos.
           ¿Como Funciona?
           Si reconoces algún problema o necesidad del lugar donde vives, compártelo con nosotros.

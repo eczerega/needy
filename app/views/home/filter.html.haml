@@ -1,11 +1,11 @@
 -begin
   .row.resume-project
-    .col-md-5.image-project
-      =image_tag SocialsNeedImage.where(:socials_need_id => @social_needs.id).take.image_content
+    .col-md-5.image-project{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{@social_needs.id}'})"}
+      =image_tag SocialsNeedImage.where(:socials_need_id => @social_needs.id).take.image_content, :style=>"width.:100%"
     .col-md-7
       .row
-        .col-md-12
-          %h4.project-title
+        .col-md-12{:style=>"letter-spacing: 2.15px;"}
+          %h4.project-title{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{@social_needs.id}'})"}
             =@social_needs.name
       .tags
         %span
@@ -16,8 +16,8 @@
           =@social_needs.category.name  
       .row
         .col-md-12.project-content
-          %p
-            =@social_needs.description
+          .quees
+            =truncate(@social_needs.description, length: 280)
           .pull-bottom
             %span
               %i.fa.fa-volume-up{:style =>"cursor: pointer"}

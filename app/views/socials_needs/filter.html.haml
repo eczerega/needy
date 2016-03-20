@@ -4,9 +4,9 @@
     %table
       - @socials_needs.each do |socials_need|
         .card{:style=>"width: 320px; display: inline-block; margin: 15px; margin-bottom: 50px"}
-          .thumbnail
+          .thumbnail{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{socials_need.id}'})"}
             =image_tag SocialsNeedImage.where(:socials_need_id => socials_need.id).take.image_content
-          .content
+          .content{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{socials_need.id}'})"}
             %h6
               = socials_need.name
             .by
