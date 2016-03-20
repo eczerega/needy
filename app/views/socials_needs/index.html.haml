@@ -19,9 +19,9 @@
   .col.md-3{:style=>"margin-top:-35px;"}
     %span{:style=>"width: 100%"}
       %h3
-        %md-select.category{"md-on-open" => "loadModes()", "ng-model" => "mode", :placeholder => "Orden", :style => "margin-right: 20px;"}
-          %md-option{"ng-value" => "mode", "ng-repeat" => "mode in modes"} 
-            {{mode.name}}
+        %md-select.category{"data-ng-change"=>"ReloadState($event)","ng-model" => "order", :placeholder => "Orden", :style => "margin-right: 20px;"}
+          %md-option{"ng-value" => "order", "ng-repeat" => "order in orders", "value" => "{{order}}"} 
+            {{order}}
 
 
 

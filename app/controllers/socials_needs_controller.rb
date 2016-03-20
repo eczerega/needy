@@ -41,16 +41,56 @@ class SocialsNeedsController < ApplicationController
         @socials_needs = SocialsNeed.all
 
       elsif @name!="all" &&  @category=="all" && @filter == "all"
-        @socials_needs = SocialsNeed.where("name LIKE ?", "%#{@name}%")
+        @socials_needs = SocialsNeed.where("LOWER(name) LIKE ?", "%#{@name.downcase}%")
 
       elsif @name!="all" &&  @category!="all" && @filter == "all"
-        @socials_needs = SocialsNeed.where("name LIKE ?", "%#{@name}%").where(:category_id =>@category)
+        @socials_needs = SocialsNeed.where("LOWER(name)  LIKE ?", "%#{@name.downcase}%").where(:category_id =>@category)
  
       elsif @name=="all" &&  @category!="all" && @filter == "all"
         @socials_needs = SocialsNeed.where(:category_id => @category)
 
-      elsif @name=="all" &&  @category=="all" && @filter == "all"
-        @socials_needs = SocialsNeed.where("name LIKE ?", "%#{@name}%")
+      
+
+
+
+      elsif @name=="all" &&  @category=="all" && @filter != "all"
+        if @filter=="A-Z"
+          @socials_needs = SocialsNeed.order('LOWER(name) ASC').all
+        else
+          @socials_needs = SocialsNeed.order('LOWER(name) DESC').all
+        end
+      
+
+
+
+      elsif @name!="all" &&  @category=="all" && @filter != "all"
+        if @filter=="A-Z"
+          @socials_needs = SocialsNeed.where("LOWER(name) LIKE ?", "%#{@name.downcase}%").order('LOWER(name) ASC').all
+        else
+          @socials_needs  = SocialsNeed.where("LOWER(name) LIKE ?", "%#{@name.downcase}%").order('LOWER(name) DESC').all
+        end
+
+
+
+
+      elsif @name=="all" &&  @category!="all" && @filter != "all"
+        if @filter=="A-Z"
+          @socials_needs = SocialsNeed.where(:category_id => @category).order('LOWER(name) ASC').all
+        else
+          @socials_needs = SocialsNeed.where(:category_id => @category).order('LOWER(name) DESC').all
+        end
+
+
+
+
+      elsif @name!="all" &&  @category!="all" && @filter != "all"
+          if @filter=="A-Z"
+            @socials_needs = SocialsNeed.where("LOWER(name)  LIKE ?", "%#{@name.downcase}%").where(:category_id =>@category).order('LOWER(name) ASC').all
+          else
+                @socials_needs = SocialsNeed.where("LOWER(name)  LIKE ?", "%#{@name.downcase}%").where(:category_id =>@category).order('LOWER(name) DESC').all
+          end    
+      
+
 
       else
          @socials_needs = SocialsNeed.all
@@ -72,9 +112,13 @@ class SocialsNeedsController < ApplicationController
       rescue Exception => e
         @category_id = 0
       end
-      @success="ASDASDAS"
+      @success=""
       if @socials_need.save
         @need_id=@socials_need.id
+        if 
+           SocialsNeedImage.create(:image_content => 'http://biodiv.org.ar/wp-content/themes/fearless/images/missing-image-640x360.png', :socials_need_id => @socials_need.id)
+          
+        end
         @success = true
             respond_to do |format|
               format.html {}
@@ -82,8 +126,6 @@ class SocialsNeedsController < ApplicationController
               format.js
             end
         #redirect_to @socials_need, notice: 'Socials need was successfully created.'
-     
-
       else
         render :new
       end

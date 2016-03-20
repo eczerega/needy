@@ -3,8 +3,10 @@ app
     function ($scope,$timeout, $http, $state) {
 		$scope.user = null;
 		$scope.users = null;
-		$scope.mode = null;
-		$scope.modes = null;
+		$scope.orders = [
+		  "A-Z",
+		  "Z-A"
+		];
 		$http({
 		  method: 'GET',
 		  url: '/categories.json'
@@ -20,18 +22,9 @@ app
 						$scope.users =  $scope.categories
 					}, 650);
 	 		}
-
-			$scope.loadModes = function() 
-			{
-				$scope.modes =  $scope.modes  || [
-			        { id: 1, name: 'Mayor a menor' },
-			        { id: 2, name: 'Menor a' }
-			      ];
-													
-	 		}
 	   		
 		    $scope.Prueba = function (id) {
-				console.log( $scope.user.name);
+				console.log( $scope.order);
 			};
 
 		    $scope.ReloadState = function (id) {
@@ -43,6 +36,14 @@ app
 		    	else
 		    	{
 				name= $scope.name;
+		    	}
+		    	if($scope.order==null)
+		    	{
+		    		order="all";
+		    	}
+		    	else
+		    	{
+					order= $scope.order;
 		    	}
 
 				if($scope.user==null)
@@ -59,7 +60,7 @@ app
 					name='all'
 				}
 
-				$state.go("social_needs.filter", { "name": name,"category": category, "filter": "all"},  {});
+				$state.go("social_needs.filter", { "name": name,"category": category, "filter": order},  {});
 			};
 
    		}	
