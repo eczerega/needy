@@ -1,7 +1,10 @@
 -begin
   .row.resume-project
     .col-md-5.image-project{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{@social_needs.id}'})"}
-      =image_tag SocialsNeedImage.where(:socials_need_id => @social_needs.id).take.image_content, :style=>"width.:100%"
+      -begin
+        =image_tag SocialsNeedImage.where(:socials_need_id => @social_needs.id).take.image_content, :style=>"width.:100%"
+      -rescue Exception => e
+        =image_tag 'missing_im.png'
     .col-md-7
       .row
         .col-md-12{:style=>"letter-spacing: 2.15px;"}

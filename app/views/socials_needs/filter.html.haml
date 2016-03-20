@@ -5,7 +5,10 @@
       - @socials_needs.each do |socials_need|
         .card{:style=>"width: 320px; display: inline-block; margin: 15px; margin-bottom: 50px"}
           .thumbnail{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{socials_need.id}'})"}
-            =image_tag SocialsNeedImage.where(:socials_need_id => socials_need.id).take.image_content
+            -begin
+              =image_tag SocialsNeedImage.where(:socials_need_id => socials_need.id).take.image_content
+            -rescue Exception => e
+              =image_tag 'missing_im.png'
           .content{:style=>"cursor: pointer","ui-sref" => "social_need({id: '#{socials_need.id}'})"}
             %h6
               = socials_need.name
@@ -23,7 +26,7 @@
                     = socials_need.latitude
                   .col-md-4.pull-right
                     %i.fa.fa-thumbs-up
-                    80 
+                    =SocialsNeedImage.where(:socials_need_id => socials_need.id).count
                     %i.fa.fa-thumbs-down
                     21
 

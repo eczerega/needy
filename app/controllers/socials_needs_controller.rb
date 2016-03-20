@@ -126,10 +126,7 @@ class SocialsNeedsController < ApplicationController
       @success=""
       if @socials_need.save
         @need_id=@socials_need.id
-        if 
-           SocialsNeedImage.create(:image_content => 'http://biodiv.org.ar/wp-content/themes/fearless/images/missing-image-640x360.png', :socials_need_id => @socials_need.id)
-          
-        end
+        #SocialsNeedImage.create(:image_content => 'http://biodiv.org.ar/wp-content/themes/fearless/images/missing-image-640x360.png', :socials_need_id => @socials_need.id)
         @success = true
             respond_to do |format|
               format.html {}

@@ -50,6 +50,6 @@ names = [ "Una necesidad mala", "Una necesidad buena", "cosas malas que pasan",
 
 100.times do
 	@need = SocialsNeed.create(:name => names[Random.new.rand(16).to_i], :description => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", :category_id => Random.new.rand(1..17).to_i, :latitude=>"Dead Valley", :user_id=>1)
-	SocialsNeedImage.create(:image_content => 'http://biodiv.org.ar/wp-content/themes/fearless/images/missing-image-640x360.png', :socials_need_id => @need.id)
+	#SocialsNeedImage.create(:image_content => 'http://biodiv.org.ar/wp-content/themes/fearless/images/missing-image-640x360.png', :socials_need_id => @need.id)
 end
 
