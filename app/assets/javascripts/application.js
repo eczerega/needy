@@ -13,6 +13,7 @@
 //= require ng-parallax/angular-parallax.js
 //= require sweetalert/dist/sweetalert.min.js
 //= require angular-loading-bar/build/loading-bar.min.js
+//= require ngInfiniteScroll/build/ng-infinite-scroll.js
 //= require_tree .
 
 

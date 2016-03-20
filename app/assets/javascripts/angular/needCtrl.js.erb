@@ -1,18 +1,25 @@
 app
 .controller('NeedCtrl',
-    function ($scope,$timeout, $http, $state) {
+    function ($scope,$timeout, $http, $state, Reddit) {
     	$scope.test="pruebo";
 		$scope.user = null;
 		$scope.users = null;
 		$scope.categories = null;
+		//Infinite scroll
+		$scope.reddit = new Reddit();
 		$http({
-		  method: 'GET',
-		  url: '/categories.json'
-		}).then(function successCallback(response) {
-		    $scope.categories =  response.data;
-		  }, function errorCallback(response) {
-		    // called asynchronously if an error occurs
-		    // or server returns response with an error status.
+		  		method: 'GET',
+		 	 	url: '/categories.json'
+			  }).then(function successCallback(response) {
+    			$scope.categories =  response.data;
+		  		}, function errorCallback(response) {
+		  });
+		$http({
+		  		method: 'GET',
+		 	 	url: '/categories.json'
+			  }).then(function successCallback(response) {
+    			$scope.categories =  response.data;
+		  		}, function errorCallback(response) {
 		  });
 
 			$scope.loadUsers = function() 
@@ -28,7 +35,36 @@ app
 				$state.go("home", {},  {reload: true});
 			};
 
+
+
    		}	
 
 
 );
+
+
+// Infinite scroll factory
+app.factory('Reddit', function($http) {
+  var Reddit = function() {
+    this.items = [];
+    this.busy = false;
+    this.after = '';
+  };
+
+  Reddit.prototype.nextPage = function() {
+    if (this.busy) return;
+    this.busy = true;
+
+    var url = "https://api.reddit.com/hot?after=" + this.after + "&jsonp=JSON_CALLBACK";
+    $http.jsonp(url).success(function(data) {
+      var items = data.data.children;
+      for (var i = 0; i < items.length; i++) {
+        this.items.push(items[i].data);
+      }
+      this.after = "t3_" + this.items[this.items.length - 1].id;
+      this.busy = false;
+    }.bind(this));
+  };
+
+  return Reddit;
+});

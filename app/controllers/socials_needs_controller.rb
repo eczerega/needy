@@ -95,6 +95,17 @@ class SocialsNeedsController < ApplicationController
       else
          @socials_needs = SocialsNeed.all
       end
+    respond_to do |format|
+      format.html {}
+      format.json {render :json => @socials_needs}
+      #format.js {render :json => @socials_needs.to_json }
+      #if params[:callback]
+        #format.js { render :json => @socials_needs, :callback => params[:callback] }
+      #else
+      #  format.json { render json: @socials_needs}
+      #end
+    end
+
   end
 
   # POST /socials_needs

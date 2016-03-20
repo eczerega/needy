@@ -9,7 +9,8 @@ var app = angular
         'duParallax',
         'ui.router',
         'angular-loading-bar', 
-        'ngAnimate'
+        'ngAnimate',
+        'infinite-scroll'
     ]
 );
 
@@ -48,6 +49,15 @@ app.config(function(
                           filter = $stateParams.filter
                           return 'social_filter/'+name+'/'+category+'/'+filter
                         }
+
+              })
+              .state('social_need', {
+                 url: "/necesidad/:id",
+                  templateUrl:
+                  function ($stateParams) {
+                    id= $stateParams.id;
+                    return 'socials_needs/'+id
+                  }
 
               })
               .state('new_social_needs', {

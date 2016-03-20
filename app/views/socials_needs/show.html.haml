@@ -1,42 +1,31 @@
-%p#notice= notice
+.show-container
+  .container-fluid
+    .row{:style=>"margin-top: 20px"}
+      %h2
+        = @socials_need.name
+      %span
+        %b Por:
+        = User.find(@socials_need.user_id).name
+      %span
+        %b Ubicación
+        = @socials_need.latitude
+  .container-fluid{:style=>"margin-top: 50px !important"}
+    .row
+      .col-md-6
+        .row
+          .col-md-6
+            %a{:href => "https://www.facebook.com/sharer/sharer.php?u=#{request.original_url }" ,:target => "_blank"}
+              .facebook-button
+                .text
+                  Compartir
+          .col-md-6
+            .twitter-button
+              .text
+                Compartir
+        =image_tag SocialsNeedImage.where(:socials_need_id => @socials_need.id).take.image_content
+      .col-md-6
+        %p
+          = @socials_need.description
+        %md-button.md-raised.md-primary.landing-slider-buttons{} 
+          Apoya
 
-%p
-  %b User:
-  = @socials_need.user_id
-%p
-  %b Integer:
-  = @socials_need.integer
-%p
-  %b Name:
-  = @socials_need.name
-%p
-  %b String:
-  = @socials_need.string
-%p
-  %b Description:
-  = @socials_need.description
-%p
-  %b String:
-  = @socials_need.string
-%p
-  %b Latitude:
-  = @socials_need.latitude
-%p
-  %b Integer:
-  = @socials_need.integer
-%p
-  %b Longitude:
-  = @socials_need.longitude
-%p
-  %b Integer:
-  = @socials_need.integer
-%p
-  %b Address:
-  = @socials_need.address
-%p
-  %b String:
-  = @socials_need.string
-
-= link_to 'Edit', edit_socials_need_path(@socials_need)
-\|
-= link_to 'Back', socials_needs_path

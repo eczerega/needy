@@ -1,12 +1,30 @@
-.background-session
-  .row
-    .col-md-1
-    .col-md-5
-      =image_tag 'logo_3.png', size: "120x50"
-    .col-md-3
-    .col-md-3
-      .login-text
-        %br
-        Eres nuevo?
-      .login-enter
-        Crear
+.needs-index-middlev{"ng-controller" => "NeedCtrl"} 
+  .text-center.pagination-centered{:style=>"background-color: white"}
+    %br
+    %table
+      - @socials_needs.each do |socials_need|
+        .card{:style=>"width: 320px; display: inline-block; margin: 15px; margin-bottom: 50px"}
+          .thumbnail
+            =image_tag SocialsNeedImage.where(:socials_need_id => socials_need.id).take.image_content
+          .content
+            %h6
+              = socials_need.name
+            .by
+              %p
+                BY: 
+                = User.find(socials_need.user_id).name
+            .description
+              %p
+                =truncate(socials_need.description, length: 100)
+              .footer
+                .row
+                  .col-md-8
+                    %i.fa.fa-map-marker
+                    = socials_need.latitude
+                  .col-md-4.pull-right
+                    %i.fa.fa-thumbs-up
+                    80 
+                    %i.fa.fa-thumbs-down
+                    21
+
+    %br
