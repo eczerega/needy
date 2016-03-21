@@ -10,6 +10,16 @@
       %title= content_for?(:title) ? yield(:title) : t('common.app_name')
       %meta{:content => content_for?(:description) ? yield(:description) : t('common.app_desc'), :name => "description"}
       %meta{:content => "yGN1yX6Bj0uGy9rOk-GJbfz1KUvVAw9MzRyVoZIkMu0", :name => "google-site-verification"}/
+
+
+
+      %meta{:content => "Comparte lo que necesitan los Chilenos", :property => "og:description"}
+      %meta{:content => "article", :property => "og:type"}/
+      %meta{:content => "Needy", :property => "og:site_name"}/
+      %meta{:content => "https://www.facebook.com/needy.cl", :property => "article:publisher"}
+
+
+
       = metamagic
       = stylesheet_link_tag "application", :media => "all" #, "data-turbolinks-track" => true
       = javascript_include_tag "application" #, "data-turbolinks-track" => true

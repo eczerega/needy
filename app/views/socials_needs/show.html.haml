@@ -1,3 +1,5 @@
+
+%meta{:content => @socials_need.name, :property => "og:title"}/
 .show-container
   .container-fluid
     .row{:style=>"margin-top: 20px"}
@@ -22,7 +24,10 @@
             .twitter-button
               .text
                 Compartir
-        =image_tag SocialsNeedImage.where(:socials_need_id => @socials_need.id).take.image_content
+        -begin
+          =image_tag SocialsNeedImage.where(:socials_need_id => @socials_need.id).take.image_content
+        -rescue
+          =image_tag 'missing_im.png'
       .col-md-6
         %p
           = @socials_need.description
