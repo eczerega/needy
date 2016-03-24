@@ -19,7 +19,7 @@
   #basic-waypoint.col-md-12.second-content
     .row{:layout => "row", "layout-align" => "center center"}  
       .col-md-9
-        %h2{:style=>"letter-spacing: 2.15px;"}
+        .h2-title
           Necesidades más Urgentes
         %div{"ui-view" => ""}
       .col-md-3.resume-project.hidden-xs
@@ -77,7 +77,7 @@
 .row
   #basic-waypoint.col-md-12.fourth-content
     .row{:layout => "row", "layout-align" => "center center"}  
-      .col-md-12
+      .col-md-12{:style=>"text-align:center; margin: 20px 20px;"}
         %h2
           ¿Qué es Needy?
     .row
@@ -86,14 +86,27 @@
         %iframe{:height => "315", :src => "http://www.youtube.com/embed/oooOET1IIiY?autoplay=0", :width => "100%"}
       .col-md-6
         .quees{:style=>"line-height: 28px;"}
-          Es el portal donde se escuchan las necesidades y opiniones de los chilenos.
-          ¿Como Funciona?
-          Si reconoces algún problema o necesidad del lugar donde vives, compártelo con nosotros.
-          Si encuentras alguna problemática en esta página con la que estés de acuerdo, dale 👍 Me gusta y coméntalo.
-          Si se te ocurre alguna forma de solucionar el problema, compártela!
-          ¡Invita a tus amigos a que se hagan parte de la comunidad Needy!
-          %md-button.md-raised.md-primary.landing-slider-buttons{:style=>"width: 100%; bottom: 0;", "ng-controller" => "HomeCtrl", "ng-click" => "showRegister($event)"}
-            Únete*
+          .row{:style=>"margin-bottom:40px !important"}
+            .col-md-12
+              %i.fa.fa-sellsy
+              %span.feature-title
+                Portal de opinión
+              .div
+                Es donde se escuchan las necesidades y opiniones de los Chilenos.                
+          .row{:style=>"margin-bottom:40px !important"}
+            .col-md-12
+              %i.fa.fa-globe
+              %span.feature-title
+                ¿Cómo funciona?
+              .div
+                Si reconoces algún problema o necesidad del lugar donde vives, compártelo con nosotros.
+          .row{:style=>"margin-bottom:40px !important"}
+            .col-md-12
+              %i.fa.fa-hourglass-end
+              %span.feature-title
+                ¿Con qué fin?
+              .div                
+                Si se te ocurre alguna forma de solucionar el problema, compártela!
 
 
 :javascript

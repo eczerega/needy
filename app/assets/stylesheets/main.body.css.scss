@@ -143,15 +143,15 @@ h1, h2, h3, h4, h5, h6
       li:hover
       {
         cursor: pointer;
-        color: #2bde73;
+        color: #99cc00;
       }
 
       .selected-category-list
       {
         padding-left: 18px;
-        border-color: #2bde73;
-        color: #2bde73;
-        border-left: 3px solid #2bde73;
+        border-color: #99cc00;
+        color: #99cc00;
+        border-left: 3px solid #99cc00;
       }
     }
   h2
@@ -261,15 +261,15 @@ h1, h2, h3, h4, h5, h6
       li:hover
       {
         cursor: pointer;
-        color: #2bde73;
+        color: #99cc00;
       }
 
       .selected-category-list
       {
         padding-left: 18px;
-        border-color: #2bde73;
-        color: #2bde73;
-        border-left: 3px solid #2bde73;
+        border-color: #99cc00;
+        color: #99cc00;
+        border-left: 3px solid #99cc00;
       }
     }
   h2
@@ -359,15 +359,49 @@ h1, h2, h3, h4, h5, h6
 
 
 
+svg {
+  fill: currentColor;
+}
 
 
+.h2-title
+{
+      font-size: x-large;
+    font-weight: 600!important;
+    line-height: 1.5!important;
+    margin-bottom: 0!important;
+    text-transform: uppercase!important;
+    letter-spacing: 1px!important;
+    color: #333 !important!important;
+    -webkit-margin-before: 1em!important;
+    -webkit-margin-after: 1em!important;
+    -webkit-margin-start: 0px!important;
+    -webkit-margin-end: 0px!important;
+    margin: 0 0 30px 0!important;
+    font-family: 'proxima-nova', sans-serif!important;
+}
 
 
 
 .fourth-content
 {
+  i
+  {
+    font-size: 28px;
+    color: #99cc00 !important;
+  }
+
+  .feature-title
+  {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #333;
+  }
   padding: 30px 6% 80px 6%;
-  background-color: #a4d8a7 !important;
+  background-color: #f9f9f9 !important;
   min-height: 470px;
   ul
     {
@@ -385,21 +419,32 @@ h1, h2, h3, h4, h5, h6
       li:hover
       {
         cursor: pointer;
-        color: #2bde73;
+        color: #99cc00 ;
       }
 
       .selected-category-list
       {
         padding-left: 18px;
-        border-color: #2bde73;
-        color: #2bde73;
-        border-left: 3px solid #2bde73;
+        border-color: #99cc00;
+        color: #99cc00;
+        border-left: 3px solid #99cc00;
       }
     }
   h2
   {
-    color: #003404 !important;
-    font-weight: 400 !important;
+    font-size: x-large;
+    font-weight: 600!important;
+    line-height: 1.5!important;
+    margin-bottom: 0!important;
+    text-transform: uppercase!important;
+    letter-spacing: 1px!important;
+    color: #333 !important!important;
+    -webkit-margin-before: 1em!important;
+    -webkit-margin-after: 1em!important;
+    -webkit-margin-start: 0px!important;
+    -webkit-margin-end: 0px!important;
+    margin: 0 0 30px 0!important;
+    font-family: 'proxima-nova', sans-serif!important;
   }
   h3
   {
